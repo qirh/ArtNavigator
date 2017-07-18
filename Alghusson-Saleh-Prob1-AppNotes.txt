@@ -1,0 +1,1 @@
+If there’s information you feel you must convey that just won’t fit in StoryBoard, such as animation, or discussion of any non-Apple library iOS code you plan to integrate, or Internet servers you’re relying on, include it in an ‘LastName-FirstName-Prob1-AppNotes.pdf’ document at top level.
