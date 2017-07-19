@@ -1,1 +1,3 @@
-If there’s information you feel you must convey that just won’t fit in StoryBoard, such as animation, or discussion of any non-Apple library iOS code you plan to integrate, or Internet servers you’re relying on, include it in an ‘LastName-FirstName-Prob1-AppNotes.pdf’ document at top level.
+I couldn't set some preferences that I wanted to set, such as setting up borders and such for label and textviews, thus I used background colors just to showcase the different objects and their borders. Now, despite being horribly unfashionable, I still recognize that these colors are ugly and they are only temporary and for this version of the application.
+
+Also, I hope it's not an issue, but i added the data sources to the repo and the icons that i plan on using and a file named 'Alghusson-Saleh-Prob1-AppIdea.txt' that has the answers to the write up requested in the assignment.

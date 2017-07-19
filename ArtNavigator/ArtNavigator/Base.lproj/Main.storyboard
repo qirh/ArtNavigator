@@ -30,12 +30,12 @@
                                 </items>
                             </navigationBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eAw-6e-FIa">
-                                <rect key="frame" x="16" y="20" width="343" height="598"/>
+                                <rect key="frame" x="16" y="40" width="343" height="578"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eAw-6e-FIa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9KB-mq-7IO"/>
+                            <constraint firstItem="eAw-6e-FIa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="9KB-mq-7IO"/>
                             <constraint firstItem="eAw-6e-FIa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NMb-tW-Q9K"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eAw-6e-FIa" secondAttribute="trailing" id="RsE-Yt-pdH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eAw-6e-FIa" secondAttribute="bottom" id="aBh-1T-caa"/>
@@ -43,6 +43,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="vmE-ho-MWi" userLabel="Map"/>
                     <connections>
+                        <outlet property="mapKit" destination="eAw-6e-FIa" id="X44-I2-dHb"/>
                         <segue destination="kqG-Dj-Cvh" kind="show" id="dQ5-CL-UkK"/>
                     </connections>
                 </viewController>
@@ -70,14 +71,14 @@
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cJ7-rz-dvP">
-                                <rect key="frame" x="16" y="20" width="343" height="598"/>
+                                <rect key="frame" x="16" y="40" width="343" height="578"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8or-vV-TtQ" firstAttribute="top" secondItem="cJ7-rz-dvP" secondAttribute="bottom" id="HJD-rI-IMz"/>
-                            <constraint firstItem="cJ7-rz-dvP" firstAttribute="top" secondItem="deZ-pM-Mak" secondAttribute="bottom" id="IeP-cm-W53"/>
+                            <constraint firstItem="cJ7-rz-dvP" firstAttribute="top" secondItem="deZ-pM-Mak" secondAttribute="bottom" constant="20" id="IeP-cm-W53"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cJ7-rz-dvP" secondAttribute="trailing" id="Q3W-CK-PCZ"/>
                             <constraint firstItem="cJ7-rz-dvP" firstAttribute="leading" secondItem="YoC-M0-g97" secondAttribute="leadingMargin" id="SL0-JM-3q6"/>
                         </constraints>
@@ -100,16 +101,16 @@
                         <viewControllerLayoutGuide type="bottom" id="xde-WK-uwt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="taG-FX-PPd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1050"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POq-Vh-ba4">
-                                <rect key="frame" x="16" y="20" width="343" height="931"/>
+                                <rect key="frame" x="16" y="20" width="343" height="981"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oY-GO-eti" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="1000"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place Holder Text, here should be either a picture or a map." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwt-jw-FqN">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place Holder Text, here should be either a picture of the art piece or a map preview of it's location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwt-jw-FqN">
                                                 <rect key="frame" x="20" y="10" width="303" height="300"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -119,13 +120,13 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM3-f5-r4B">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM3-f5-r4B">
                                                 <rect key="frame" x="20" y="421" width="303" height="50"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="bDR-cb-vBC"/>
                                                 </constraints>
-                                                <string key="text">Title
+                                                <string key="text">Title of the art piece
 Year</string>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -149,13 +150,15 @@ Year</string>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="Hn1-KF-0Lp"/>
                                                 </constraints>
-                                                <mutableString key="text">Drawn Water combines real drinking water, symbolic elements, and a 2500 sq. foot map that focuses attention on the importance of water in our lives. The underground pipes that bring the water throughout the city are marked on the map, along with water fountains, swimming pools, and ponds. Actual water pipes form functional seats and suggest the sizes of pipes in the map. A transparent water column is placed on the map at the site of the city's holding reservoir, Payson Park. The art continues outside the building. A shallow depression on both sides of a path reveals a 42 inch pipe, reminding us of the connection between the treatment facility and Fresh Pond, the city's reservoir. A circular opening in the fence around the pond focuses views of the water intake. A drinking fountain in the form of a squirting arc offers water to users of the path. When they drink from the fountain, the water column reacts with light, bubbles and changes in the water level, as if the water had been drawn through the large pipe back from the treatment facility. There are also thirteen bronze utility covers located throughout the city, each with a different water-related image. The locations of the covers are marked on the floor map to encourage a treasure hunt in the neighborhoods.Mags Harries and Lajos Héder have collaborated on several projects since 1990, ranging from large-scale commissions to temporary installations and performances.</mutableString>
+                                                <string key="text">Drawn Water combines real drinking water, symbolic elements, and a 2500 sq. foot map that focuses attention on the importance of water in our lives. The underground pipes that bring the water throughout the city are marked on the map, along with water fountains, swimming pools, and ponds. Actual water pipes form functional seats and suggest the sizes of pipes in the map. A transparent water column is placed on the map at the site of the city's holding reservoir, Payson Park. The art continues outside the building. A shallow depression on both sides of a path reveals a 42 inch pipe, reminding us of the connection between the treatment facility and Fresh Pond, the city's reservoir. A circular opening in the fence around the pond focuses views of the water intake. A drinking fountain in the form of a squirting arc offers water to users of the path. When they drink from the fountain, the water column reacts with light, bubbles and changes in the water level, as if the water had been drawn through the large pipe back from the treatment facility. There are also thirteen bronze utility covers located throughout the city, each with a different water-related image. The locations of the covers are marked on the floor map to encourage a treasure hunt in the neighborhoods.
+
+Mags Harries and Lajos Héder have collaborated on several projects since 1990, ranging from large-scale commissions to temporary installations and performances.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interior/Exterior" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Teq-mY-BY6">
-                                                <rect key="frame" x="20" y="820" width="118.5" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interior or Exterior installation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Teq-mY-BY6">
+                                                <rect key="frame" x="20" y="820" width="263" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -224,7 +227,7 @@ Steel</string>
                                             <constraint firstItem="Xno-Mh-HaL" firstAttribute="leading" secondItem="5oY-GO-eti" secondAttribute="leading" constant="20" id="Jpa-7H-KIO"/>
                                             <constraint firstItem="xpc-4S-mKz" firstAttribute="leading" secondItem="dHi-o5-o6p" secondAttribute="trailing" constant="10" id="MpM-WW-fR2"/>
                                             <constraint firstItem="xpc-4S-mKz" firstAttribute="top" secondItem="Teq-mY-BY6" secondAttribute="bottom" constant="18" id="OP9-GX-QNW"/>
-                                            <constraint firstAttribute="trailing" secondItem="Teq-mY-BY6" secondAttribute="trailing" constant="204.5" id="Qux-XN-hrj"/>
+                                            <constraint firstAttribute="trailing" secondItem="Teq-mY-BY6" secondAttribute="trailing" constant="60" id="Qux-XN-hrj"/>
                                             <constraint firstItem="Xno-Mh-HaL" firstAttribute="top" secondItem="lM3-f5-r4B" secondAttribute="bottom" constant="10" id="TEC-S7-IKT"/>
                                             <constraint firstItem="xpc-4S-mKz" firstAttribute="height" secondItem="dHi-o5-o6p" secondAttribute="height" id="VUf-ji-aRG"/>
                                             <constraint firstItem="Fwt-jw-FqN" firstAttribute="leading" secondItem="5oY-GO-eti" secondAttribute="leading" constant="20" id="Z15-Kl-lES"/>
@@ -272,7 +275,7 @@ Steel</string>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1000"/>
+                    <size key="freeformSize" width="375" height="1050"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CH2-eb-bi1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -298,6 +301,6 @@ Steel</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tv5-ai-x2f"/>
+        <segue reference="dQ5-CL-UkK"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -1,10 +1,8 @@
-Your submission for this problem should be an Xcode project only. It should have no code*, and instead just use StoryBoard. Be sure to include any image and other media assets directly in the submission. For any images, photos, music, audio clips, or other media that you did not personally create, include the source and full copyright information in a separate ‘LastName-FirstName- Prob1-Copyright.pdf’ document at top level.
 
 Resource 1:
   The data provided by the city of Cambridge.
   Source: https://data.cambridgema.gov/General-Government/Cambridge-Public-Art-Locations/svyv-zh72/data
-  License:
-  Credit:
+  License: Provided as public information, free to use and no credit necessary.
 
 Resource 2:
   Navigation icon
