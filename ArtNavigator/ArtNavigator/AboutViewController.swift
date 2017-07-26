@@ -12,8 +12,8 @@ class AboutViewController: UIViewController, UITextViewDelegate {
     
     
     
-    @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var text: UITextView!
+    @IBOutlet weak var imageAbout: UIImageView!
+    @IBOutlet weak var textAbout: UITextView!
     
     
     override func viewDidLoad() {
@@ -26,22 +26,22 @@ class AboutViewController: UIViewController, UITextViewDelegate {
         
         let textString = NSLocalizedString("about-me", comment: "")
         let textLink = NSLocalizedString("git", comment: "")
-        self.text.text = textString + " " + textLink
-        self.text.delegate = self
+        self.textAbout.text = textString + " " + textLink
+        self.textAbout.delegate = self
         
         
         // ImageView resizing from here:
         // https://stackoverflow.com/a/41266504
         
-        image.image = UIImage(named: "me")
+        imageAbout.image = UIImage(named: "me")
         
-        image.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleBottomMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin]
-        image.contentMode = .scaleAspectFit
-        image.clipsToBounds = true
+        imageAbout.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleBottomMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin]
+        imageAbout.contentMode = .scaleAspectFit
+        imageAbout.clipsToBounds = true
         
-        image.layer.borderWidth = 1.5
-        image.layer.cornerRadius = 5.0
-        image.layer.masksToBounds = true
+        imageAbout.layer.borderWidth = 1.5
+        imageAbout.layer.cornerRadius = 5.0
+        imageAbout.layer.masksToBounds = true
         
     }
     

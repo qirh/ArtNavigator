@@ -11,7 +11,7 @@
 //keys will always be lower case
 
 "hey" = "Hola!";
-"about-me" = "bla bla español:";
+"aboutMe" = "bla bla español:";
 "git" = "http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html";
 
 
@@ -21,4 +21,7 @@
 "about" = "Sobre";
 "detail" = "Detalles";
 
+"nightMode" = "night mode";
+"resultsPerPage" = "resultados por pagina";
+"save" = "guardar";
 
