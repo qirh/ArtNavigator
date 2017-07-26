@@ -13,11 +13,19 @@ Resource 2:
     licensed by: http://creativecommons.org/licenses/by/3.0/
 
 Resource 3:
-  About, List, Map and Settings icons
+  About, List, Map, Settings and flag icons
   Source: icons8.com
   License: Free to use with credit
   Credit:
+    https://icons8.com/icon/set/flags/all
     https://icons8.com/icon/14313/about
     https://icons8.com/icon/20406/bulleted-list
     https://icons8.com/icon/3779/map-marker
     https://icons8.com/icon/14099/Settings
+
+Resource 4:
+  EWToastAlerts framework
+  Source: https://github.com/estampworld/ios-toast-alerts
+  License: MIY License
+  Credit:
+    http://www.estamp.co/ios-toast-view/

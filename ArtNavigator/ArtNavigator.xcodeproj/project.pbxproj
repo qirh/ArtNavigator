@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3019E3871F294EFF00ABE324 /* EWToastAlerts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3019E3861F294EFF00ABE324 /* EWToastAlerts.framework */; };
+		3019E3891F2951C900ABE324 /* EWToastAlerts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3019E3861F294EFF00ABE324 /* EWToastAlerts.framework */; };
+		3019E38A1F2951C900ABE324 /* EWToastAlerts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3019E3861F294EFF00ABE324 /* EWToastAlerts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		303AD1A31F1EB9B50031F35F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1A21F1EB9B50031F35F /* AppDelegate.swift */; };
 		303AD1A51F1EB9B50031F35F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1A41F1EB9B50031F35F /* MapViewController.swift */; };
 		303AD1A81F1EB9B50031F35F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303AD1A61F1EB9B50031F35F /* Main.storyboard */; };
@@ -38,7 +41,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3019E38B1F2951C900ABE324 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3019E38A1F2951C900ABE324 /* EWToastAlerts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3019E3861F294EFF00ABE324 /* EWToastAlerts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EWToastAlerts.framework; sourceTree = "<group>"; };
+		3019E3881F294F9000ABE324 /* Obj-CAndSwiftBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Obj-CAndSwiftBridging.h"; sourceTree = "<group>"; };
 		303AD19F1F1EB9B50031F35F /* ArtNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		303AD1A21F1EB9B50031F35F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		303AD1A41F1EB9B50031F35F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3019E3871F294EFF00ABE324 /* EWToastAlerts.framework in Frameworks */,
+				3019E3891F2951C900ABE324 /* EWToastAlerts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,13 +108,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3019E3811F294B6300ABE324 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		303AD1961F1EB9B50031F35F = {
 			isa = PBXGroup;
 			children = (
+				3019E3861F294EFF00ABE324 /* EWToastAlerts.framework */,
 				303AD1A11F1EB9B50031F35F /* ArtNavigator */,
 				303AD1B61F1EB9B50031F35F /* ArtNavigatorTests */,
 				303AD1C11F1EB9B50031F35F /* ArtNavigatorUITests */,
 				303AD1A01F1EB9B50031F35F /* Products */,
+				3019E3811F294B6300ABE324 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +151,7 @@
 				303AD1A21F1EB9B50031F35F /* AppDelegate.swift */,
 				303AD1AB1F1EB9B50031F35F /* LaunchScreen.storyboard */,
 				303AD1AE1F1EB9B50031F35F /* Info.plist */,
+				3019E3881F294F9000ABE324 /* Obj-CAndSwiftBridging.h */,
 			);
 			path = ArtNavigator;
 			sourceTree = "<group>";
@@ -153,6 +184,7 @@
 				303AD19B1F1EB9B50031F35F /* Sources */,
 				303AD19C1F1EB9B50031F35F /* Frameworks */,
 				303AD19D1F1EB9B50031F35F /* Resources */,
+				3019E38B1F2951C900ABE324 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -451,10 +483,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ArtNavigator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.harvard.csci-s65.ArtNavigator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sal7/Git/c65/assignment-5-almto3/ArtNavigator/ArtNavigator/Obj-CAndSwiftBridging.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -463,10 +500,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ArtNavigator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.harvard.csci-s65.ArtNavigator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sal7/Git/c65/assignment-5-almto3/ArtNavigator/ArtNavigator/Obj-CAndSwiftBridging.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
