@@ -24,6 +24,9 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     @IBOutlet weak var buttonSave: UIButton!
     
+    //let tav =  EWToastAlertView(message: "Hey!", image: UIImage(named: "Cat Icon")!)
+
+    
     let supportedLanguages = ["ar":"العربية", "en":"English", "es":"Español", "fr":"Francês", "pt":"Português"]
     
     // source: 
@@ -39,7 +42,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         self.pickerLanguage.dataSource = self
         
         buttonSave.layer.borderWidth = 0.7
-        buttonSave.layer.cornerRadius = 0.5
+        buttonSave.layer.cornerRadius = 5
         
         defaults.register(defaults: ["sliderValue" : 5])
         defaults.register(defaults: ["languageSelectedCode" : Locale.preferredLanguages[0]])
@@ -150,6 +153,24 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         defaults.set(sliderValue, forKey: "sliderValue")
         defaults.set(languageSelectedCode, forKey: "languageSelectedCode")
         defaults.set(nightModeOn, forKey: "nightModeOn")
+        
+        let tav = EWToastAlertView()
+        tav.message = "Language will change upon restating the app"
+        tav.dismissTime = 3.0
+        /*
+        tav.shouldDismissWithTap
+        
+        tav.frameDuration = 0.1
+        tav.repeatAnimation = false
+        */
+        
+        tav.shouldDismissWithTap = true
+        tav.shouldDismissWithTime = true
+        tav.show()
+        //tav.dismiss() to Hide
+
+
+
     }
     func setViews() {
         labelResultsNumbers.text = "\(sliderValue)"
