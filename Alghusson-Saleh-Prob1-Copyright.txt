@@ -11,3 +11,13 @@ Resource 2:
   Credit:
     Icons made by http://www.flaticon.com/authors/madebyoliver
     licensed by: http://creativecommons.org/licenses/by/3.0/
+
+Resource 3:
+  About, List, Map and Settings icons
+  Source: icons8.com
+  License: Free to use with credit
+  Credit:
+    https://icons8.com/icon/14313/about
+    https://icons8.com/icon/20406/bulleted-list
+    https://icons8.com/icon/3779/map-marker
+    https://icons8.com/icon/14099/Settings

@@ -1,3 +1,39 @@
 I couldn't set some preferences that I wanted to set, such as setting up borders and such for label and textviews, thus I used background colors just to showcase the different objects and their borders. Now, despite being horribly unfashionable, I still recognize that these colors are ugly and they are only temporary and for this version of the application.
 
 Also, I hope it's not an issue, but i added the data sources to the repo and the icons that i plan on using and a file named 'Alghusson-Saleh-Prob1-AppIdea.txt' that has the answers to the write up requested in the assignment.
+
+Notes:
+	Custom icon guide:
+		https://developer.apple.com/ios/human-interface-guidelines/graphics/custom-icons/
+	Look at photos app for layout inspiration
+
+As far as I know, I have implemented everything required except:
+		* nil
+
+Features not working properly:
+		* nil
+
+Features to add:
+
+		* Provide two versions of custom tab bar icons. Provide icons for both the selected and unselected states. The selected icon is often a filled-in version of the unselected icon.
+		* Persistence
+		* App icon
+		* Search button
+		* Speech synth
+		* Add sommerville/other cities data
+
+		Map View:
+      * Fix constraints
+			* Cambridge button
+			* User location button
+		List View:
+		Detail View:
+		About View:
+			* IMPLEMENT VIEW
+		Settings View:
+			* IMPLEMENT VIEW
+			* Night mode?
+			* Localization (Spanish, Arabic?)
+
+Known Bugs:
+		* nil

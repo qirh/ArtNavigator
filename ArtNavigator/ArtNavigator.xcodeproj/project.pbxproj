@@ -16,6 +16,10 @@
 		303AD1C31F1EB9B50031F35F /* ArtNavigatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1C21F1EB9B50031F35F /* ArtNavigatorUITests.swift */; };
 		303AD1D11F1EC1AF0031F35F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1D01F1EC1AF0031F35F /* ListViewController.swift */; };
 		303AD1D31F1EC1C90031F35F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1D21F1EC1C90031F35F /* DetailViewController.swift */; };
+		30BEECF11F28110B00EABA93 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEECF01F28110B00EABA93 /* SettingsViewController.swift */; };
+		30BEECF31F28111B00EABA93 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEECF21F28111B00EABA93 /* AboutViewController.swift */; };
+		30BEECF81F28264000EABA93 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30BEECFA1F28264000EABA93 /* Localizable.strings */; };
+		30BEECFD1F2826EE00EABA93 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEECFC1F2826EE00EABA93 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		303AD1C41F1EB9B50031F35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		303AD1D01F1EC1AF0031F35F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		303AD1D21F1EC1C90031F35F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		30BEECF01F28110B00EABA93 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		30BEECF21F28111B00EABA93 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		30BEECF41F28252900EABA93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		30BEECF51F28252900EABA93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		30BEECF91F28264000EABA93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30BEECFB1F28264400EABA93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30BEECFC1F2826EE00EABA93 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +112,16 @@
 		303AD1A11F1EB9B50031F35F /* ArtNavigator */ = {
 			isa = PBXGroup;
 			children = (
-				303AD1A21F1EB9B50031F35F /* AppDelegate.swift */,
-				303AD1A41F1EB9B50031F35F /* MapViewController.swift */,
-				303AD1D01F1EC1AF0031F35F /* ListViewController.swift */,
+				30BEECF21F28111B00EABA93 /* AboutViewController.swift */,
 				303AD1D21F1EC1C90031F35F /* DetailViewController.swift */,
+				303AD1D01F1EC1AF0031F35F /* ListViewController.swift */,
+				303AD1A41F1EB9B50031F35F /* MapViewController.swift */,
+				30BEECF01F28110B00EABA93 /* SettingsViewController.swift */,
+				30BEECFC1F2826EE00EABA93 /* TabBarController.swift */,
 				303AD1A61F1EB9B50031F35F /* Main.storyboard */,
+				30BEECFA1F28264000EABA93 /* Localizable.strings */,
 				303AD1A91F1EB9B50031F35F /* Assets.xcassets */,
+				303AD1A21F1EB9B50031F35F /* AppDelegate.swift */,
 				303AD1AB1F1EB9B50031F35F /* LaunchScreen.storyboard */,
 				303AD1AE1F1EB9B50031F35F /* Info.plist */,
 			);
@@ -239,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				303AD1AD1F1EB9B50031F35F /* LaunchScreen.storyboard in Resources */,
+				30BEECF81F28264000EABA93 /* Localizable.strings in Resources */,
 				303AD1AA1F1EB9B50031F35F /* Assets.xcassets in Resources */,
 				303AD1A81F1EB9B50031F35F /* Main.storyboard in Resources */,
 			);
@@ -265,9 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30BEECF31F28111B00EABA93 /* AboutViewController.swift in Sources */,
 				303AD1A51F1EB9B50031F35F /* MapViewController.swift in Sources */,
 				303AD1A31F1EB9B50031F35F /* AppDelegate.swift in Sources */,
+				30BEECFD1F2826EE00EABA93 /* TabBarController.swift in Sources */,
 				303AD1D11F1EC1AF0031F35F /* ListViewController.swift in Sources */,
+				30BEECF11F28110B00EABA93 /* SettingsViewController.swift in Sources */,
 				303AD1D31F1EC1C90031F35F /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +327,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				303AD1A71F1EB9B50031F35F /* Base */,
+				30BEECF41F28252900EABA93 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -316,8 +336,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				303AD1AC1F1EB9B50031F35F /* Base */,
+				30BEECF51F28252900EABA93 /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		30BEECFA1F28264000EABA93 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30BEECF91F28264000EABA93 /* es */,
+				30BEECFB1F28264400EABA93 /* Base */,
+			);
+			name = Localizable.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -327,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -378,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -515,6 +548,7 @@
 				303AD1C91F1EB9B50031F35F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		303AD1CA1F1EB9B50031F35F /* Build configuration list for PBXNativeTarget "ArtNavigatorTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +557,7 @@
 				303AD1CC1F1EB9B50031F35F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		303AD1CD1F1EB9B50031F35F /* Build configuration list for PBXNativeTarget "ArtNavigatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +566,7 @@
 				303AD1CF1F1EB9B50031F35F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
