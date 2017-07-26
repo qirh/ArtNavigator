@@ -1,0 +1,57 @@
+
+/* Class = "UIButton"; normalTitle = "(Navigate Picture)"; ObjectID = "0A3-Se-Fcr"; */
+"0A3-Se-Fcr.normalTitle" = "(Navigate Picture)";
+
+/* Class = "UILabel"; text = "Top Left"; ObjectID = "2Bo-XY-dBc"; */
+"2Bo-XY-dBc.text" = "Top Left";
+
+/* Class = "UILabel"; text = "Top Right"; ObjectID = "2Xa-d1-p7F"; */
+"2Xa-d1-p7F.text" = "Top Right";
+
+/* Class = "UILabel"; text = "Artist: Gene Cauthen"; ObjectID = "2x8-uL-6xo"; */
+"2x8-uL-6xo.text" = "Artist: Gene Cauthen";
+
+/* Class = "UILabel"; text = "Place Holder Text, here should be either a picture of the art piece or a map preview of it's location"; ObjectID = "Fwt-jw-FqN"; */
+"Fwt-jw-FqN.text" = "Place Holder Text, here should be either a picture of the art piece or a map preview of it's location";
+
+/* Class = "UILabel"; text = "Material:\nSteel"; ObjectID = "LTg-uR-mb6"; */
+"LTg-uR-mb6.text" = "Material:\nSteel";
+
+/* Class = "UILabel"; text = "Interior or Exterior installation"; ObjectID = "Teq-mY-BY6"; */
+"Teq-mY-BY6.text" = "Interior or Exterior installation";
+
+/* Class = "UILabel"; text = "Description:"; ObjectID = "Xno-Mh-HaL"; */
+"Xno-Mh-HaL.text" = "Description:";
+
+/* Class = "UILabel"; text = "Category:\nSculpture"; ObjectID = "dHi-o5-o6p"; */
+"dHi-o5-o6p.text" = "Category:\nSculpture";
+
+/* Class = "UILabel"; text = "Location: Old Morse/Nunes Park"; ObjectID = "dWR-o8-KyM"; */
+"dWR-o8-KyM.text" = "Location: Old Morse/Nunes Park";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "em8-wl-uBq"; */
+"em8-wl-uBq.title" = "Settings";
+
+/* Class = "UILabel"; text = "Location Description: 28 Sacramento St, 02138"; ObjectID = "f5C-Kl-EX3"; */
+"f5C-Kl-EX3.text" = "Location Description: 28 Sacramento St, 02138";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "g5C-lY-wps"; */
+"g5C-lY-wps.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UITabBarItem"; title = "About"; ObjectID = "ggU-CA-FZ8"; */
+"ggU-CA-FZ8.title" = "About";
+
+/* Class = "UILabel"; text = "Drawn Water combines real drinking water, symbolic elements, and a 2500 sq. foot map that focuses attention on the importance of water in our lives. The underground pipes that bring the water throughout the city are marked on the map, along with water fountains, swimming pools, and ponds. Actual water pipes form functional seats and suggest the sizes of pipes in the map. A transparent water column is placed on the map at the site of the city's holding reservoir, Payson Park. The art continues outside the building. A shallow depression on both sides of a path reveals a 42 inch pipe, reminding us of the connection between the treatment facility and Fresh Pond, the city's reservoir. A circular opening in the fence around the pond focuses views of the water intake. A drinking fountain in the form of a squirting arc offers water to users of the path. When they drink from the fountain, the water column reacts with light, bubbles and changes in the water level, as if the water had been drawn through the large pipe back from the treatment facility. There are also thirteen bronze utility covers located throughout the city, each with a different water-related image. The locations of the covers are marked on the floor map to encourage a treasure hunt in the neighborhoods.\n\nMags Harries and Lajos Héder have collaborated on several projects since 1990, ranging from large-scale commissions to temporary installations and performances."; ObjectID = "ioR-ha-fEM"; */
+"ioR-ha-fEM.text" = "Drawn Water combines real drinking water, symbolic elements, and a 2500 sq. foot map that focuses attention on the importance of water in our lives. The underground pipes that bring the water throughout the city are marked on the map, along with water fountains, swimming pools, and ponds. Actual water pipes form functional seats and suggest the sizes of pipes in the map. A transparent water column is placed on the map at the site of the city's holding reservoir, Payson Park. The art continues outside the building. A shallow depression on both sides of a path reveals a 42 inch pipe, reminding us of the connection between the treatment facility and Fresh Pond, the city's reservoir. A circular opening in the fence around the pond focuses views of the water intake. A drinking fountain in the form of a squirting arc offers water to users of the path. When they drink from the fountain, the water column reacts with light, bubbles and changes in the water level, as if the water had been drawn through the large pipe back from the treatment facility. There are also thirteen bronze utility covers located throughout the city, each with a different water-related image. The locations of the covers are marked on the floor map to encourage a treasure hunt in the neighborhoods.\n\nMags Harries and Lajos Héder have collaborated on several projects since 1990, ranging from large-scale commissions to temporary installations and performances.";
+
+/* Class = "UILabel"; text = "Title of the art piece\nYear"; ObjectID = "lM3-f5-r4B"; */
+"lM3-f5-r4B.text" = "Title of the art piece\nYear";
+
+/* Class = "UITabBarItem"; title = "List"; ObjectID = "qc7-Dn-fhf"; */
+"qc7-Dn-fhf.title" = "List";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "vmE-ho-MWi"; */
+"vmE-ho-MWi.title" = "Map";
+
+/* Class = "UILabel"; text = "Object Type:\nMetal"; ObjectID = "xpc-4S-mKz"; */
+"xpc-4S-mKz.text" = "Object Type:\nMetal";

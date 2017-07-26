@@ -1,25 +1,21 @@
 //
-//  DetailViewController.swift
+//  SettingsViewController.swift
 //  ArtNavigator
 //
-//  Created by saleh on 7/18/17.
+//  Created by saleh on 7/25/17.
 //  Copyright © 2017 saleh. All rights reserved.
 //
 
 import UIKit
 
-class DetailViewController: UIViewController {
-    
-    private let labelTitleColor = UIColor.blue
+class SettingsViewController: UIViewController {
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = NSLocalizedString("detail", comment: "")
-        print("\(self.title ?? "DETAIL NIL") loaded")
-        
-        
+        self.title = NSLocalizedString("settings", comment: "")
+        print("\(self.title ?? "Settings NIL") loaded")
     }
     
     override func didReceiveMemoryWarning() {

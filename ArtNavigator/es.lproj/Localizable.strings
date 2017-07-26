@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  ArtNavigator
+
+  Created by saleh on 7/25/17.
+  Copyright © 2017 saleh. All rights reserved.
+*/
+// localiazation source:
+// https://medium.com/lean-localization/ios-localization-tutorial-938231f9f881
+//
+//keys will always be lower case
+
+"hey" = "Hola!";
+"about-me" = "bla bla español:";
+"git" = "http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html";
+
+
+"map" = "Mapa";
+"list" = "Lista";
+"settings" = "Ajustes";
+"about" = "Sobre";
+"detail" = "Detalles";
+
+

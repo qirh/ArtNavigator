@@ -8,8 +8,6 @@
 
 import UIKit
 
-import UIKit
-
 class ListViewController: UIViewController {
     
     private let labelTitleColor = UIColor.blue
@@ -17,7 +15,10 @@ class ListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.title = NSLocalizedString("list", comment: "")
+        print("\(self.title ?? "LIST NIL") loaded")
+        
     }
     
     override func didReceiveMemoryWarning() {
