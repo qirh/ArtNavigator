@@ -21,6 +21,7 @@ Features to add:
 		* Search button
 		* Speech synth
 		* Add sommerville/other cities data
+		* Support Larger Text
 
 		Map View:
       * Fix constraints
@@ -31,7 +32,6 @@ Features to add:
 		About View:
 			* IMPLEMENT VIEW
 		Settings View:
-			* IMPLEMENT VIEW
 			* Night mode?
 			* Localization (Spanish, Arabic?)
 

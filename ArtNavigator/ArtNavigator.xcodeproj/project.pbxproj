@@ -19,7 +19,6 @@
 		30BEECF11F28110B00EABA93 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEECF01F28110B00EABA93 /* SettingsViewController.swift */; };
 		30BEECF31F28111B00EABA93 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEECF21F28111B00EABA93 /* AboutViewController.swift */; };
 		30BEECF81F28264000EABA93 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30BEECFA1F28264000EABA93 /* Localizable.strings */; };
-		30BEECFD1F2826EE00EABA93 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEECFC1F2826EE00EABA93 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +60,6 @@
 		30BEECF51F28252900EABA93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		30BEECF91F28264000EABA93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		30BEECFB1F28264400EABA93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		30BEECFC1F2826EE00EABA93 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +115,6 @@
 				303AD1D01F1EC1AF0031F35F /* ListViewController.swift */,
 				303AD1A41F1EB9B50031F35F /* MapViewController.swift */,
 				30BEECF01F28110B00EABA93 /* SettingsViewController.swift */,
-				30BEECFC1F2826EE00EABA93 /* TabBarController.swift */,
 				303AD1A61F1EB9B50031F35F /* Main.storyboard */,
 				30BEECFA1F28264000EABA93 /* Localizable.strings */,
 				303AD1A91F1EB9B50031F35F /* Assets.xcassets */,
@@ -284,7 +281,6 @@
 				30BEECF31F28111B00EABA93 /* AboutViewController.swift in Sources */,
 				303AD1A51F1EB9B50031F35F /* MapViewController.swift in Sources */,
 				303AD1A31F1EB9B50031F35F /* AppDelegate.swift in Sources */,
-				30BEECFD1F2826EE00EABA93 /* TabBarController.swift in Sources */,
 				303AD1D11F1EC1AF0031F35F /* ListViewController.swift in Sources */,
 				30BEECF11F28110B00EABA93 /* SettingsViewController.swift in Sources */,
 				303AD1D31F1EC1C90031F35F /* DetailViewController.swift in Sources */,
