@@ -31,6 +31,7 @@ Features to add:
 		Detail View:
 		About View:
 			* App notes
+			* Add note about approx. coordinates
 		Settings View:
 			* Night mode?
 			* Change language based on selection
