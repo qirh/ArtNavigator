@@ -22,18 +22,18 @@ Features to add:
 		* Speech synth
 		* Add sommerville/other cities data
 		* Support Larger Text
-		* Toast
-
 
 		Map View:
-      * Fix constraints
+      * Highlight Cambridge
 			* Cambridge button
 			* User location button
 		List View:
 		Detail View:
 		About View:
+			* App notes
 		Settings View:
 			* Night mode?
 			* Change language based on selection
+			* Currently no base language, not sure if this will crash the app if it has a base language that's not supported.
 Known Bugs:
-		* nil
+		* Crash upon restart

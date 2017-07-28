@@ -41,6 +41,9 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="" id="vmE-ho-MWi" userLabel="Map"/>
+                    <connections>
+                        <outlet property="mapView" destination="eAw-6e-FIa" id="cV0-wi-OMN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3019E3871F294EFF00ABE324 /* EWToastAlerts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3019E3861F294EFF00ABE324 /* EWToastAlerts.framework */; };
-		3019E3891F2951C900ABE324 /* EWToastAlerts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3019E3861F294EFF00ABE324 /* EWToastAlerts.framework */; };
-		3019E38A1F2951C900ABE324 /* EWToastAlerts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3019E3861F294EFF00ABE324 /* EWToastAlerts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		303AD1A31F1EB9B50031F35F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1A21F1EB9B50031F35F /* AppDelegate.swift */; };
 		303AD1A51F1EB9B50031F35F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1A41F1EB9B50031F35F /* MapViewController.swift */; };
 		303AD1A81F1EB9B50031F35F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303AD1A61F1EB9B50031F35F /* Main.storyboard */; };
@@ -19,9 +16,15 @@
 		303AD1C31F1EB9B50031F35F /* ArtNavigatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1C21F1EB9B50031F35F /* ArtNavigatorUITests.swift */; };
 		303AD1D11F1EC1AF0031F35F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1D01F1EC1AF0031F35F /* ListViewController.swift */; };
 		303AD1D31F1EC1C90031F35F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1D21F1EC1C90031F35F /* DetailViewController.swift */; };
+		308A68B01F29C683001EFD69 /* CRToastConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 308A68A61F29C683001EFD69 /* CRToastConfig.m */; };
+		308A68B11F29C683001EFD69 /* CRToastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 308A68A91F29C683001EFD69 /* CRToastManager.m */; };
+		308A68B21F29C683001EFD69 /* CRToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 308A68AB1F29C683001EFD69 /* CRToastView.m */; };
+		308A68B31F29C683001EFD69 /* CRToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308A68AD1F29C683001EFD69 /* CRToastViewController.m */; };
+		308A68B41F29C683001EFD69 /* CRToastWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 308A68AF1F29C683001EFD69 /* CRToastWindow.m */; };
 		30BEECF11F28110B00EABA93 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEECF01F28110B00EABA93 /* SettingsViewController.swift */; };
 		30BEECF31F28111B00EABA93 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEECF21F28111B00EABA93 /* AboutViewController.swift */; };
 		30BEECF81F28264000EABA93 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30BEECFA1F28264000EABA93 /* Localizable.strings */; };
+		30E2F96A1F2AAFD1000ABFCE /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E2F9691F2AAFD1000ABFCE /* Defaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,22 +44,7 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		3019E38B1F2951C900ABE324 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3019E38A1F2951C900ABE324 /* EWToastAlerts.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		3019E3861F294EFF00ABE324 /* EWToastAlerts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EWToastAlerts.framework; sourceTree = "<group>"; };
 		3019E3881F294F9000ABE324 /* Obj-CAndSwiftBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Obj-CAndSwiftBridging.h"; sourceTree = "<group>"; };
 		303AD19F1F1EB9B50031F35F /* ArtNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		303AD1A21F1EB9B50031F35F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,12 +61,25 @@
 		303AD1C41F1EB9B50031F35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		303AD1D01F1EC1AF0031F35F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		303AD1D21F1EC1C90031F35F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		308A68A41F29C683001EFD69 /* CRToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToast.h; sourceTree = "<group>"; };
+		308A68A51F29C683001EFD69 /* CRToastConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastConfig.h; sourceTree = "<group>"; };
+		308A68A61F29C683001EFD69 /* CRToastConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRToastConfig.m; sourceTree = "<group>"; };
+		308A68A71F29C683001EFD69 /* CRToastLayoutHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastLayoutHelpers.h; sourceTree = "<group>"; };
+		308A68A81F29C683001EFD69 /* CRToastManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastManager.h; sourceTree = "<group>"; };
+		308A68A91F29C683001EFD69 /* CRToastManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRToastManager.m; sourceTree = "<group>"; };
+		308A68AA1F29C683001EFD69 /* CRToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastView.h; sourceTree = "<group>"; };
+		308A68AB1F29C683001EFD69 /* CRToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRToastView.m; sourceTree = "<group>"; };
+		308A68AC1F29C683001EFD69 /* CRToastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastViewController.h; sourceTree = "<group>"; };
+		308A68AD1F29C683001EFD69 /* CRToastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRToastViewController.m; sourceTree = "<group>"; };
+		308A68AE1F29C683001EFD69 /* CRToastWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastWindow.h; sourceTree = "<group>"; };
+		308A68AF1F29C683001EFD69 /* CRToastWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRToastWindow.m; sourceTree = "<group>"; };
 		30BEECF01F28110B00EABA93 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		30BEECF21F28111B00EABA93 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		30BEECF41F28252900EABA93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		30BEECF51F28252900EABA93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		30BEECF91F28264000EABA93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		30BEECFB1F28264400EABA93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30E2F9691F2AAFD1000ABFCE /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		30E2F96C1F2AC2E5000ABFCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3019E3871F294EFF00ABE324 /* EWToastAlerts.framework in Frameworks */,
-				3019E3891F2951C900ABE324 /* EWToastAlerts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +117,6 @@
 		303AD1961F1EB9B50031F35F = {
 			isa = PBXGroup;
 			children = (
-				3019E3861F294EFF00ABE324 /* EWToastAlerts.framework */,
 				303AD1A11F1EB9B50031F35F /* ArtNavigator */,
 				303AD1B61F1EB9B50031F35F /* ArtNavigatorTests */,
 				303AD1C11F1EB9B50031F35F /* ArtNavigatorUITests */,
@@ -140,11 +138,13 @@
 		303AD1A11F1EB9B50031F35F /* ArtNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				308A68A31F29C569001EFD69 /* CRToast */,
 				30BEECF21F28111B00EABA93 /* AboutViewController.swift */,
 				303AD1D21F1EC1C90031F35F /* DetailViewController.swift */,
 				303AD1D01F1EC1AF0031F35F /* ListViewController.swift */,
 				303AD1A41F1EB9B50031F35F /* MapViewController.swift */,
 				30BEECF01F28110B00EABA93 /* SettingsViewController.swift */,
+				30E2F9691F2AAFD1000ABFCE /* Defaults.swift */,
 				303AD1A61F1EB9B50031F35F /* Main.storyboard */,
 				30BEECFA1F28264000EABA93 /* Localizable.strings */,
 				303AD1A91F1EB9B50031F35F /* Assets.xcassets */,
@@ -174,6 +174,25 @@
 			path = ArtNavigatorUITests;
 			sourceTree = "<group>";
 		};
+		308A68A31F29C569001EFD69 /* CRToast */ = {
+			isa = PBXGroup;
+			children = (
+				308A68A41F29C683001EFD69 /* CRToast.h */,
+				308A68A51F29C683001EFD69 /* CRToastConfig.h */,
+				308A68A61F29C683001EFD69 /* CRToastConfig.m */,
+				308A68A71F29C683001EFD69 /* CRToastLayoutHelpers.h */,
+				308A68A81F29C683001EFD69 /* CRToastManager.h */,
+				308A68A91F29C683001EFD69 /* CRToastManager.m */,
+				308A68AA1F29C683001EFD69 /* CRToastView.h */,
+				308A68AB1F29C683001EFD69 /* CRToastView.m */,
+				308A68AC1F29C683001EFD69 /* CRToastViewController.h */,
+				308A68AD1F29C683001EFD69 /* CRToastViewController.m */,
+				308A68AE1F29C683001EFD69 /* CRToastWindow.h */,
+				308A68AF1F29C683001EFD69 /* CRToastWindow.m */,
+			);
+			name = CRToast;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,7 +203,6 @@
 				303AD19B1F1EB9B50031F35F /* Sources */,
 				303AD19C1F1EB9B50031F35F /* Frameworks */,
 				303AD19D1F1EB9B50031F35F /* Resources */,
-				3019E38B1F2951C900ABE324 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,11 +329,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				30BEECF31F28111B00EABA93 /* AboutViewController.swift in Sources */,
+				308A68B31F29C683001EFD69 /* CRToastViewController.m in Sources */,
 				303AD1A51F1EB9B50031F35F /* MapViewController.swift in Sources */,
+				308A68B21F29C683001EFD69 /* CRToastView.m in Sources */,
+				308A68B01F29C683001EFD69 /* CRToastConfig.m in Sources */,
 				303AD1A31F1EB9B50031F35F /* AppDelegate.swift in Sources */,
 				303AD1D11F1EC1AF0031F35F /* ListViewController.swift in Sources */,
 				30BEECF11F28110B00EABA93 /* SettingsViewController.swift in Sources */,
+				308A68B11F29C683001EFD69 /* CRToastManager.m in Sources */,
+				30E2F96A1F2AAFD1000ABFCE /* Defaults.swift in Sources */,
 				303AD1D31F1EC1C90031F35F /* DetailViewController.swift in Sources */,
+				308A68B41F29C683001EFD69 /* CRToastWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +397,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				30BEECF91F28264000EABA93 /* es */,
-				30BEECFB1F28264400EABA93 /* Base */,
+				30E2F96C1F2AC2E5000ABFCE /* en */,
 			);
 			name = Localizable.strings;
 			path = ..;
