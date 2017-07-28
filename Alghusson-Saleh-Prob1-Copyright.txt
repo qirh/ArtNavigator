@@ -24,8 +24,8 @@ Resource 3:
     https://icons8.com/icon/14099/Settings
 
 Resource 4:
-  EWToastAlerts framework
-  Source: https://github.com/estampworld/ios-toast-alerts
-  License: MIY License
+  CRToast for alerts
+  Source: https://github.com/cruffenach/CRToast
+  License: MIT License
   Credit:
-    http://www.estamp.co/ios-toast-view/
+    https://github.com/Ashton-W

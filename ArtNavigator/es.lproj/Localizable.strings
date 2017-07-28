@@ -5,23 +5,28 @@
   Created by saleh on 7/25/17.
   Copyright © 2017 saleh. All rights reserved.
 */
+
 // localiazation source:
 // https://medium.com/lean-localization/ios-localization-tutorial-938231f9f881
 //
 //keys will always be lower case
 
-"hey" = "Hola!";
+//AboutViewController.swift
 "aboutMe" = "bla bla español:";
 "git" = "http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html";
 
-
+//DetailViewController.swift
+//ListViewController.swift
+//MapViewController.swift
 "map" = "Mapa";
 "list" = "Lista";
 "settings" = "Ajustes";
-"about" = "Sobre";
+"about" = "Conócenos";
 "detail" = "Detalles";
 
+//SettingsViewController.swift
 "nightMode" = "night mode";
 "resultsPerPage" = "resultados por pagina";
 "save" = "guardar";
+"restart" = "El idioma va a cambiar después de reiniciar";
 

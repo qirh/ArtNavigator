@@ -5,21 +5,27 @@
   Created by saleh on 7/25/17.
   Copyright © 2017 saleh. All rights reserved.
 */
+
 // localiazation source:
 // https://medium.com/lean-localization/ios-localization-tutorial-938231f9f881
 //
 //keys will always be lower case
 
-"hey" = "Hey!";
+//AboutViewController.swift
 "aboutMe" = "Hey!\nThis is saleh. I'm learning how to develop for IOS. And since I'm staying in Cambridge, MA for the summer, I figured I should try to create an app that the people of this city could use. Please email for any suggestions or questions or anything else I can be reached at: salehg@live.com\nAlso when this project is finished, I'll open up the git repo, link:";
 "git" = "http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html";
 
+//DetailViewController.swift
+//ListViewController.swift
+//MapViewController.swift
 "map" = "Map";
 "list" = "List";
 "settings" = "Settings";
 "about" = "About";
 "detail" = "Detail";
 
+//SettingsViewController.swift
 "nightMode" = "night mode";
 "resultsPerPage" = "results per page";
 "save" = "save";
+"restart" = "Language will change upon restart";

@@ -16,9 +16,6 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = NSLocalizedString("detail", comment: "")
-        print("\(self.title ?? "DETAIL NIL") loaded")
-        
         
     }
     

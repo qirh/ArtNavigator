@@ -19,9 +19,6 @@ class AboutViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = NSLocalizedString("about", comment: "")
-        print("\(self.title ?? "ABOUT NIL") loaded")
-        
         //self.tabBarController?.image
         
         let textString = NSLocalizedString("about-me", comment: "")

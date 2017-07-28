@@ -16,8 +16,6 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = NSLocalizedString("list", comment: "")
-        print("\(self.title ?? "LIST NIL") loaded")
         
     }
     
