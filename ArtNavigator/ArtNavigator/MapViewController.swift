@@ -31,7 +31,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         self.tabBarController?.tabBar.items![2].image = UIImage(named: "settings")
         self.tabBarController?.tabBar.items![2].title = Defaults.getLocalizedString(key: "settings")
         self.tabBarController?.tabBar.items![3].image = UIImage(named: "about")
-        self.tabBarController?.tabBar.items![3].title = Defaults.getLocalizedString(key: "aboutMe")
+        self.tabBarController?.tabBar.items![3].title = Defaults.getLocalizedString(key: "about")
         
         centerMapOnLocation(location: initialLocation)
     }

@@ -157,6 +157,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
     }
     func setViews() {
+        labelLanguage.text = Defaults.getLocalizedString(key: "language")
         labelResultsNumbers.text = "\(Defaults.sliderValue)"
         switchNightMode.isOn = Defaults.nightModeOn
         sliderResults.setValue(Float(Defaults.sliderValue), animated: true)

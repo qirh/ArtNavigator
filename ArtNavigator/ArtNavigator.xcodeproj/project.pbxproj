@@ -80,6 +80,10 @@
 		30BEECF91F28264000EABA93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		30E2F9691F2AAFD1000ABFCE /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		30E2F96C1F2AC2E5000ABFCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30E2F96D1F2AEA1C000ABFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30E2F9711F2AED5D000ABFCE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		30E2F9721F2AED5D000ABFCE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		30E2F9731F2AED5D000ABFCE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +286,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 303AD1961F1EB9B50031F35F;
 			productRefGroup = 303AD1A01F1EB9B50031F35F /* Products */;
@@ -380,6 +385,7 @@
 			children = (
 				303AD1A71F1EB9B50031F35F /* Base */,
 				30BEECF41F28252900EABA93 /* es */,
+				30E2F9711F2AED5D000ABFCE /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -389,6 +395,7 @@
 			children = (
 				303AD1AC1F1EB9B50031F35F /* Base */,
 				30BEECF51F28252900EABA93 /* es */,
+				30E2F9721F2AED5D000ABFCE /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -398,6 +405,8 @@
 			children = (
 				30BEECF91F28264000EABA93 /* es */,
 				30E2F96C1F2AC2E5000ABFCE /* en */,
+				30E2F96D1F2AEA1C000ABFCE /* Base */,
+				30E2F9731F2AED5D000ABFCE /* ar */,
 			);
 			name = Localizable.strings;
 			path = ..;
