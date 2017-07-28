@@ -1,10 +1,10 @@
-/* 
-  Localizable.strings
-  ArtNavigator
-
-  Created by saleh on 7/25/17.
-  Copyright © 2017 saleh. All rights reserved.
-*/
+/*
+ Localizable.strings
+ ArtNavigator
+ 
+ Created by saleh on 7/25/17.
+ Copyright © 2017 saleh. All rights reserved.
+ */
 
 // localiazation source:
 // https://medium.com/lean-localization/ios-localization-tutorial-938231f9f881
@@ -18,15 +18,15 @@
 //DetailViewController.swift
 //ListViewController.swift
 //MapViewController.swift
-"map" = "Map";
-"list" = "List";
-"settings" = "Settings";
-"about" = "About";
-"detail" = "Detail";
+"map" = "الخريطة";
+"list" = "الجدول";
+"settings" = "الإعدادات";
+"about" = "من أنا";
+"detail" = "تفاصيل";
 
 //SettingsViewController.swift
-"nightMode" = "night mode";
-"resultsPerPage" = "results per page";
-"save" = "save";
-"language" = "Language";
-"restart" = "Language will change upon restart";
+"nightMode" = "الوضع الليلي";
+"resultsPerPage" = "عدد النتائج لكل صفحة";
+"save" = "إحفظ";
+"language" = "اللغة\nLanguage";
+"restart" = "سيتم تغيير اللغة بعد إعادة تشغيل التطبيق";
