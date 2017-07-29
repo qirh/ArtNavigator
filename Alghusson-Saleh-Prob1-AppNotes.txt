@@ -22,9 +22,11 @@ Features to add:
 		* Speech synth
 		* Add sommerville/other cities data
 		* Support Larger Text
+		*
 
 		Map View:
       * Highlight Cambridge
+			* highlight zip codes
 			* Cambridge button
 			* User location button
 		List View:
