@@ -56,9 +56,11 @@ class Defaults {
     // source:
     // https://stackoverflow.com/a/27879342
     static func getLocalizedString(key: String) -> String {
+        /*
         print("lang: \(languageSelectedCode)")
         print("key: \(key)")
         print("val: \(bundle?.localizedString(forKey: key, value: nil, table: nil ?? "nil") ?? "niiiiiil")")
+        */
         return (bundle?.localizedString(forKey: key, value: nil, table: nil))!
     }
     
