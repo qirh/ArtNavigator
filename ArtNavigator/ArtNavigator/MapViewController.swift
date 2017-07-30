@@ -34,6 +34,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         self.tabBarController?.tabBar.items![3].title = Defaults.getLocalizedString(key: "about")
         
         centerMapOnLocation(location: initialLocation)
+        
+        JSONParser.printFile()
     }
     
     func centerMapOnLocation(location: CLLocation) {

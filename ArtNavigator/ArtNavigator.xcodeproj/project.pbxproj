@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3031BEAC1F2E3C5100CCC967 /* dataRevised.json in Resources */ = {isa = PBXBuildFile; fileRef = 3031BEAB1F2E3C5100CCC967 /* dataRevised.json */; };
+		3031BEAE1F2E3C8600CCC967 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3031BEAD1F2E3C8600CCC967 /* JSONParser.swift */; };
+		3031BEB01F2E3C9B00CCC967 /* ArtPieces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3031BEAF1F2E3C9B00CCC967 /* ArtPieces.swift */; };
+		3031BEB21F2E4CBB00CCC967 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3031BEB11F2E4CBB00CCC967 /* SwiftyJSON.swift */; };
 		303AD1A31F1EB9B50031F35F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1A21F1EB9B50031F35F /* AppDelegate.swift */; };
 		303AD1A51F1EB9B50031F35F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1A41F1EB9B50031F35F /* MapViewController.swift */; };
 		303AD1A81F1EB9B50031F35F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303AD1A61F1EB9B50031F35F /* Main.storyboard */; };
@@ -46,6 +50,10 @@
 
 /* Begin PBXFileReference section */
 		3019E3881F294F9000ABE324 /* Obj-CAndSwiftBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Obj-CAndSwiftBridging.h"; sourceTree = "<group>"; };
+		3031BEAB1F2E3C5100CCC967 /* dataRevised.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dataRevised.json; sourceTree = "<group>"; };
+		3031BEAD1F2E3C8600CCC967 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		3031BEAF1F2E3C9B00CCC967 /* ArtPieces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtPieces.swift; sourceTree = "<group>"; };
+		3031BEB11F2E4CBB00CCC967 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		303AD19F1F1EB9B50031F35F /* ArtNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		303AD1A21F1EB9B50031F35F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		303AD1A41F1EB9B50031F35F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +126,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3031BEA81F2E369000CCC967 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3031BEAB1F2E3C5100CCC967 /* dataRevised.json */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		303AD1961F1EB9B50031F35F = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +158,7 @@
 		303AD1A11F1EB9B50031F35F /* ArtNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				3031BEA81F2E369000CCC967 /* SupportingFiles */,
 				308A68A31F29C569001EFD69 /* CRToast */,
 				30BEECF21F28111B00EABA93 /* AboutViewController.swift */,
 				303AD1D21F1EC1C90031F35F /* DetailViewController.swift */,
@@ -149,12 +166,15 @@
 				303AD1A41F1EB9B50031F35F /* MapViewController.swift */,
 				30BEECF01F28110B00EABA93 /* SettingsViewController.swift */,
 				30E2F9691F2AAFD1000ABFCE /* Defaults.swift */,
+				3031BEAD1F2E3C8600CCC967 /* JSONParser.swift */,
+				3031BEAF1F2E3C9B00CCC967 /* ArtPieces.swift */,
 				303AD1A61F1EB9B50031F35F /* Main.storyboard */,
 				30BEECFA1F28264000EABA93 /* Localizable.strings */,
 				303AD1A91F1EB9B50031F35F /* Assets.xcassets */,
 				303AD1A21F1EB9B50031F35F /* AppDelegate.swift */,
 				303AD1AB1F1EB9B50031F35F /* LaunchScreen.storyboard */,
 				303AD1AE1F1EB9B50031F35F /* Info.plist */,
+				3031BEB11F2E4CBB00CCC967 /* SwiftyJSON.swift */,
 				3019E3881F294F9000ABE324 /* Obj-CAndSwiftBridging.h */,
 			);
 			path = ArtNavigator;
@@ -309,6 +329,7 @@
 				30BEECF81F28264000EABA93 /* Localizable.strings in Resources */,
 				303AD1AA1F1EB9B50031F35F /* Assets.xcassets in Resources */,
 				303AD1A81F1EB9B50031F35F /* Main.storyboard in Resources */,
+				3031BEAC1F2E3C5100CCC967 /* dataRevised.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,8 +357,11 @@
 				30BEECF31F28111B00EABA93 /* AboutViewController.swift in Sources */,
 				308A68B31F29C683001EFD69 /* CRToastViewController.m in Sources */,
 				303AD1A51F1EB9B50031F35F /* MapViewController.swift in Sources */,
+				3031BEB21F2E4CBB00CCC967 /* SwiftyJSON.swift in Sources */,
 				308A68B21F29C683001EFD69 /* CRToastView.m in Sources */,
+				3031BEAE1F2E3C8600CCC967 /* JSONParser.swift in Sources */,
 				308A68B01F29C683001EFD69 /* CRToastConfig.m in Sources */,
+				3031BEB01F2E3C9B00CCC967 /* ArtPieces.swift in Sources */,
 				303AD1A31F1EB9B50031F35F /* AppDelegate.swift in Sources */,
 				303AD1D11F1EC1AF0031F35F /* ListViewController.swift in Sources */,
 				30BEECF11F28110B00EABA93 /* SettingsViewController.swift in Sources */,

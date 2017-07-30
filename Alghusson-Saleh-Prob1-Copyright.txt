@@ -29,3 +29,10 @@ Resource 4:
   License: MIT License
   Credit:
     https://github.com/Ashton-W
+
+Resource 5:
+  SwiftyJSON
+  Source: https://github.com/SwiftyJSON/SwiftyJSON
+  License: MIT License
+  Credit:
+    https://github.com/tangplin
