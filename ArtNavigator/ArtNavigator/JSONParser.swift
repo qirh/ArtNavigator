@@ -12,9 +12,7 @@ class JSONParser {
     
     // source:
     // https://stackoverflow.com/a/28644494
-    static func printFile() {
-        print("printFile -- Start")
-        
+    static func parseJSON() {
         guard let path = Bundle.main.path(forResource: "dataRevised", ofType: "json") else {
             print("Invalid filename/path.")
             return
@@ -68,11 +66,9 @@ class JSONParser {
                     if(subJson["About The Work"].string! != ""){
                         artPiece.aboutTheWork = subJson["About The Work"].string!.trimmingCharacters(in: .whitespacesAndNewlines)
                     }
-                    
-                    
                     ArtPieces.addArtPiece(artPiece: artPiece)
                 }
-                ArtPieces.printArtPieces()
+                //ArtPieces.printArtPieces()
             }
             else {
                 print("Could not get json from file, make sure that file contains valid json.")
@@ -81,6 +77,5 @@ class JSONParser {
         catch let error{
             print(error.localizedDescription)
         }
-        print("printFile -- End")
     }
 }
