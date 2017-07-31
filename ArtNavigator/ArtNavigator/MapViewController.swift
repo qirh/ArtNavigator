@@ -18,6 +18,12 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     let initialLocation = CLLocation(latitude: 42.371936, longitude: -71.108003)
     let regionRadius: CLLocationDistance = 1000
     
+    var filePath : String {
+        let manager = FileManager.default
+        let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first! as NSURL
+        return url.appendingPathComponent("objectsArray")!.path
+    }
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -35,7 +41,19 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         centerMapOnLocation(location: initialLocation)
         
-        JSONParser.printFile()
+        JSONParser.parseJSON()
+        
+        var success = false
+        
+        success = NSKeyedArchiver.archiveRootObject(ArtPieces.artPieces, toFile: filePath)
+        
+        if success {
+            print("Saved artpieces")
+        } else {
+            print("Didn't save artpieces")
+        }
+
+        
     }
     
     func centerMapOnLocation(location: CLLocation) {
