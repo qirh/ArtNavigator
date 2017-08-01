@@ -32,7 +32,8 @@ class JSONParser {
                     }
                     // white space source:
                     // https://stackoverflow.com/a/26797958
-                    let artPiece: ArtPiece = ArtPiece(accessionNumber: subJson["Accession Number"].string!, title: subJson["Title"].string!.replacingOccurrences(of: "\"", with: ""), locationName: subJson["Location Name"].string!, latitude: subJson["Latitude"].int!, longitude: subJson["Longitude"].int!, address: subJson["Address"].string!, isInterior: isInterior, category: Category(rawValue: subJson["Category"].string!.trimmingCharacters(in: .whitespacesAndNewlines))!, objectType: subJson["Object Type"].string!)
+                    let artPiece: ArtPiece = ArtPiece(accessionNumber: subJson["Accession Number"].string!, title: subJson["Title"].string!.replacingOccurrences(of: "\"", with: ""), locationName: subJson["Location Name"].string!, latitude: subJson["Latitude"].double!, longitude: subJson["Longitude"].double!, address: subJson["Address"].string!, isInterior: isInterior, category: Category(rawValue: subJson["Category"].string!.trimmingCharacters(in: .whitespacesAndNewlines))!, objectType: subJson["Object Type"].string!)
+                    
                    
                     if(subJson["Last Name"].string! != ""){
                         artPiece.lastName = subJson["Last Name"].string!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -68,7 +69,6 @@ class JSONParser {
                     }
                     ArtPieces.addArtPiece(artPiece: artPiece)
                 }
-                //ArtPieces.printArtPieces()
             }
             else {
                 print("Could not get json from file, make sure that file contains valid json.")

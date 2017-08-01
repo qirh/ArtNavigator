@@ -40,7 +40,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         Defaults.register(defaultsArgument: ["nightModeOn" : true])
         
         Defaults.setDefaultsVaribles()
-        Defaults.printDefaults()
+        //Defaults.printDefaults()
         setViews()
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -48,7 +48,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         super.viewWillAppear(animated)
         
         Defaults.setDefaultsVaribles()
-        Defaults.printDefaults()
+        //Defaults.printDefaults()
         setViews()
     }
     
@@ -142,15 +142,11 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     @IBAction func buttonSavePressed(_ sender: Any) {
-        print("-3")
         let oldLanguageSelectedCode = Defaults.get(key: "languageSelectedCode")
-        print("-2")
         Defaults.set(key: "sliderValue", value: Defaults.sliderValue)
         Defaults.set(key: "languageSelectedCode", value: Defaults.languageSelectedCode)
         Defaults.set(key: "nightModeOn", value: Defaults.nightModeOn)
-        print("-1")
         Defaults.setDefaultsVaribles()
-        print("0")
         if oldLanguageSelectedCode != Defaults.languageSelectedCode{
 
             toast()
@@ -185,7 +181,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     
     func toast() {
-        print("TOAST")
         let options: NSDictionary = [
             kCRToastTextKey : Defaults.getLocalizedString(key: "restart"),
             kCRToastTextAlignmentKey : NSTextAlignment.center.rawValue,

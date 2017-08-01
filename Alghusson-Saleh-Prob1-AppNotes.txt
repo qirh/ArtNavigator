@@ -36,7 +36,6 @@ Features to add:
 			* Add note about approx. coordinates
 		Settings View:
 			* Night mode?
-			* Change language based on selection
-			* Currently no base language, not sure if this will crash the app if it has a base language that's not supported.
+			* Custom pin colors app if it has a base language that's not supported.
 Known Bugs:
 		* Crash upon restart
