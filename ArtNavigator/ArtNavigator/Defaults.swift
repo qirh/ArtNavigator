@@ -30,11 +30,9 @@ class Defaults {
         nightModeOn = defaults.bool(forKey: "nightModeOn")
         
         if(languageSelectedCode.characters.count > 2){
-            print("languageSelectedCode is longer than 2: '\(languageSelectedCode)'")
             languageSelectedCode = languageSelectedCode.substring(to:languageSelectedCode.index(languageSelectedCode.startIndex, offsetBy: 2))
         }
         if(languageSelectedCode != "ar" && languageSelectedCode != "en" && languageSelectedCode != "es" && languageSelectedCode != "fr" && languageSelectedCode != "pt"){
-            print("languageSelectedCode is none of the supported lanuages: '\(languageSelectedCode)'")
             languageSelectedCode = "en"
         }
     }
@@ -56,11 +54,6 @@ class Defaults {
     // source:
     // https://stackoverflow.com/a/27879342
     static func getLocalizedString(key: String) -> String {
-        /*
-        print("lang: \(languageSelectedCode)")
-        print("key: \(key)")
-        print("val: \(bundle?.localizedString(forKey: key, value: nil, table: nil ?? "nil") ?? "niiiiiil")")
-        */
         return (bundle?.localizedString(forKey: key, value: nil, table: nil))!
     }
     

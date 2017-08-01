@@ -50,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		3019E3881F294F9000ABE324 /* Obj-CAndSwiftBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Obj-CAndSwiftBridging.h"; sourceTree = "<group>"; };
+		30314D161F30F164007289A9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		3031BEAB1F2E3C5100CCC967 /* dataRevised.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dataRevised.json; sourceTree = "<group>"; };
 		3031BEAD1F2E3C8600CCC967 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		3031BEAF1F2E3C9B00CCC967 /* ArtPieces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtPieces.swift; sourceTree = "<group>"; };
@@ -83,13 +84,11 @@
 		308A68AF1F29C683001EFD69 /* CRToastWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRToastWindow.m; sourceTree = "<group>"; };
 		30BEECF01F28110B00EABA93 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		30BEECF21F28111B00EABA93 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		30BEECF41F28252900EABA93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		30BEECF51F28252900EABA93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		30BEECF91F28264000EABA93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		30E2F9691F2AAFD1000ABFCE /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		30E2F96C1F2AC2E5000ABFCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		30E2F96D1F2AEA1C000ABFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		30E2F9711F2AED5D000ABFCE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		30E2F9721F2AED5D000ABFCE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		30E2F9731F2AED5D000ABFCE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,9 +164,9 @@
 				303AD1D01F1EC1AF0031F35F /* ListViewController.swift */,
 				303AD1A41F1EB9B50031F35F /* MapViewController.swift */,
 				30BEECF01F28110B00EABA93 /* SettingsViewController.swift */,
+				3031BEAF1F2E3C9B00CCC967 /* ArtPieces.swift */,
 				30E2F9691F2AAFD1000ABFCE /* Defaults.swift */,
 				3031BEAD1F2E3C8600CCC967 /* JSONParser.swift */,
-				3031BEAF1F2E3C9B00CCC967 /* ArtPieces.swift */,
 				303AD1A61F1EB9B50031F35F /* Main.storyboard */,
 				30BEECFA1F28264000EABA93 /* Localizable.strings */,
 				303AD1A91F1EB9B50031F35F /* Assets.xcassets */,
@@ -408,8 +407,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				303AD1A71F1EB9B50031F35F /* Base */,
-				30BEECF41F28252900EABA93 /* es */,
-				30E2F9711F2AED5D000ABFCE /* ar */,
+				30314D161F30F164007289A9 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
