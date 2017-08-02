@@ -194,8 +194,6 @@ class ArtPiece : NSObject, NSCoding, MKAnnotation{
         
         let rawCategory = unarchiver.decodeObject(forKey: Keys.Category) as? String
         let decodedCategory = Category(rawValue: rawCategory!)
-        print("raw Cat = \(rawCategory)")
-        print("dec Cat = \(decodedCategory)")
         category = decodedCategory!
         
         objectType = unarchiver.decodeObject(forKey: Keys.ObjectType) as! String

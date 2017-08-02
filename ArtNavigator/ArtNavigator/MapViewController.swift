@@ -71,7 +71,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         if let artPiece = annotation as? ArtPiece {
             let identifier = "pin"
             var viewAnnotation: MKPinAnnotationView
-            //print("if1, ccae = \(identifier)")
             if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
                 as? MKPinAnnotationView {
                 dequeuedView.annotation = artPiece
@@ -95,10 +94,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let detailViewController = segue.destination as? DetailViewController {
-            detailViewController.artPiece = (sender as! MKAnnotationView).annotation! as! ArtPiece
+            detailViewController.artPiece = ((sender as! MKAnnotationView).annotation! as! ArtPiece)
         }
- 
-        //print("\((sender as! MKAnnotation).accessionNumber)")
         
     }
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {

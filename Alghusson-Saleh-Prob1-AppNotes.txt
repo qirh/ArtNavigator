@@ -31,7 +31,8 @@ Features to add:
 			* User location button
 		List View:
 		Detail View:
-			* More info
+			* Change the 3 labels to textview
+			* More info button
 		About View:
 			* About the app
 			* Add note about approximate coordinates

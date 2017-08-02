@@ -32,11 +32,6 @@ class JSONParser {
                     }
                     // white space source:
                     // https://stackoverflow.com/a/26797958
-                    print("1: '\(subJson["Category"].string!.trimmingCharacters(in: .whitespacesAndNewlines))'")
-                    print("2: '\(Category(rawValue: "Sculpture"))'")
-                    print("3: '\(Category(rawValue: "sculpture"))'")
-                    print("4: '\(Category(rawValue: "Mural"))'")
-                    print("5: '\(Category(rawValue: "mural"))'")
                     
                     let artPiece: ArtPiece = ArtPiece(accessionNumber: subJson["Accession Number"].string!, title: subJson["Title"].string!.replacingOccurrences(of: "\"", with: ""), locationName: subJson["Location Name"].string!, latitude: subJson["Latitude"].double!, longitude: subJson["Longitude"].double!, address: subJson["Address"].string!, isInterior: isInterior, category: Category(rawValue: subJson["Category"].string!.trimmingCharacters(in: .whitespacesAndNewlines))!, objectType: subJson["Object Type"].string!)
                     
