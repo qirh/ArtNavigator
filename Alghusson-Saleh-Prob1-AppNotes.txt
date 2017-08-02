@@ -21,6 +21,7 @@ Features to add:
 		* Search button
 		* Speech synth
 		* Add sommerville/other cities data
+		* Localization: Add right to left support for arabic/hebrew
 
 
 		Map View:

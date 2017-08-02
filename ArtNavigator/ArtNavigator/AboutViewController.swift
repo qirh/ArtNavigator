@@ -22,7 +22,7 @@ class AboutViewController: UIViewController, UITextViewDelegate {
         //self.tabBarController?.image
         
         let textString = Defaults.getLocalizedString(key: "aboutMe")
-        let textLink = Defaults.getLocalizedString(key: "git")
+        let textLink = "http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html"
         self.textAbout.text = textString + " " + textLink
         self.textAbout.delegate = self
         

@@ -29,8 +29,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        print(mapView.isZoomEnabled)
         Defaults.setDefaultsVaribles()
         
         self.tabBarController?.tabBar.items![0].image = UIImage(named: "map")

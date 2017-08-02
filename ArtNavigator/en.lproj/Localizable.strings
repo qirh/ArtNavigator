@@ -13,10 +13,21 @@
 
 //AboutViewController.swift
 "aboutMe" = "Hey!\nThis is saleh. I'm learning how to develop for IOS. And since I'm staying in Cambridge, MA for the summer, I figured I should try to create an app that the people of this city could use. Please email for any suggestions or questions or anything else I can be reached at: salehg@live.com\nAlso when this project is finished, I'll open up the git repo, link:";
-"git" = "http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html";
 
 //DetailViewController.swift
-//ListViewController.swift
+"navigate" = "Navigate";
+"location" = "Location";
+"noInformation" = "No Information";
+"locationDescription" = "Location Description";
+"address" = "Address";
+"descriptionOfTheArtPiece" = "Description of the art piece";
+"locatedIndoors" = "indoors installation";
+"locatedOutdoors" = "outdoors installation";
+"category" = "Category";
+"objectType" = "Object Type";
+"material" = "Material";
+"byArtist" = "By Artist";
+
 //MapViewController.swift
 "map" = "Map";
 "list" = "List";
@@ -30,3 +41,10 @@
 "save" = "save";
 "language" = "Language";
 "restart" = "Language will change upon restart";
+
+//TableViewController.swift
+
+//ArtPieces.swift
+"sculpture" = "Sculpture";
+"mural" = "Mural";
+"electronicMedia" = "Electronic Media";
