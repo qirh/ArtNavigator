@@ -43,19 +43,19 @@ class Defaults {
         }
     }
     static func firstTimeRun() {
-        
+        /*
         for locale in Locale.preferredLanguages {
             print("locale = \(locale)")
             print("direction = \(Bundle.main.preferredLocalizations[0])")
             print("code = \(Locale.current.regionCode ?? "nil")")
         }
-        
+        */
         if supportedLanguages[languageSelectedCode] != nil {
-            print("language exists. '\(languageSelectedCode)'")
+            //print("language exists. '\(languageSelectedCode)'")
             defaults.register(defaults: ["languageSelectedCode" : languageSelectedCode])
         }
         else{
-            print("language does not exist. '\(languageSelectedCode)'")
+            //print("language does not exist. '\(languageSelectedCode)'")
             defaults.register(defaults: ["languageSelectedCode" : "en"])
         }
         defaults.register(defaults: ["sliderValue" : 5])
