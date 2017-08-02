@@ -165,7 +165,7 @@
                                 <rect key="frame" x="131" y="305" width="228" height="203"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIg-bj-bUA">
-                                <rect key="frame" x="26" y="396" width="100" height="21"/>
+                                <rect key="frame" x="26" y="396" width="100" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="4AL-x3-Gnn"/>
                                 </constraints>
@@ -174,7 +174,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMB-ug-OQD">
-                                <rect key="frame" x="156" y="565" width="63" height="30"/>
+                                <rect key="frame" x="170.5" y="565" width="34" height="30"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="buttonSavePressed:" destination="H7K-We-3lf" eventType="touchUpInside" id="MbP-dw-ptz"/>
@@ -187,19 +188,20 @@
                             <constraint firstAttribute="trailingMargin" secondItem="jQT-bV-J1w" secondAttribute="trailing" id="3lg-2m-Mep"/>
                             <constraint firstItem="jQT-bV-J1w" firstAttribute="top" secondItem="uBz-Ub-QFS" secondAttribute="bottom" constant="100" id="4ka-Jz-01Z"/>
                             <constraint firstItem="Seb-KG-aJA" firstAttribute="top" secondItem="HMB-ug-OQD" secondAttribute="bottom" constant="23" id="6bX-E8-6G4"/>
+                            <constraint firstItem="HMB-ug-OQD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xiY-BT-EFJ" secondAttribute="leadingMargin" constant="100" id="92T-KO-qdO"/>
                             <constraint firstItem="Seb-KG-aJA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="IIg-bj-bUA" secondAttribute="bottom" constant="150" id="DeH-CP-lKr"/>
                             <constraint firstItem="4gD-3R-fnj" firstAttribute="top" secondItem="gXQ-qE-OjK" secondAttribute="bottom" constant="20" id="I0P-JR-c3l"/>
                             <constraint firstItem="IIg-bj-bUA" firstAttribute="top" secondItem="uBz-Ub-QFS" secondAttribute="bottom" constant="191" id="Pis-um-VRy"/>
                             <constraint firstAttribute="leadingMargin" secondItem="4gD-3R-fnj" secondAttribute="leading" constant="-20" id="RiS-3I-3Yj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HMB-ug-OQD" secondAttribute="trailing" constant="140" id="VXM-wY-Rp9"/>
                             <constraint firstItem="IIg-bj-bUA" firstAttribute="leading" secondItem="xiY-BT-EFJ" secondAttribute="leadingMargin" constant="10" id="Vuo-0f-oVS"/>
                             <constraint firstItem="uBz-Ub-QFS" firstAttribute="top" secondItem="4gD-3R-fnj" secondAttribute="bottom" constant="15" id="Y1c-1T-Lzl"/>
-                            <constraint firstItem="HMB-ug-OQD" firstAttribute="leading" secondItem="xiY-BT-EFJ" secondAttribute="leadingMargin" constant="140" id="dp8-2j-Ki0"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="HMB-ug-OQD" secondAttribute="trailing" constant="100" id="ZwQ-9o-c52"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4gD-3R-fnj" secondAttribute="trailing" constant="20" id="qsE-nl-gPq"/>
                             <constraint firstItem="jQT-bV-J1w" firstAttribute="leading" secondItem="IIg-bj-bUA" secondAttribute="trailing" constant="5" id="qvb-zv-WeR"/>
                             <constraint firstItem="HMB-ug-OQD" firstAttribute="top" secondItem="jQT-bV-J1w" secondAttribute="bottom" constant="57" id="vHO-e8-uKO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uBz-Ub-QFS" secondAttribute="trailing" constant="20" id="vfn-Wb-nFB"/>
                             <constraint firstItem="Seb-KG-aJA" firstAttribute="top" secondItem="jQT-bV-J1w" secondAttribute="bottom" constant="110" id="yem-nI-RbA"/>
+                            <constraint firstItem="HMB-ug-OQD" firstAttribute="centerX" secondItem="xiY-BT-EFJ" secondAttribute="centerX" id="z92-jU-yTh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="em8-wl-uBq"/>
