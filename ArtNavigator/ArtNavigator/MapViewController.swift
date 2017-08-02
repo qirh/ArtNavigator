@@ -30,6 +30,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         super.viewDidLoad()
         
+        print(mapView.isZoomEnabled)
         Defaults.setDefaultsVaribles()
         
         self.tabBarController?.tabBar.items![0].image = UIImage(named: "map")
@@ -69,41 +70,44 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
-        if let annotation = annotation as? ArtPiece {
+        if let artPiece = annotation as? ArtPiece {
             let identifier = "pin"
-            var view: MKPinAnnotationView
-            print("if1, ccae = \(identifier)")
+            var viewAnnotation: MKPinAnnotationView
+            //print("if1, ccae = \(identifier)")
             if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
                 as? MKPinAnnotationView {
-                print("if2, ccae = \(identifier)")
-                dequeuedView.annotation = annotation
-                view = dequeuedView
+                dequeuedView.annotation = artPiece
+                viewAnnotation = dequeuedView
             }
             else {
-                print("else")
-                view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-                view.canShowCallout = true
-                view.calloutOffset = CGPoint(x: -5, y: 5)
-                view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure) as UIView
+                viewAnnotation = MKPinAnnotationView(annotation: artPiece, reuseIdentifier: identifier)
+                viewAnnotation.canShowCallout = true
+                viewAnnotation.calloutOffset = CGPoint(x: -5, y: 5)
+                viewAnnotation.rightCalloutAccessoryView = UIButton(type: .detailDisclosure) as UIView
             }
-            view.pinTintColor = annotation.pinTintColor()
-            return view
+            
+            viewAnnotation.pinTintColor = artPiece.pinTintColor()
+            viewAnnotation.animatesDrop = true
+            viewAnnotation.isDraggable = false
+            return viewAnnotation
         }
         return nil
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        /*
-        if let detailViewController = segue.destinationViewController as? DetailViewController {
-            detailViewController.artPiece =
+        
+        if let detailViewController = segue.destination as? DetailViewController {
+            detailViewController.artPiece = (sender as! MKAnnotationView).annotation! as! ArtPiece
         }
-         */
-        //print((sender as! MKAnnotationView).annotation)
+ 
+        //print("\((sender as! MKAnnotation).accessionNumber)")
         
     }
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
-        self.performSegue(withIdentifier: segueAnnotation, sender: view)
+        if control == view.rightCalloutAccessoryView {
+            self.performSegue(withIdentifier: segueAnnotation, sender: view)
+        }
     }
     
     // source:

@@ -9,7 +9,7 @@
 import Foundation
 
 class Defaults {
-    static let supportedLanguages = ["ar":"العربية", "en":"English", "es":"Español", "fr":"Francês", "pt":"Português"]
+    static let supportedLanguages = ["ar":"العربية", "en":"English", "es":"Español", "he":"עִברִית", "pt":"Português"]
     
     // source:
     // https://swift3tutorials.com/swift-3-user-defaults/
@@ -17,17 +17,24 @@ class Defaults {
     static var sliderValue: Int = 0
     static var languageSelectedCode: String = ""
     static var nightModeOn: Bool = true
+    static var isFirstRun: Bool = true
     
-    static let path = Bundle.main.path(forResource: languageSelectedCode, ofType: "lproj")
-    static let bundle = Bundle(path: path!)
     
+    static var path: String = ""
+    //static var bundle: String = Bundle.main
     
     private init(){}
     
     static func setDefaultsVaribles() {
+        
+        if (isFirstRun) {
+            firstTimeRun()
+        }
+        
         sliderValue = defaults.integer(forKey: "sliderValue")
         languageSelectedCode = defaults.string(forKey: "languageSelectedCode")!
         nightModeOn = defaults.bool(forKey: "nightModeOn")
+        isFirstRun = defaults.bool(forKey: "isFirstRun")
         
         if(languageSelectedCode.characters.count > 2){
             languageSelectedCode = languageSelectedCode.substring(to:languageSelectedCode.index(languageSelectedCode.startIndex, offsetBy: 2))
@@ -35,6 +42,31 @@ class Defaults {
         if(languageSelectedCode != "ar" && languageSelectedCode != "en" && languageSelectedCode != "es" && languageSelectedCode != "fr" && languageSelectedCode != "pt"){
             languageSelectedCode = "en"
         }
+    }
+    static func firstTimeRun() {
+        
+        path = Bundle.main.path(forResource: languageSelectedCode, ofType: "lproj")!
+        
+        print("path = \(path)")
+        
+        //bundle = Bundle(path: path!)
+        
+        let revisedLanguage = Locale.preferredLanguages[0][0..<3]
+        
+        print("firstTimeRun(). language = \(Locale.preferredLanguages[0]). revised language = \(revisedLanguage).")
+        
+        if supportedLanguages[revisedLanguage] != nil {
+            print("language exists")
+            defaults.register(defaults: ["languageSelectedCode" : revisedLanguage])
+        }
+        else{
+            print("language does not exist")
+            defaults.register(defaults: ["languageSelectedCode" : "en"])
+        }
+        defaults.register(defaults: ["sliderValue" : 5])
+        defaults.register(defaults: ["nightModeOn" : true])
+        defaults.register(defaults: ["isFirstRun" : false])
+        
     }
     static func register(defaultsArgument: [String: Any]) {
         defaults.register(defaults: defaultsArgument)
@@ -50,11 +82,13 @@ class Defaults {
         print("sliderValue: \(sliderValue)")
         print("languageSelectedCode: \(languageSelectedCode)")
         print("nightModeOn: \(nightModeOn)")
+        print("isFirstRun: \(isFirstRun)")
     }
     // source:
     // https://stackoverflow.com/a/27879342
     static func getLocalizedString(key: String) -> String {
-        return (bundle?.localizedString(forKey: key, value: nil, table: nil))!
+        //return (bundle?.localizedString(forKey: key, value: nil, table: nil))!
+        return ""
     }
     
 }

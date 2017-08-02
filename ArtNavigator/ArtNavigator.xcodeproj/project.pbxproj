@@ -16,8 +16,6 @@
 		303AD1A81F1EB9B50031F35F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303AD1A61F1EB9B50031F35F /* Main.storyboard */; };
 		303AD1AA1F1EB9B50031F35F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303AD1A91F1EB9B50031F35F /* Assets.xcassets */; };
 		303AD1AD1F1EB9B50031F35F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303AD1AB1F1EB9B50031F35F /* LaunchScreen.storyboard */; };
-		303AD1B81F1EB9B50031F35F /* ArtNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1B71F1EB9B50031F35F /* ArtNavigatorTests.swift */; };
-		303AD1C31F1EB9B50031F35F /* ArtNavigatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1C21F1EB9B50031F35F /* ArtNavigatorUITests.swift */; };
 		303AD1D11F1EC1AF0031F35F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1D01F1EC1AF0031F35F /* ListViewController.swift */; };
 		303AD1D31F1EC1C90031F35F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1D21F1EC1C90031F35F /* DetailViewController.swift */; };
 		308A68B01F29C683001EFD69 /* CRToastConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 308A68A61F29C683001EFD69 /* CRToastConfig.m */; };
@@ -28,25 +26,9 @@
 		30BEECF11F28110B00EABA93 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEECF01F28110B00EABA93 /* SettingsViewController.swift */; };
 		30BEECF31F28111B00EABA93 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEECF21F28111B00EABA93 /* AboutViewController.swift */; };
 		30BEECF81F28264000EABA93 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30BEECFA1F28264000EABA93 /* Localizable.strings */; };
+		30C9A9501F31592C008DE3B1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9A94F1F31592C008DE3B1 /* StringExtension.swift */; };
 		30E2F96A1F2AAFD1000ABFCE /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E2F9691F2AAFD1000ABFCE /* Defaults.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		303AD1B41F1EB9B50031F35F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 303AD1971F1EB9B50031F35F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 303AD19E1F1EB9B50031F35F;
-			remoteInfo = ArtNavigator;
-		};
-		303AD1BF1F1EB9B50031F35F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 303AD1971F1EB9B50031F35F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 303AD19E1F1EB9B50031F35F;
-			remoteInfo = ArtNavigator;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3019E3881F294F9000ABE324 /* Obj-CAndSwiftBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Obj-CAndSwiftBridging.h"; sourceTree = "<group>"; };
@@ -62,10 +44,8 @@
 		303AD1A91F1EB9B50031F35F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		303AD1AC1F1EB9B50031F35F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		303AD1AE1F1EB9B50031F35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		303AD1B31F1EB9B50031F35F /* ArtNavigatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtNavigatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		303AD1B71F1EB9B50031F35F /* ArtNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtNavigatorTests.swift; sourceTree = "<group>"; };
 		303AD1B91F1EB9B50031F35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		303AD1BE1F1EB9B50031F35F /* ArtNavigatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtNavigatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		303AD1C21F1EB9B50031F35F /* ArtNavigatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtNavigatorUITests.swift; sourceTree = "<group>"; };
 		303AD1C41F1EB9B50031F35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		303AD1D01F1EC1AF0031F35F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -86,29 +66,18 @@
 		30BEECF21F28111B00EABA93 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		30BEECF51F28252900EABA93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		30BEECF91F28264000EABA93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30C9A94E1F3157B1008DE3B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30C9A94F1F31592C008DE3B1 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		30C9A9511F316705008DE3B1 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30C9A9521F31674E008DE3B1 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
+		30C9A9531F31674E008DE3B1 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		30E2F9691F2AAFD1000ABFCE /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
-		30E2F96C1F2AC2E5000ABFCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		30E2F96D1F2AEA1C000ABFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		30E2F9721F2AED5D000ABFCE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		30E2F9731F2AED5D000ABFCE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		303AD19C1F1EB9B50031F35F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		303AD1B01F1EB9B50031F35F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		303AD1BB1F1EB9B50031F35F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -148,8 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				303AD19F1F1EB9B50031F35F /* ArtNavigator.app */,
-				303AD1B31F1EB9B50031F35F /* ArtNavigatorTests.xctest */,
-				303AD1BE1F1EB9B50031F35F /* ArtNavigatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +134,7 @@
 				3031BEAF1F2E3C9B00CCC967 /* ArtPieces.swift */,
 				30E2F9691F2AAFD1000ABFCE /* Defaults.swift */,
 				3031BEAD1F2E3C8600CCC967 /* JSONParser.swift */,
+				30C9A94F1F31592C008DE3B1 /* StringExtension.swift */,
 				303AD1A61F1EB9B50031F35F /* Main.storyboard */,
 				30BEECFA1F28264000EABA93 /* Localizable.strings */,
 				303AD1A91F1EB9B50031F35F /* Assets.xcassets */,
@@ -236,42 +204,6 @@
 			productReference = 303AD19F1F1EB9B50031F35F /* ArtNavigator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		303AD1B21F1EB9B50031F35F /* ArtNavigatorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 303AD1CA1F1EB9B50031F35F /* Build configuration list for PBXNativeTarget "ArtNavigatorTests" */;
-			buildPhases = (
-				303AD1AF1F1EB9B50031F35F /* Sources */,
-				303AD1B01F1EB9B50031F35F /* Frameworks */,
-				303AD1B11F1EB9B50031F35F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				303AD1B51F1EB9B50031F35F /* PBXTargetDependency */,
-			);
-			name = ArtNavigatorTests;
-			productName = ArtNavigatorTests;
-			productReference = 303AD1B31F1EB9B50031F35F /* ArtNavigatorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		303AD1BD1F1EB9B50031F35F /* ArtNavigatorUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 303AD1CD1F1EB9B50031F35F /* Build configuration list for PBXNativeTarget "ArtNavigatorUITests" */;
-			buildPhases = (
-				303AD1BA1F1EB9B50031F35F /* Sources */,
-				303AD1BB1F1EB9B50031F35F /* Frameworks */,
-				303AD1BC1F1EB9B50031F35F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				303AD1C01F1EB9B50031F35F /* PBXTargetDependency */,
-			);
-			name = ArtNavigatorUITests;
-			productName = ArtNavigatorUITests;
-			productReference = 303AD1BE1F1EB9B50031F35F /* ArtNavigatorUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -284,17 +216,8 @@
 				TargetAttributes = {
 					303AD19E1F1EB9B50031F35F = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = TLN7TR76QL;
 						ProvisioningStyle = Automatic;
-					};
-					303AD1B21F1EB9B50031F35F = {
-						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 303AD19E1F1EB9B50031F35F;
-					};
-					303AD1BD1F1EB9B50031F35F = {
-						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 303AD19E1F1EB9B50031F35F;
 					};
 				};
 			};
@@ -306,6 +229,8 @@
 				en,
 				Base,
 				ar,
+				pt,
+				he,
 			);
 			mainGroup = 303AD1961F1EB9B50031F35F;
 			productRefGroup = 303AD1A01F1EB9B50031F35F /* Products */;
@@ -313,8 +238,6 @@
 			projectRoot = "";
 			targets = (
 				303AD19E1F1EB9B50031F35F /* ArtNavigator */,
-				303AD1B21F1EB9B50031F35F /* ArtNavigatorTests */,
-				303AD1BD1F1EB9B50031F35F /* ArtNavigatorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -332,20 +255,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		303AD1B11F1EB9B50031F35F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		303AD1BC1F1EB9B50031F35F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -357,6 +266,7 @@
 				308A68B31F29C683001EFD69 /* CRToastViewController.m in Sources */,
 				303AD1A51F1EB9B50031F35F /* MapViewController.swift in Sources */,
 				3031BEB21F2E4CBB00CCC967 /* SwiftyJSON.swift in Sources */,
+				30C9A9501F31592C008DE3B1 /* StringExtension.swift in Sources */,
 				308A68B21F29C683001EFD69 /* CRToastView.m in Sources */,
 				3031BEAE1F2E3C8600CCC967 /* JSONParser.swift in Sources */,
 				308A68B01F29C683001EFD69 /* CRToastConfig.m in Sources */,
@@ -371,36 +281,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		303AD1AF1F1EB9B50031F35F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				303AD1B81F1EB9B50031F35F /* ArtNavigatorTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		303AD1BA1F1EB9B50031F35F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				303AD1C31F1EB9B50031F35F /* ArtNavigatorUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		303AD1B51F1EB9B50031F35F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 303AD19E1F1EB9B50031F35F /* ArtNavigator */;
-			targetProxy = 303AD1B41F1EB9B50031F35F /* PBXContainerItemProxy */;
-		};
-		303AD1C01F1EB9B50031F35F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 303AD19E1F1EB9B50031F35F /* ArtNavigator */;
-			targetProxy = 303AD1BF1F1EB9B50031F35F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		303AD1A61F1EB9B50031F35F /* Main.storyboard */ = {
@@ -408,6 +289,7 @@
 			children = (
 				303AD1A71F1EB9B50031F35F /* Base */,
 				30314D161F30F164007289A9 /* ar */,
+				30C9A9521F31674E008DE3B1 /* he */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -426,9 +308,10 @@
 			isa = PBXVariantGroup;
 			children = (
 				30BEECF91F28264000EABA93 /* es */,
-				30E2F96C1F2AC2E5000ABFCE /* en */,
-				30E2F96D1F2AEA1C000ABFCE /* Base */,
 				30E2F9731F2AED5D000ABFCE /* ar */,
+				30C9A94E1F3157B1008DE3B1 /* en */,
+				30C9A9511F316705008DE3B1 /* pt */,
+				30C9A9531F31674E008DE3B1 /* he */,
 			);
 			name = Localizable.strings;
 			path = ..;
@@ -460,6 +343,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -512,6 +396,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -538,6 +423,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TLN7TR76QL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -546,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.harvard.csci-s65.ArtNavigator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sal7/Git/c65/assignment-5-almto3/ArtNavigator/ArtNavigator/Obj-CAndSwiftBridging.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -555,6 +443,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TLN7TR76QL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -563,62 +453,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.harvard.csci-s65.ArtNavigator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sal7/Git/c65/assignment-5-almto3/ArtNavigator/ArtNavigator/Obj-CAndSwiftBridging.h";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		303AD1CB1F1EB9B50031F35F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ArtNavigatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.harvard.csci-s65.ArtNavigatorTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtNavigator.app/ArtNavigator";
-			};
-			name = Debug;
-		};
-		303AD1CC1F1EB9B50031F35F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ArtNavigatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.harvard.csci-s65.ArtNavigatorTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtNavigator.app/ArtNavigator";
-			};
-			name = Release;
-		};
-		303AD1CE1F1EB9B50031F35F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = ArtNavigatorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.harvard.csci-s65.ArtNavigatorUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = ArtNavigator;
-			};
-			name = Debug;
-		};
-		303AD1CF1F1EB9B50031F35F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = ArtNavigatorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.harvard.csci-s65.ArtNavigatorUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = ArtNavigator;
 			};
 			name = Release;
 		};
@@ -639,24 +476,6 @@
 			buildConfigurations = (
 				303AD1C81F1EB9B50031F35F /* Debug */,
 				303AD1C91F1EB9B50031F35F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		303AD1CA1F1EB9B50031F35F /* Build configuration list for PBXNativeTarget "ArtNavigatorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				303AD1CB1F1EB9B50031F35F /* Debug */,
-				303AD1CC1F1EB9B50031F35F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		303AD1CD1F1EB9B50031F35F /* Build configuration list for PBXNativeTarget "ArtNavigatorUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				303AD1CE1F1EB9B50031F35F /* Debug */,
-				303AD1CF1F1EB9B50031F35F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

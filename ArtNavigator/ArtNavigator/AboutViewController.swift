@@ -21,8 +21,8 @@ class AboutViewController: UIViewController, UITextViewDelegate {
         
         //self.tabBarController?.image
         
-        let textString = NSLocalizedString("about-me", comment: "")
-        let textLink = NSLocalizedString("git", comment: "")
+        let textString = Defaults.getLocalizedString(key: "aboutMe")
+        let textLink = Defaults.getLocalizedString(key: "git")
         self.textAbout.text = textString + " " + textLink
         self.textAbout.delegate = self
         

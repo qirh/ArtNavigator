@@ -35,10 +35,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         buttonSave.layer.borderWidth = 0.7
         buttonSave.layer.cornerRadius = 5
         
-        Defaults.register(defaultsArgument: ["sliderValue" : 5])
-        Defaults.register(defaultsArgument: ["languageSelectedCode" : Locale.preferredLanguages[0]])
-        Defaults.register(defaultsArgument: ["nightModeOn" : true])
-        
         Defaults.setDefaultsVaribles()
         //Defaults.printDefaults()
         setViews()
@@ -80,7 +76,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         var languageSelected: String
         switch row {
-        case 0:               //The following are the ios language codes: en, fr, es, pt and ar
+        case 0:               //The following are the ios language codes: ar, en, es, he and pt
             Defaults.languageSelectedCode = "ar"
             myImageView.image = UIImage(named: Defaults.languageSelectedCode)
         case 1:
@@ -90,7 +86,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             Defaults.languageSelectedCode = "es"
             myImageView.image = UIImage(named: Defaults.languageSelectedCode)
         case 3:
-            Defaults.languageSelectedCode = "fr"
+            Defaults.languageSelectedCode = "he"
             myImageView.image = UIImage(named: Defaults.languageSelectedCode)
         case 4:
             Defaults.languageSelectedCode = "pt"

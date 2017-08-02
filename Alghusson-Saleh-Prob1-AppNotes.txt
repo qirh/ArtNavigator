@@ -21,8 +21,7 @@ Features to add:
 		* Search button
 		* Speech synth
 		* Add sommerville/other cities data
-		* Support Larger Text
-		*
+
 
 		Map View:
       * Highlight Cambridge
@@ -31,11 +30,14 @@ Features to add:
 			* User location button
 		List View:
 		Detail View:
+			* More info
 		About View:
-			* App notes
-			* Add note about approx. coordinates
+			* About the app
+			* Add note about approximate coordinates
+			* Link to data
 		Settings View:
 			* Night mode?
 			* Custom pin colors app if it has a base language that's not supported.
+			* Support Larger Text
 Known Bugs:
-		* Crash upon restart
+		* Annotation only shows 1 art piece. Even if the location has multiple
