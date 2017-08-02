@@ -34,6 +34,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         buttonSave.layer.borderWidth = 0.7
         buttonSave.layer.cornerRadius = 5
+        //buttonSave.titleLabel!.adjustsFontSizeToFitWidth = true
         
         Defaults.setDefaultsVaribles()
         //Defaults.printDefaults()
@@ -117,7 +118,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             case 2:
                 Defaults.languageSelectedCode = "es"
             case 3:
-                Defaults.languageSelectedCode = "fr"
+                Defaults.languageSelectedCode = "he"
             case 4:
                 Defaults.languageSelectedCode = "pt"
             default:
@@ -158,6 +159,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         labelResults.text = Defaults.getLocalizedString(key: "resultsPerPage")
         buttonSave.setTitle(Defaults.getLocalizedString(key: "save"), for: .normal)
         
+        
         switch Defaults.languageSelectedCode {
             case "ar":
                 pickerLanguage.selectRow(0, inComponent: 0, animated: true)
@@ -165,7 +167,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 pickerLanguage.selectRow(1, inComponent: 0, animated: true)
             case "es":
                 pickerLanguage.selectRow(2, inComponent: 0, animated: true)
-            case "fr":
+            case "he":
                 pickerLanguage.selectRow(3, inComponent: 0, animated: true)
             case "pt":
                 pickerLanguage.selectRow(4, inComponent: 0, animated: true)
