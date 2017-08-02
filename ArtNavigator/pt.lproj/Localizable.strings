@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  ArtNavigator
+
+  Created by saleh on 7/27/17.
+  Copyright © 2017 saleh. All rights reserved.
+*/
+
+//keys will always be lower case
+
+//AboutViewController.swift
+"aboutMe" = "Oi, mi chamo saleh";
+"git" = "http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html";
+
+//DetailViewController.swift
+//ListViewController.swift
+//MapViewController.swift
+"map" = "pt place holder";
+"list" = "pt place holder";
+"settings" = "pt place holder";
+"about" = "pt place holder";
+"detail" = "pt place holder";
+
+//SettingsViewController.swift
+"nightMode" = "pt place holder";
+"resultsPerPage" = "pt place holder";
+"save" = "pt place holder";
+"language" = "pt place holder";
+"restart" = "pt place holder";
