@@ -37,7 +37,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         //buttonSave.titleLabel!.adjustsFontSizeToFitWidth = true
         
         Defaults.setDefaultsVaribles()
-        //Defaults.printDefaults()
         setViews()
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -45,7 +44,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         super.viewWillAppear(animated)
         
         Defaults.setDefaultsVaribles()
-        //Defaults.printDefaults()
         setViews()
     }
     
@@ -145,7 +143,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         Defaults.set(key: "nightModeOn", value: Defaults.nightModeOn)
         Defaults.setDefaultsVaribles()
         if oldLanguageSelectedCode != Defaults.languageSelectedCode{
-
             toast()
         }
     }
@@ -176,8 +173,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
         
     }
-    
-    
     func toast() {
         let options: NSDictionary = [
             kCRToastTextKey : Defaults.getLocalizedString(key: "restart"),

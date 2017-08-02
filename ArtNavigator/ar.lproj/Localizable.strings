@@ -13,7 +13,19 @@
 "git" = "http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html";
 
 //DetailViewController.swift
-//ListViewController.swift
+"navigate" = "إذهب";
+"location" = "الموقع";
+"noInformation" = "لا توجد معلومات";
+"locationDescription" = "وصف الموقع";
+"address" = "العنوان";
+"descriptionOfTheArtPiece" = "وصف العمل الفني";
+"locatedIndoors" = "داخل مبنى";
+"locatedOutdoors" = "في الخارج";
+"category" = "نوع العمل";
+"objectType" = "صنف العمل";
+"material" = "مصنوع من";
+"byArtist" = "عمل الفنان";
+
 //MapViewController.swift
 "map" = "الخريطة";
 "list" = "الجدول";
@@ -27,3 +39,10 @@
 "save" = "إحفظ";
 "language" = "اللغة\nLanguage";
 "restart" = "سيتم تغيير اللغة بعد إعادة تشغيل التطبيق";
+
+//TableViewController.swift
+
+//ArtPieces.swift
+"sculpture" = "تمثال";
+"mural" = "فن جداري";
+"electronicMedia" = "إعلام إلكتروني";

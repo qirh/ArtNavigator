@@ -17,7 +17,7 @@ class Defaults {
     static var sliderValue: Int = 5
     static var languageSelectedCode: String = Locale.preferredLanguages[0][0..<3]
     static var nightModeOn: Bool = true
-    static var isFirstRun: Bool = true
+    static var ranBefore: Bool = false
     
     static var path = Bundle.main.path(forResource: languageSelectedCode, ofType: "lproj")
     static var bundle = Bundle(path: path ?? Bundle.main.path(forResource: "en", ofType: "lproj")!)
@@ -26,15 +26,14 @@ class Defaults {
     
     static func setDefaultsVaribles() {
         
-        if (isFirstRun) {
+        if defaults.object(forKey: "ranBefore") == nil && !ranBefore {
             firstTimeRun()
         }
+        
         sliderValue = defaults.integer(forKey: "sliderValue")
         languageSelectedCode = defaults.string(forKey: "languageSelectedCode")!
         nightModeOn = defaults.bool(forKey: "nightModeOn")
-        isFirstRun = defaults.bool(forKey: "isFirstRun")
-        
-        
+        ranBefore = defaults.bool(forKey: "ranBefore")
         
         if(languageSelectedCode.characters.count > 2){
             languageSelectedCode = languageSelectedCode[0..<3]
@@ -45,7 +44,11 @@ class Defaults {
     }
     static func firstTimeRun() {
         
-        print("firstTimeRun(). language = \(Locale.preferredLanguages[0]). languageSelectedCode = \(languageSelectedCode).")
+        for locale in Locale.preferredLanguages {
+            print("locale = \(locale)")
+            print("direction = \(Bundle.main.preferredLocalizations[0])")
+            print("code = \(Locale.current.regionCode ?? "nil")")
+        }
         
         if supportedLanguages[languageSelectedCode] != nil {
             print("language exists. '\(languageSelectedCode)'")
@@ -57,11 +60,13 @@ class Defaults {
         }
         defaults.register(defaults: ["sliderValue" : 5])
         defaults.register(defaults: ["nightModeOn" : true])
-        defaults.register(defaults: ["isFirstRun" : false])
+        defaults.register(defaults: ["ranBefore" : true])
+        defaults.synchronize()
         
     }
     static func register(defaultsArgument: [String: Any]) {
         defaults.register(defaults: defaultsArgument)
+        defaults.synchronize()
     }
     static func set(key: String, value: Any) {
         defaults.set(value, forKey: key)
@@ -74,7 +79,7 @@ class Defaults {
         print("sliderValue: \(sliderValue)")
         print("languageSelectedCode: \(languageSelectedCode)")
         print("nightModeOn: \(nightModeOn)")
-        print("isFirstRun: \(isFirstRun)")
+        print("ranBefore: \(ranBefore)\n***\n")
     }
     // source:
     // https://stackoverflow.com/a/27879342
@@ -82,5 +87,4 @@ class Defaults {
         return (bundle?.localizedString(forKey: key, value: nil, table: nil))!
         
     }
-    
 }

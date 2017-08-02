@@ -42,7 +42,7 @@
 
 /**
  Queues a notification to be shown with a given message
- @param options The notification message to be shown. Defaults will be used for all other notification
+ @param message The notification message to be shown. Defaults will be used for all other notification
  properties
  @param completion A completion block to be fired at the completion of the dismisall of the notification
  */
@@ -65,7 +65,7 @@
 /**
  Immidiately begins the (un)animated dismisal of a notification and removing of all notifications 
  with specified identifier
- @param identifier `kCRToastIdentiferKey` specified for the toasts in queue. If no toasts are found with that identifier, none will be removed.
+ @param identifer `kCRToastIdentiferKey` specified for the toasts in queue. If no toasts are found with that identifier, none will be removed.
  @param animated   If YES the notification will dismiss with its configure animation, otherwise it will immidiately disappear
  */
 + (void)dismissAllNotificationsWithIdentifier:(NSString *)identifer animated:(BOOL)animated;

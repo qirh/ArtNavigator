@@ -44,7 +44,6 @@ class DetailViewController: UIViewController {
     
     func setViews() {
         
-        
         //navigate bar
         self.title = "\(artPiece?.title ?? "error: title nil") - \(artPiece?.year ?? "error: year nil")"
         let labelTitle = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
@@ -59,26 +58,27 @@ class DetailViewController: UIViewController {
         buttonNavigate.layer.borderWidth = 2
         buttonNavigate.layer.cornerRadius = 4
         buttonNavigate.layer.borderColor = UIColor.black.cgColor
+        buttonNavigate.setTitle(Defaults.getLocalizedString(key: "navigate"), for: .normal)
         
-        labelLocationName.text = "location: \(artPiece?.locationName ?? "err")"
-        labelLocationDescription.text = "location description:\n \(artPiece?.locationDescription ?? "err")"
-        labelAddress.text = "address:\n \(artPiece?.address ?? "err")"
+        labelLocationName.text = "\(Defaults.getLocalizedString(key: "location")): \(artPiece?.locationName ?? Defaults.getLocalizedString(key: "No Information"))"
+        labelLocationDescription.text = "\(Defaults.getLocalizedString(key: "locationDescription")):\n \(artPiece?.locationDescription ?? Defaults.getLocalizedString(key: "No Information"))"
+        labelAddress.text = "\(Defaults.getLocalizedString(key: "address")):\n \(artPiece?.address ?? Defaults.getLocalizedString(key: "No Information"))"
         
-        labelDescription.text = "description on the art piece:"
-        labelDescriptionText.text = artPiece?.description
+        labelDescription.text = "\(Defaults.getLocalizedString(key: "descriptionOfTheArtPiece"))"
+        labelDescriptionText.text = "\(artPiece?.description ?? Defaults.getLocalizedString(key: "No Information"))"
         
         if(artPiece?.isInterior)! {
-            labelInteriorExterior.text = "located indoors"
+            labelInteriorExterior.text = "\(Defaults.getLocalizedString(key: "locatedIndoors"))"
         }
         else {
-           labelInteriorExterior.text = "located outdoors"
+           labelInteriorExterior.text = "\(Defaults.getLocalizedString(key: "locatedOutdoors"))"
         }
         
-        labelCategory.text = "category\n\(artPiece?.category.rawValue ?? "err")"
-        labelObjectType.text = "object type\n\(artPiece?.objectType ?? "err")"
-        labelMaterial.text = "material\n\(artPiece?.material ?? "err")"
+        labelCategory.text = "\(Defaults.getLocalizedString(key: "category")):\n\(Defaults.getLocalizedString(key: "\(artPiece?.category.rawValue ?? Defaults.getLocalizedString(key: "No Information"))"))"
+        labelObjectType.text = "\(Defaults.getLocalizedString(key: "objectType")):\n\(artPiece?.objectType ?? Defaults.getLocalizedString(key: "No Information"))"
+        labelMaterial.text = "\(Defaults.getLocalizedString(key: "material"))\n\(artPiece?.material ?? Defaults.getLocalizedString(key: "No Information"))"
         
-        labelArtistName.text = "\(artPiece?.firstName ?? "err") \(artPiece?.lastName ?? "err")"
+        labelArtistName.text = "\(Defaults.getLocalizedString(key: "byArtist")): \(artPiece?.firstName ?? Defaults.getLocalizedString(key: "No Information")) \(artPiece?.lastName ?? Defaults.getLocalizedString(key: "No Information"))"
     }
     
     override func didReceiveMemoryWarning() {

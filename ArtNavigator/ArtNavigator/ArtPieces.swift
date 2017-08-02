@@ -39,9 +39,9 @@ class ArtPieces {
 // source:
 // https://stackoverflow.com/a/30009873
 enum Category : String {                        //Values in JSON file
-    case sculpture = "Sculpture"                //Sculpture
-    case mural = "Mural"                        //Mural
-    case electronicMedia = "Electronic Media"   //Electronic Media
+    case sculpture = "sculpture"                //Sculpture
+    case mural = "mural"                        //Mural
+    case electronicMedia = "electronicMedia"    //Electronic Media
 }
 
 class ArtPiece : NSObject, NSCoding, MKAnnotation{
@@ -194,6 +194,8 @@ class ArtPiece : NSObject, NSCoding, MKAnnotation{
         
         let rawCategory = unarchiver.decodeObject(forKey: Keys.Category) as? String
         let decodedCategory = Category(rawValue: rawCategory!)
+        print("raw Cat = \(rawCategory)")
+        print("dec Cat = \(decodedCategory)")
         category = decodedCategory!
         
         objectType = unarchiver.decodeObject(forKey: Keys.ObjectType) as! String
