@@ -104,7 +104,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         if let detailViewController = segue.destination as? DetailViewController {
             detailViewController.artPiece = ((sender as! MKAnnotationView).annotation! as! ArtPiece)
         }
-        
+        self.tabBarController?.tabBar.isHidden = true
     }
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
@@ -122,6 +122,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     // https://stackoverflow.com/a/2406167
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        self.tabBarController?.tabBar.isHidden = false
         super.viewWillAppear(animated)
     }
     override func viewWillDisappear(_ animated: Bool) {

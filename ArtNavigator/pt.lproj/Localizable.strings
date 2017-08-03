@@ -23,6 +23,8 @@
 "material" = "";
 "byArtist" = "";
 "byArtists" = "";
+"showMore" = "";
+"showLess" = "";
 
 //MapViewController.swift
 "map" = "";

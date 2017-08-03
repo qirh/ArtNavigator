@@ -25,6 +25,7 @@
 "byArtists" = "عمل الفنانان";
 "showMore" = "أظهر التفاصيل";
 "showLess" = "إخفِ التفاصيل";
+"artPiece" = "العمل الفني";
 
 //MapViewController.swift
 "map" = "الخريطة";

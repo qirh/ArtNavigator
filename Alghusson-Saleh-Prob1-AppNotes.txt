@@ -23,7 +23,7 @@ Features to add:
 
 		About View:
 		Detail View:
-			* Insert map
+			* Gap in top of map
 			* Change the 3 labels to textview
 			* More info button
 
@@ -34,7 +34,7 @@ Features to add:
 		Settings View:
 			* Night mode?
 			* Custom pin colors app if it has a base language that's not supported.
-			* Support Larger Text
+
 		Table View:
 			* variable cell size
 
