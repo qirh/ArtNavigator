@@ -1,13 +1,4 @@
 
-
-Notes:
-	Custom icon guide:
-		https://developer.apple.com/ios/human-interface-guidelines/graphics/custom-icons/
-	Look at photos app for layout inspiration
-
-As far as I know, I have implemented everything required except:
-		* nil
-
 Features not working properly:
 		* nil
 
