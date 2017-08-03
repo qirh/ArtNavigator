@@ -12,6 +12,7 @@ import MapKit
 class MapViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var buttonCambridge: UIButton!
     
     
     // set initial location in Cambridge
@@ -40,7 +41,16 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         self.tabBarController?.tabBar.items![3].image = UIImage(named: "about")
         self.tabBarController?.tabBar.items![3].title = Defaults.getLocalizedString(key: "about")
         
-        centerMapOnLocation(location: cambridgeCoordinates)
+        centerMapOnLocation(location: cambridgeCoordinates, radius: regionRadius)
+        
+        buttonCambridge.setTitle(Defaults.getLocalizedString(key: "cambridge"), for: .normal)
+        
+        buttonCambridge.layer.shadowRadius =  3.0
+        buttonCambridge.layer.shadowColor =  UIColor.black.cgColor
+        buttonCambridge.layer.shadowOpacity =  0.3
+        buttonCambridge.layer.borderColor = UIColor.black.withAlphaComponent(0.5).cgColor
+        buttonCambridge.layer.borderWidth = 1
+        self.view.addSubview(buttonCambridge)
         
         
         if let array = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? [AnyObject] {
@@ -59,8 +69,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         mapView.delegate = self
     }
     
-    func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2.0, regionRadius * 2.0)
+    func centerMapOnLocation(location: CLLocation, radius: CLLocationDistance) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, radius * 2.3, radius * 2.3)
         mapView.setRegion(coordinateRegion, animated: true)
     }
     
@@ -102,6 +112,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             self.performSegue(withIdentifier: segueAnnotation, sender: view)
         }
     }
+    
+    @IBAction func buttonCambridgePressed(_ sender: UIButton) {
+        centerMapOnLocation(location: cambridgeCoordinates, radius: regionRadius)
+    }
+    
     
     // source:
     // https://stackoverflow.com/a/2406167

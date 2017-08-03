@@ -30,13 +30,13 @@ Features to add:
 		Map View:
       * Highlight Cambridge
 			* highlight zip codes
-			* Cambridge button
 			* User location button
 		Settings View:
 			* Night mode?
 			* Custom pin colors app if it has a base language that's not supported.
 			* Support Larger Text
 		Table View:
+			* variable cell size
 
 Known Bugs:
 		* Annotation only shows 1 art piece. Even if the location has multiple
