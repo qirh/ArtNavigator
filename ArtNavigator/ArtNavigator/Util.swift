@@ -6,6 +6,8 @@
 //  Copyright © 2017 saleh. All rights reserved.
 //
 
+import UIKit
+
 // source:
 // https://stackoverflow.com/a/26775912
 
@@ -37,7 +39,24 @@ extension String {
     
 }
 
-import UIKit
+// source:
+// https://stackoverflow.com/a/37992022
+extension NSMutableAttributedString {
+    @discardableResult func bold(_ text:String, font: UIFont = UIFont.boldSystemFont(ofSize: 15), size: CGFloat = 15.0) -> NSMutableAttributedString {
+        
+        let attrs:[String:AnyObject] = [NSFontAttributeName : font]
+        
+        let boldString = NSMutableAttributedString(string:"\(text)", attributes:attrs)
+        self.append(boldString)
+        return self
+    }
+    
+    @discardableResult func normal(_ text:String)->NSMutableAttributedString {
+        let normal =  NSAttributedString(string: text)
+        self.append(normal)
+        return self
+    }
+}
 
 // source
 // https://stackoverflow.com/a/38435309

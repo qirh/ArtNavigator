@@ -23,8 +23,9 @@
 "material" = "Material";
 "byArtist" = "del Artista";
 "byArtists" = "de l@s Artistas";
-"showMore" = "Mostrar detalles";
-"showLess" = "Ocultar detalles";
+"showMore" = "Más";
+"showLess" = "Menos";
+"artPiece" = "La obra";
 
 //MapViewController.swift
 "map" = "Mapa";

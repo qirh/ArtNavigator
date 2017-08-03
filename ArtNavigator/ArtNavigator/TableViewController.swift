@@ -86,6 +86,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let detailViewController = segue.destination as! DetailViewController
             detailViewController.artPiece = ArtPieces.artPieces[(tableView.indexPathForSelectedRow?.row)!]
         }
+        self.tabBarController?.tabBar.isHidden = true
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -94,6 +95,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        self.tabBarController?.tabBar.isHidden = false
         super.viewWillAppear(animated)
     }
     override func viewWillDisappear(_ animated: Bool) {

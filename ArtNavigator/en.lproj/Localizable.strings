@@ -21,8 +21,8 @@
 "locationDescription" = "Location Description";
 "address" = "Address";
 "descriptionOfTheArtPiece" = "Description of the art piece";
-"locatedIndoors" = "indoors installation";
-"locatedOutdoors" = "outdoors installation";
+"locatedIndoors" = "Indoors installation";
+"locatedOutdoors" = "Outdoors installation";
 "category" = "Category";
 "objectType" = "Object Type";
 "material" = "Material";
@@ -30,6 +30,7 @@
 "byArtists" = "By Artists";
 "showMore" = "Show More";
 "showLess" = "Show Less";
+"artPiece" = "The art piece";
 
 //MapViewController.swift
 "map" = "Map";
