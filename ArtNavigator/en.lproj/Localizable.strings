@@ -30,7 +30,7 @@
 "byArtists" = "By Artists";
 "showMore" = "Show More";
 "showLess" = "Show Less";
-"artPiece" = "The art piece";
+"artPiece" = "Art piece";
 
 //MapViewController.swift
 "map" = "Map";
