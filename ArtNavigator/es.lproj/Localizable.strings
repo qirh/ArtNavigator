@@ -23,6 +23,8 @@
 "material" = "Material";
 "byArtist" = "del Artista";
 "byArtists" = "de l@s Artistas";
+"showMore" = "Mostrar detalles";
+"showLess" = "Ocultar detalles";
 
 //MapViewController.swift
 "map" = "Mapa";
@@ -31,6 +33,7 @@
 "about" = "Conócenos";
 "detail" = "Detalles";
 "back" = "Atrás";
+"cambridge" = "Cambridge";
 
 //SettingsViewController.swift
 "nightMode" = "Moda de la noche";
