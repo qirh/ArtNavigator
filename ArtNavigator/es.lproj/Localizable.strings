@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   ArtNavigator
 
@@ -6,11 +6,8 @@
   Copyright © 2017 saleh. All rights reserved.
 */
 
-//keys will always be lower case
-
 //AboutViewController.swift
-"aboutMe" = "bla bla español:";
-"git" = "http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html";
+"aboutMe" = "¡Hola!\nMe llamo saleh. Estoy aprendiendo al Español, es un idioma muy hermoso, pero eso no es importante ahora. La cosa importante es que estoy también aprendiendo a desarrollar para iOS. Por este verano, estoy viviendo en la ciudad de Cambridge en el noreste de EE.UU. Para mi primero app, quiería hacer algo beneficioso pero al otro lado no demasiado complicado. Entonces, decidí trabajar en un app que es navegador por el arte publico en la ciudad. \nToadvía no es completo, pero estoy trabajando en eso. Además, si se quiere más información u actualizaciones o leer mis notas, el enlace para la página del proyecto está abajo. También, hay un otro enlace por la fuente de datos. Finalmente, muchísimas gracias por su interés en este app y por preguntas o algo, envíame aquí: salehg@live.com";
 
 //DetailViewController.swift
 "navigate" = "Ir";
@@ -18,13 +15,14 @@
 "noInformation" = "No hay información";
 "locationDescription" = "Descripción de la Ubicación";
 "address" = "Dirección";
-"descriptionOfTheArtPiece" = "Descripción de la pieza de arte";
+"descriptionOfTheArtPiece" = "Descripción de la obra de arte";
 "locatedIndoors" = "Instalación en interiores";
 "locatedOutdoors" = "Instalación afuera";
 "category" = "Categoría";
 "objectType" = "Tipo del Objeto";
 "material" = "Material";
-"byArtist" = "Por el Artista";
+"byArtist" = "del Artista";
+"byArtists" = "de l@s Artistas";
 
 //MapViewController.swift
 "map" = "Mapa";
@@ -35,8 +33,8 @@
 "back" = "Atrás";
 
 //SettingsViewController.swift
-"nightMode" = "night mode";
-"resultsPerPage" = "resultados por pagina";
+"nightMode" = "Moda de la noche";
+"resultsPerPage" = "resultados por página";
 "save" = "guardar";
 "language" = "El idioma\nLanguage";
 "restart" = "El idioma va a cambiar después de reiniciar";
@@ -47,4 +45,3 @@
 "sculpture" = "Escultura";
 "mural" = "Mural";
 "electronicMedia" = "Medio Electrónico";
-

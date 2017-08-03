@@ -19,15 +19,19 @@ class AboutViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.tabBarController?.image
-        
         let textString = Defaults.getLocalizedString(key: "aboutMe")
-        let textLink = "http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html"
-        self.textAbout.text = textString + " " + textLink
+        let gitLink = "\n\nGit Repo: http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html"
+        let dataLink = "\nData Source: https://data.cambridgema.gov/General-Government/Cambridge-Public-Art-Locations/svyv-zh72/data"
+        
+        self.textAbout.text = textString + gitLink + dataLink
         self.textAbout.delegate = self
         
+        if(Defaults.languageSelectedCode == "ar" || Defaults.languageSelectedCode == "he"){
+            self.textAbout.textAlignment = .right
+        }
         
-        // ImageView resizing from here:
+        
+        // source:
         // https://stackoverflow.com/a/41266504
         
         imageAbout.image = UIImage(named: "me")
@@ -41,10 +45,9 @@ class AboutViewController: UIViewController, UITextViewDelegate {
         imageAbout.layer.masksToBounds = true
         
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        textAbout.setContentOffset(CGPoint.zero, animated: false)
     }
     
 }

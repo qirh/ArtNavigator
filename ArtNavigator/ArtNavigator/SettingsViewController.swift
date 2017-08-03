@@ -34,7 +34,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         buttonSave.layer.borderWidth = 0.7
         buttonSave.layer.cornerRadius = 5
-        //buttonSave.titleLabel!.adjustsFontSizeToFitWidth = true
+        
         
         Defaults.setDefaultsVaribles()
         setViews()
@@ -97,7 +97,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
         languageSelected = Defaults.supportedLanguages[Defaults.languageSelectedCode]!
         let myLabel = UILabel(frame: CGRect(x: 60, y: 0, width: pickerView.bounds.width - 90, height: 60 ))
-        //myLabel.font = UIFont(name:some, size: 18)
         myLabel.text = languageSelected
         
         myView.addSubview(myLabel)

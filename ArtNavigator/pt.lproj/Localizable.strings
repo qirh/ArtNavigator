@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   ArtNavigator
 
@@ -6,24 +6,42 @@
   Copyright © 2017 saleh. All rights reserved.
 */
 
-//keys will always be lower case
-
 //AboutViewController.swift
-"aboutMe" = "Oi, mi chamo saleh";
-"git" = "http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html";
+"aboutMe" = "";
 
 //DetailViewController.swift
-//ListViewController.swift
+"navigate" = "";
+"location" = "";
+"noInformation" = "";
+"locationDescription" = "";
+"address" = "";
+"descriptionOfTheArtPiece" = "";
+"locatedIndoors" = "";
+"locatedOutdoors" = "";
+"category" = "";
+"objectType" = "";
+"material" = "";
+"byArtist" = "";
+"byArtists" = "";
+
 //MapViewController.swift
-"map" = "pt place holder";
-"list" = "pt place holder";
-"settings" = "pt place holder";
-"about" = "pt place holder";
-"detail" = "pt place holder";
+"map" = "";
+"list" = "";
+"settings" = "";
+"about" = "";
+"detail" = "";
+"back" = "";
 
 //SettingsViewController.swift
-"nightMode" = "pt place holder";
-"resultsPerPage" = "pt place holder";
-"save" = "pt place holder";
-"language" = "pt place holder";
-"restart" = "pt place holder";
+"nightMode" = "";
+"resultsPerPage" = "";
+"save" = "";
+"language" = "";
+"restart" = "";
+
+//TableViewController.swift
+
+//ArtPieces.swift
+"sculpture" = "";
+"mural" = "";
+"electronicMedia" = "";

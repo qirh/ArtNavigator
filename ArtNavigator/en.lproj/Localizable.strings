@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   ArtNavigator
 
@@ -9,10 +9,10 @@
 // localiazation source:
 // https://medium.com/lean-localization/ios-localization-tutorial-938231f9f881
 //
-//keys will always be lower case
+//keys will always be camelCase
 
 //AboutViewController.swift
-"aboutMe" = "Hey!\nThis is saleh. I'm learning how to develop for IOS. And since I'm staying in Cambridge, MA for the summer, I figured I should try to create an app that the people of this city could use. Please email for any suggestions or questions or anything else I can be reached at: salehg@live.com\nAlso when this project is finished, I'll open up the git repo, link:";
+"aboutMe" = "Hey!\nI'm saleh and I'm learning how to develop iOS. And since I'm staying in Cambridge, MA for the summer. I figured I should try to create an app that residents and visitors of the city could use. So, I decided to build this application, which is a navigator for the public art installations in the city. \nCurrently, this app is in beta phase and is still not finished and imho looks ugly because I'm a programmer not a designer :) For updates on the app, or to read my notes please go to the git repo at the link below. Also, a link to the data source is also below. \nThank you for your interst in this application! and don't hesistate to email me for any suggestions or questions or anything else: salehg@live.com";
 
 //DetailViewController.swift
 "navigate" = "Navigate";
@@ -33,12 +33,12 @@
 "map" = "Map";
 "list" = "List";
 "settings" = "Settings";
-"about" = "About";
+"about" = "About Me";
 "detail" = "Detail";
 "back" = "Back";
 
 //SettingsViewController.swift
-"nightMode" = "night mode";
+"nightMode" = "Night Mode";
 "resultsPerPage" = "results per page";
 "save" = "save";
 "language" = "Language";
