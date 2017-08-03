@@ -17,7 +17,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     // set initial location in Cambridge
     let cambridgeCoordinates = CLLocation(latitude: 42.375088, longitude: -71.118403)
     let regionRadius: CLLocationDistance = 1500
-    let segueAnnotation = "annotation"
+    let segueAnnotation = "segueAnnotation"
     
     
     var filePath : String {

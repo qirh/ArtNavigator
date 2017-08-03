@@ -78,6 +78,17 @@ class DetailViewController: UIViewController {
         labelObjectType.text = "\(Defaults.getLocalizedString(key: "objectType")):\n\(artPiece?.objectType ?? Defaults.getLocalizedString(key: "noInformation"))"
         labelMaterial.text = "\(Defaults.getLocalizedString(key: "material")):\n\(artPiece?.material ?? Defaults.getLocalizedString(key: "noInformation"))"
         
+        // handle multiple artists
+        let firstName = artPiece?.firstName
+        let lastName = artPiece?.lastName
+        
+        if firstName?.range(of:"/") != nil {
+            print("exists mult")
+        }
+        if lastName?.range(of:"/") != nil {
+            print("exists mult2")
+        }
+        
         labelArtistName.text = "\(Defaults.getLocalizedString(key: "byArtist")): \(artPiece?.firstName ?? Defaults.getLocalizedString(key: "noInformation")) \(artPiece?.lastName ?? Defaults.getLocalizedString(key: "noInformation"))"
     }
     

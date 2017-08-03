@@ -13,18 +13,10 @@ import UIKit
 
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    // These strings will be the data for the table view cells
-    let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
-    
-    // These are the colors of the square views in our table view cells.
-    // In a real proCustomCellTableject you might use UIImages.
-    let colors = [UIColor.blue, UIColor.yellow, UIColor.magenta, UIColor.red, UIColor.brown]
-    
-    // Don't forget to enter this in IB also
-    let cellReuseIdentifier = "cell"
+    let segueTable = "segueTable"
+    let cellReuseIdentifier = "cellCustom"
     
     @IBOutlet weak var tableView: UITableView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,30 +25,52 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.dataSource = self
     }
     
-    // number of rows in table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.animals.count
+        return ArtPieces.artPieces.count
     }
     
-    // create a cell for each table view row
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: CustomCellTable = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! CustomCellTable
         
-        cell.buttonNavigate.layer.borderWidth = 2
-        cell.buttonNavigate.layer.cornerRadius = 4
-        cell.buttonNavigate.layer.borderColor = UIColor.black.cgColor
-        cell.buttonNavigate.setTitle(Defaults.getLocalizedString(key: "navigate"), for: .normal)
+        cell.layer.borderWidth = 0.5
+        cell.layer.borderColor = UIColor.gray.cgColor
         
+        cell.labelTitle.text = ArtPieces.artPieces[indexPath.row].title
         cell.labelTitle.adjustsFontSizeToFitWidth = true
-        cell.labelTitle.text = self.animals[indexPath.row]
+        
+        cell.labelCategory.text = "\(Defaults.getLocalizedString(key: "\(ArtPieces.artPieces[indexPath.row].category.rawValue)"))"
+        cell.labelCategory.adjustsFontSizeToFitWidth = true
+        
+        cell.labelArtist.text = "\(Defaults.getLocalizedString(key: "byArtist")): \(ArtPieces.artPieces[indexPath.row].firstName ?? Defaults.getLocalizedString(key: "noInformation")) \(ArtPieces.artPieces[indexPath.row].lastName ?? Defaults.getLocalizedString(key: "noInformation"))"
+        cell.labelArtist.adjustsFontSizeToFitWidth = true
+        
+        cell.buttonNavigate.layer.borderWidth = 0.5
+        cell.buttonNavigate.layer.cornerRadius = 4
+        cell.buttonNavigate.layer.borderColor = UIColor.gray.cgColor
+        cell.buttonNavigate.setTitle(Defaults.getLocalizedString(key: "navigate"), for: .normal)
         
         return cell
     }
-    
-    // method to run when table view cell is tapped
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if(segue.identifier == segueTable) {
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.artPiece = ArtPieces.artPieces[(tableView.indexPathForSelectedRow?.row)!]
+        }
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped cell number \(indexPath.row).")
+        self.performSegue(withIdentifier: segueTable, sender: self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillAppear(animated)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillDisappear(animated)
     }
     
     
