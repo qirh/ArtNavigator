@@ -13,13 +13,26 @@
 "git" = "http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html";
 
 //DetailViewController.swift
-//ListViewController.swift
+"navigate" = "Ir";
+"location" = "Ubicación";
+"noInformation" = "No hay información";
+"locationDescription" = "Descripción de la Ubicación";
+"address" = "Dirección";
+"descriptionOfTheArtPiece" = "Descripción de la pieza de arte";
+"locatedIndoors" = "Instalación en interiores";
+"locatedOutdoors" = "Instalación afuera";
+"category" = "Categoría";
+"objectType" = "Tipo del Objeto";
+"material" = "Material";
+"byArtist" = "Por el Artista";
+
 //MapViewController.swift
 "map" = "Mapa";
 "list" = "Lista";
 "settings" = "Ajustes";
 "about" = "Conócenos";
 "detail" = "Detalles";
+"back" = "Atrás";
 
 //SettingsViewController.swift
 "nightMode" = "night mode";
@@ -27,4 +40,11 @@
 "save" = "guardar";
 "language" = "El idioma\nLanguage";
 "restart" = "El idioma va a cambiar después de reiniciar";
+
+//TableViewController.swift
+
+//ArtPieces.swift
+"sculpture" = "Escultura";
+"mural" = "Mural";
+"electronicMedia" = "Medio Electrónico";
 
