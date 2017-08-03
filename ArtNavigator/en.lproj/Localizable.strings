@@ -43,7 +43,7 @@
 
 //SettingsViewController.swift
 "nightMode" = "Night Mode";
-"resultsPerPage" = "results per page";
+"resultsPerPage" = "Results per Page";
 "save" = "save";
 "language" = "Language";
 "restart" = "Language will change upon restart";

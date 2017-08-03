@@ -37,7 +37,7 @@
 "cambridge" = "Cambridge";
 
 //SettingsViewController.swift
-"nightMode" = "";
+"nightMode" = "Modo da noite";
 "resultsPerPage" = "";
 "save" = "";
 "language" = "";

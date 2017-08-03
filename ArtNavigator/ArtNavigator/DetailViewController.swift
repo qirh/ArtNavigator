@@ -39,10 +39,16 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.white
-        
         let cambridgeCoordinates = CLLocation(latitude: (artPiece?.latitude)!, longitude: (artPiece?.longitude)!)
-        let regionRadius: CLLocationDistance = 500
+        
+        buttonArtPiece.setTitle(Defaults.getLocalizedString(key: "artPiece"), for: .normal)
+        buttonArtPiece.layer.shadowRadius =  3.0
+        buttonArtPiece.layer.shadowColor =  UIColor.black.cgColor
+        buttonArtPiece.layer.shadowOpacity =  0.3
+        buttonArtPiece.layer.borderColor = UIColor.black.withAlphaComponent(0.5).cgColor
+        buttonArtPiece.layer.borderWidth = 1
+        self.view.addSubview(buttonArtPiece)
+        self.view.bringSubview(toFront: self.buttonArtPiece)
         
         centerMapOnLocation(location: cambridgeCoordinates)
         mapView.addAnnotation(artPiece!)
@@ -91,14 +97,6 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         self.navigationItem.titleView = labelTitle
         self.navigationController?.navigationBar.backItem?.title = Defaults.getLocalizedString(key: "back")
         
-        buttonArtPiece.setTitle(Defaults.getLocalizedString(key: "artPiece"), for: .normal)
-        buttonArtPiece.layer.shadowRadius =  3.0
-        buttonArtPiece.layer.shadowColor =  UIColor.black.cgColor
-        buttonArtPiece.layer.shadowOpacity =  0.3
-        buttonArtPiece.layer.borderColor = UIColor.black.withAlphaComponent(0.5).cgColor
-        buttonArtPiece.layer.borderWidth = 1
-        self.view.addSubview(buttonArtPiece)
-        self.view.bringSubview(toFront: self.buttonArtPiece)
         
         //button
         buttonNavigate.layer.borderWidth = 1

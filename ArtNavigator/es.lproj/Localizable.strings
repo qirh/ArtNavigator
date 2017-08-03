@@ -37,8 +37,8 @@
 "cambridge" = "Cambridge";
 
 //SettingsViewController.swift
-"nightMode" = "Moda de la noche";
-"resultsPerPage" = "resultados por página";
+"nightMode" = "Modo de la noche";
+"resultsPerPage" = "Resultados por página";
 "save" = "guardar";
 "language" = "El idioma\nLanguage";
 "restart" = "El idioma va a cambiar después de reiniciar";
