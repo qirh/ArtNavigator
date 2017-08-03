@@ -13,7 +13,7 @@ Resource 2:
     licensed by: http://creativecommons.org/licenses/by/3.0/
 
 Resource 3:
-  About, List, Map, Settings and flag icons
+  About, List, Map, Settings, flag and app icons are all from icons8.com
   Source: icons8.com
   License: Free to use with credit
   Credit:
