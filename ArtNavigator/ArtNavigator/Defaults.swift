@@ -46,11 +46,9 @@ class Defaults {
     static func firstTimeRun() {
         
         if supportedLanguages[languageSelectedCode] != nil {
-            print("language exists. '\(languageSelectedCode)'")
             defaults.register(defaults: ["languageSelectedCode" : languageSelectedCode])
         }
         else{
-            print("language does not exist. '\(languageSelectedCode)'")
             defaults.register(defaults: ["languageSelectedCode" : "en"])
         }
         defaults.register(defaults: ["sliderValue" : 5])

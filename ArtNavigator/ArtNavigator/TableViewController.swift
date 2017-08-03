@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 // source:
 // https://stackoverflow.com/a/36426858/1274947
@@ -34,7 +35,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let cell: CustomCellTable = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! CustomCellTable
         
-        cell.layer.borderWidth = 0.5
+        cell.layer.borderWidth = 1
         cell.layer.borderColor = UIColor.gray.cgColor
         
         cell.labelTitle.text = ArtPieces.artPieces[indexPath.row].title
@@ -43,15 +44,41 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.labelCategory.text = "\(Defaults.getLocalizedString(key: "\(ArtPieces.artPieces[indexPath.row].category.rawValue)"))"
         cell.labelCategory.adjustsFontSizeToFitWidth = true
         
-        cell.labelArtist.text = "\(Defaults.getLocalizedString(key: "byArtist")): \(ArtPieces.artPieces[indexPath.row].firstName ?? Defaults.getLocalizedString(key: "noInformation")) \(ArtPieces.artPieces[indexPath.row].lastName ?? Defaults.getLocalizedString(key: "noInformation"))"
+        
+        // handle multiple artists
+        let firstName = ArtPieces.artPieces[indexPath.row].firstName
+        let lastName = ArtPieces.artPieces[indexPath.row].lastName
+        
+        if (firstName?.range(of:"/") != nil && lastName?.range(of:"/") != nil) {
+            let firstNameArray : [String] = firstName!.components(separatedBy: "/")
+            let lastNameArray : [String] = lastName!.components(separatedBy: "/")
+            
+            cell.labelArtist.text = "\(Defaults.getLocalizedString(key: "byArtists")): \(firstNameArray[0] ) \(lastNameArray[0] ) & \(firstNameArray[1] ) \(lastNameArray[1])"
+        }
+        else{
+            cell.labelArtist.text = "\(Defaults.getLocalizedString(key: "byArtist")): \(firstName ?? Defaults.getLocalizedString(key: "noInformation")) \(lastName ?? Defaults.getLocalizedString(key: "noInformation"))"
+        }
         cell.labelArtist.adjustsFontSizeToFitWidth = true
         
         cell.buttonNavigate.layer.borderWidth = 0.5
         cell.buttonNavigate.layer.cornerRadius = 4
         cell.buttonNavigate.layer.borderColor = UIColor.gray.cgColor
         cell.buttonNavigate.setTitle(Defaults.getLocalizedString(key: "navigate"), for: .normal)
+        cell.buttonNavigate.tag = indexPath.row
+        cell.buttonNavigate.addTarget(self, action: #selector(TableViewController.buttonNavigatePressed(_:)), for: .touchUpInside)
+        
+        cell.selectionStyle = .blue
         
         return cell
+    }
+    func buttonNavigatePressed(_ sender: UIButton) {
+        
+        let coordinate = CLLocationCoordinate2DMake(ArtPieces.artPieces[sender.tag].latitude, ArtPieces.artPieces[sender.tag].longitude)
+        let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinate, addressDictionary:nil))
+        mapItem.name = ArtPieces.artPieces[sender.tag].locationName
+        
+        mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving])
+        
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -61,9 +88,10 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         self.performSegue(withIdentifier: segueTable, sender: self)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewWillAppear(animated)

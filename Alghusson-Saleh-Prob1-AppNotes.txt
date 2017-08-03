@@ -15,31 +15,28 @@ Features not working properly:
 
 Features to add:
 
-		* Provide two versions of custom tab bar icons. Provide icons for both the selected and unselected states. The selected icon is often a filled-in version of the unselected icon.
-		* Persistence
-		* App icon
+		* support multiple flags for language selection based on region
 		* Search button
 		* Speech synth
 		* Add sommerville/other cities data
 		* Localization: Add right to left support for arabic/hebrew
 
+		About View:
+		Detail View:
+			* Insert map
+			* Change the 3 labels to textview
+			* More info button
 
 		Map View:
       * Highlight Cambridge
 			* highlight zip codes
 			* Cambridge button
 			* User location button
-		List View:
-		Detail View:
-			* Change the 3 labels to textview
-			* More info button
-		About View:
-			* About the app
-			* Add note about approximate coordinates
-			* Link to data
 		Settings View:
 			* Night mode?
 			* Custom pin colors app if it has a base language that's not supported.
 			* Support Larger Text
+		Table View:
+
 Known Bugs:
 		* Annotation only shows 1 art piece. Even if the location has multiple

@@ -45,12 +45,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         if let array = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? [AnyObject] {
             //if exists in documents
-            
             ArtPieces.artPieces = array as! [ArtPiece]
         }
         else {
             //else parse and store it
-            
             JSONParser.parseJSON()
             NSKeyedArchiver.archiveRootObject(ArtPieces.artPieces, toFile: filePath)
         }

@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   ArtNavigator
 
@@ -6,24 +6,43 @@
   Copyright © 2017 saleh. All rights reserved.
 */
 
-//keys will always be lower case
 
 //AboutViewController.swift
 "aboutMe" = "שלום, אני צָלח";
-"git" = "http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html";
 
 //DetailViewController.swift
-//ListViewController.swift
+"navigate" = "עִברִית";;
+"location" = "עִברִית";
+"noInformation" = "עִברִית";
+"locationDescription" = "עִברִית";
+"address" = "עִברִית";
+"descriptionOfTheArtPiece" = "עִברִית";
+"locatedIndoors" = "עִברִית";
+"locatedOutdoors" = "עִברִית";
+"category" = "עִברִית";
+"objectType" = "עִברִית";
+"material" = "עִברִית";
+"byArtist" = "עִברִית";
+"byArtists" = "עִברִית";
+
 //MapViewController.swift
 "map" = "עִברִית";
 "list" = "עִברִית";
 "settings" = "עִברִית";
 "about" = "עִברִית";
 "detail" = "עִברִית";
+"back" = "עִברִית";
 
 //SettingsViewController.swift
 "nightMode" = "עִברִית";
 "resultsPerPage" = "עִברִית";
 "save" = "עִברִית";
-"language" = "עִברִית\nLanguage";
+"language" = "עִברִית";
 "restart" = "עִברִית";
+
+//TableViewController.swift
+
+//ArtPieces.swift
+"sculpture" = "עִברִית";
+"mural" = "עִברִית";
+"electronicMedia" = "עִברִית";

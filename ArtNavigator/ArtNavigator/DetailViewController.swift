@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class DetailViewController: UIViewController {
     
@@ -36,15 +37,11 @@ class DetailViewController: UIViewController {
         
         self.view.backgroundColor = UIColor.white
         
-        
-        
         setViews()
-
     }
     
     func setViews() {
         
-        //navigate bar
         self.title = "\(artPiece?.title ?? "error: title nil") - \(artPiece?.year ?? "error: year nil")"
         let labelTitle = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
         labelTitle.text = self.title
@@ -53,9 +50,10 @@ class DetailViewController: UIViewController {
         labelTitle.backgroundColor = UIColor.clear
         labelTitle.adjustsFontSizeToFitWidth = true
         self.navigationItem.titleView = labelTitle
+        self.navigationController?.navigationBar.backItem?.title = Defaults.getLocalizedString(key: "back")
         
         //button
-        buttonNavigate.layer.borderWidth = 2
+        buttonNavigate.layer.borderWidth = 1
         buttonNavigate.layer.cornerRadius = 4
         buttonNavigate.layer.borderColor = UIColor.black.cgColor
         buttonNavigate.setTitle(Defaults.getLocalizedString(key: "navigate"), for: .normal)
@@ -82,15 +80,27 @@ class DetailViewController: UIViewController {
         let firstName = artPiece?.firstName
         let lastName = artPiece?.lastName
         
-        if firstName?.range(of:"/") != nil {
-            print("exists mult")
+        if (firstName?.range(of:"/") != nil && lastName?.range(of:"/") != nil) {
+            let firstNameArray : [String] = firstName!.components(separatedBy: "/")
+            let lastNameArray : [String] = lastName!.components(separatedBy: "/")
+            
+            labelArtistName.text = "\(Defaults.getLocalizedString(key: "byArtists")): \(firstNameArray[0] ) \(lastNameArray[0] ) & \(firstNameArray[1] ) \(lastNameArray[1])"
         }
-        if lastName?.range(of:"/") != nil {
-            print("exists mult2")
+        else{
+            labelArtistName.text = "\(Defaults.getLocalizedString(key: "byArtist")): \(firstName ?? Defaults.getLocalizedString(key: "noInformation")) \(lastName ?? Defaults.getLocalizedString(key: "noInformation"))"
         }
         
-        labelArtistName.text = "\(Defaults.getLocalizedString(key: "byArtist")): \(artPiece?.firstName ?? Defaults.getLocalizedString(key: "noInformation")) \(artPiece?.lastName ?? Defaults.getLocalizedString(key: "noInformation"))"
+        
     }
+    
+    @IBAction func buttonNavigatePressed(_ sender: UIButton) {
+        let coordinate = CLLocationCoordinate2DMake(artPiece!.latitude, artPiece!.longitude)
+        let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinate, addressDictionary:nil))
+        mapItem.name = artPiece!.locationName
+        
+        mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving])
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
