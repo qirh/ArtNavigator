@@ -1,18 +1,20 @@
 
 Features not working properly:
-		* nil
+		* Button over map in details
+Known Bugs:
+		* Annotation only shows 1 art piece. Even if the location has multiple
 
 Features to add:
-		** Show More Button
-		** Search button
-		** Different views for the map
-		** Localization: Add right to left support for arabic/hebrew
+		General:
+			** Show More Button
+			** Searching the table
+			** Sorting the table
+			** Different views for the map
+			** Localization: Add right to left support for ar/he
 
-		* Support multiple flags for language selection based on region		
-		* Speech synth
-		* Add sommerville/other cities data
-
-
+			* Support multiple flags for language selection based on region		
+			* Speech synth
+			* Add somervill/other cities data
 		About View:
 		Detail View:
 			* Change the 3 labels to textview
@@ -28,6 +30,3 @@ Features to add:
 
 		Table View:
 			* variable cell size
-
-Known Bugs:
-		* Annotation only shows 1 art piece. Even if the location has multiple
