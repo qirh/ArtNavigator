@@ -479,8 +479,8 @@ Steel</string>
                                                 </connections>
                                             </button>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JO-mH-0qI">
-                                                <rect key="frame" x="327" y="343" width="46" height="30"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.39695202460000001" colorSpace="calibratedWhite"/>
+                                                <rect key="frame" x="312" y="343" width="46" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.83632488423692841" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="buttonArtPiecePressed:" destination="kqG-Dj-Cvh" eventType="touchUpInside" id="o2s-Nk-l2W"/>
@@ -515,7 +515,7 @@ Steel</string>
                                             <constraint firstAttribute="bottom" secondItem="cV5-js-iYK" secondAttribute="bottom" constant="10" id="aQl-pZ-mse"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0A3-Se-Fcr" secondAttribute="trailing" constant="20" id="aYu-kP-nFG"/>
                                             <constraint firstItem="Teq-mY-BY6" firstAttribute="centerX" secondItem="5oY-GO-eti" secondAttribute="centerX" id="e9e-wu-awT"/>
-                                            <constraint firstAttribute="trailing" secondItem="1JO-mH-0qI" secondAttribute="trailing" constant="10" id="fB0-Ve-dRH"/>
+                                            <constraint firstAttribute="trailing" secondItem="1JO-mH-0qI" secondAttribute="trailing" constant="25" id="fB0-Ve-dRH"/>
                                             <constraint firstItem="2x8-uL-6xo" firstAttribute="top" secondItem="dHi-o5-o6p" secondAttribute="bottom" constant="20" id="gRw-Ws-uNu"/>
                                             <constraint firstItem="1JO-mH-0qI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5oY-GO-eti" secondAttribute="leading" constant="250" id="hUp-PD-Hwa"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cV5-js-iYK" secondAttribute="trailing" constant="20" id="iU4-bb-fNd"/>
@@ -567,6 +567,7 @@ Steel</string>
                         <outlet property="labelMaterial" destination="LTg-uR-mb6" id="zRM-Dh-8SM"/>
                         <outlet property="labelObjectType" destination="xpc-4S-mKz" id="rMo-35-pt5"/>
                         <outlet property="mapView" destination="PRv-JX-kKN" id="6VN-E5-C32"/>
+                        <outlet property="viewContent" destination="5oY-GO-eti" id="S2X-ao-DOA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CH2-eb-bi1" userLabel="First Responder" sceneMemberID="firstResponder"/>

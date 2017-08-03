@@ -33,6 +33,8 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var labelArtistName: UILabel!
     @IBOutlet weak var buttonShowMore: UIButton!
     
+    @IBOutlet weak var viewContent: UIView!
+    
     var showMoreIsPressed = true
     var artPiece: ArtPiece? = nil
     
@@ -42,13 +44,13 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         let cambridgeCoordinates = CLLocation(latitude: (artPiece?.latitude)!, longitude: (artPiece?.longitude)!)
         
         buttonArtPiece.setTitle(Defaults.getLocalizedString(key: "artPiece"), for: .normal)
-        buttonArtPiece.layer.shadowRadius =  3.0
-        buttonArtPiece.layer.shadowColor =  UIColor.black.cgColor
-        buttonArtPiece.layer.shadowOpacity =  0.3
-        buttonArtPiece.layer.borderColor = UIColor.black.withAlphaComponent(0.5).cgColor
-        buttonArtPiece.layer.borderWidth = 1
-        self.view.addSubview(buttonArtPiece)
-        self.view.bringSubview(toFront: self.buttonArtPiece)
+        //buttonArtPiece.layer.shadowRadius =  3.0
+        //buttonArtPiece.layer.shadowColor =  UIColor.black.cgColor
+        //buttonArtPiece.layer.shadowOpacity =  0.3
+        buttonArtPiece.layer.borderColor = UIColor.black.withAlphaComponent(1).cgColor
+        buttonArtPiece.layer.borderWidth = 3
+        viewContent.addSubview(buttonArtPiece)
+        mapView.addSubview(buttonArtPiece)
         
         centerMapOnLocation(location: cambridgeCoordinates)
         mapView.addAnnotation(artPiece!)
@@ -113,10 +115,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         
         boldedString = NSMutableAttributedString()
         labelAddress.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "address")):\n ").normal("\(artPiece?.address ?? Defaults.getLocalizedString(key: "noInformation"))")
-        /*
-        labelDescription.text = "\(Defaults.getLocalizedString(key: "descriptionOfTheArtPiece"))"
-        labelDescriptionText.text = "\(artPiece?.description ?? Defaults.getLocalizedString(key: "noInformation"))"
-        */
+       
         boldedString = NSMutableAttributedString()
         if(artPiece?.isInterior)! {
             labelInteriorExterior.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "locatedIndoors"))")
@@ -165,12 +164,10 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving])
     }
     @IBAction func buttonArtPiecePressed(_ sender: UIButton) {
+        print("pressed")
         centerMapOnLocation(location: CLLocation(latitude: (artPiece?.latitude)!, longitude: (artPiece?.longitude)!))
     }
-    
-    
     @IBAction func buttonShowMorePressed(_ sender: UIButton) {
-        print("pressed")
         showMoreInfo()
     }
     func showMoreInfo() {
