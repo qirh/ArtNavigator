@@ -10,24 +10,25 @@
 "aboutMe" = "";
 
 //DetailViewController.swift
-"navigate" = "";
-"location" = "";
-"noInformation" = "";
-"locationDescription" = "";
-"address" = "";
-"descriptionOfTheArtPiece" = "";
+"navigate" = "Navegar";
+"location" = "Locação ";
+"noInformation" = "Sem Informação";
+"locationDescription" = "Descrição do  Local";
+"address" = "Endereço ";
+"descriptionOfTheArtPiece" = "Descrição da Arte";
 "locatedIndoors" = "";
 "locatedOutdoors" = "";
-"category" = "";
-"objectType" = "";
+"category" = "Categoria";
+"objectType" = "Tipo De Objeto";
 "material" = "";
-"byArtist" = "";
-"byArtists" = "";
-"showMore" = "";
-"showLess" = "";
+"byArtist" = "Artista";
+"byArtists" = "Artistas";
+"showMore" = "Mais";
+"showLess" = "Menos";
+"artPiece" = "A obra";
 
 //MapViewController.swift
-"map" = "";
+"map" = "Mapa";
 "list" = "";
 "settings" = "";
 "about" = "";
