@@ -1,0 +1,42 @@
+
+
+Notes:
+	Custom icon guide:
+		https://developer.apple.com/ios/human-interface-guidelines/graphics/custom-icons/
+	Look at photos app for layout inspiration
+
+As far as I know, I have implemented everything required except:
+		* nil
+
+Features not working properly:
+		* nil
+
+Features to add:
+		** Show More Button
+		** Search button
+		** Different views for the map
+		** Localization: Add right to left support for arabic/hebrew
+
+		* Support multiple flags for language selection based on region		
+		* Speech synth
+		* Add sommerville/other cities data
+
+
+		About View:
+		Detail View:
+			* Change the 3 labels to textview
+			* More info button
+
+		Map View:
+      			* Highlight Cambridge
+			* highlight zip codes
+			* User location button
+		Settings View:
+			* Night mode?
+			* Custom pin colors app if it has a base language that's not supported.
+
+		Table View:
+			* variable cell size
+
+Known Bugs:
+		* Annotation only shows 1 art piece. Even if the location has multiple
