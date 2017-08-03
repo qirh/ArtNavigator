@@ -413,7 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.harvard.csci-s65.ArtNavigator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sal7/Git/c65/assignment-5-almto3/ArtNavigator/ArtNavigator/Obj-CAndSwiftBridging.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Obj-CAndSwiftBridging.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -433,7 +433,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.harvard.csci-s65.ArtNavigator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sal7/Git/c65/assignment-5-almto3/ArtNavigator/ArtNavigator/Obj-CAndSwiftBridging.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Obj-CAndSwiftBridging.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
