@@ -45,12 +45,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         buttonCambridge.setTitle(Defaults.getLocalizedString(key: "cambridge"), for: .normal)
         
-        buttonCambridge.layer.shadowRadius =  3.0
+        buttonCambridge.layer.shadowRadius =  2.0
         buttonCambridge.layer.shadowColor =  UIColor.black.cgColor
         buttonCambridge.layer.shadowOpacity =  0.3
         buttonCambridge.layer.borderColor = UIColor.black.withAlphaComponent(0.5).cgColor
-        buttonCambridge.layer.borderWidth = 1
-        self.view.addSubview(buttonCambridge)
+        buttonCambridge.layer.borderWidth = 0.8
         
         
         if let array = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? [AnyObject] {

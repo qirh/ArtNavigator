@@ -43,21 +43,13 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         
         let cambridgeCoordinates = CLLocation(latitude: (artPiece?.latitude)!, longitude: (artPiece?.longitude)!)
         
-        buttonArtPiece.setTitle(Defaults.getLocalizedString(key: "artPiece"), for: .normal)
-        //buttonArtPiece.layer.shadowRadius =  3.0
-        //buttonArtPiece.layer.shadowColor =  UIColor.black.cgColor
-        //buttonArtPiece.layer.shadowOpacity =  0.3
-        buttonArtPiece.layer.borderColor = UIColor.black.withAlphaComponent(1).cgColor
-        buttonArtPiece.layer.borderWidth = 3
-        viewContent.addSubview(buttonArtPiece)
-        mapView.addSubview(buttonArtPiece)
-        
         centerMapOnLocation(location: cambridgeCoordinates)
         mapView.addAnnotation(artPiece!)
         mapView.delegate = self
         
-        setViews()
+        //setViews()
     }
+    
     func centerMapOnLocation(location: CLLocation, radius: CLLocationDistance = 500) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, radius * 2.3, radius * 2.3)
         mapView.setRegion(coordinateRegion, animated: true)
@@ -99,6 +91,13 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         self.navigationItem.titleView = labelTitle
         self.navigationController?.navigationBar.backItem?.title = Defaults.getLocalizedString(key: "back")
         
+        buttonArtPiece.setTitle(Defaults.getLocalizedString(key: "artPiece"), for: .normal)
+        buttonArtPiece.layer.shadowRadius =  2.0
+        buttonArtPiece.layer.shadowColor =  UIColor.black.cgColor
+        buttonArtPiece.layer.shadowOpacity =  0.3
+        buttonArtPiece.layer.borderColor = UIColor.black.withAlphaComponent(0.5).cgColor
+        buttonArtPiece.layer.borderWidth = 0.8
+        
         
         //button
         buttonNavigate.layer.borderWidth = 1
@@ -107,11 +106,16 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         buttonNavigate.setTitle(Defaults.getLocalizedString(key: "navigate"), for: .normal)
         
         
+        
         var boldedString = NSMutableAttributedString()
         labelLocationName.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "location")): ").normal(artPiece?.locationName ?? Defaults.getLocalizedString(key: "noInformation"))
         
+        print("label1 = \(boldedString.bold("\(Defaults.getLocalizedString(key: "location")): ").normal(artPiece?.locationName ?? Defaults.getLocalizedString(key: "noInformation")))")
+        
         boldedString = NSMutableAttributedString()
         labelLocationDescription.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "locationDescription")):\n").normal("\(artPiece?.locationDescription ?? Defaults.getLocalizedString(key: "noInformation"))")
+        
+        print("label2 = \(boldedString.bold("\(Defaults.getLocalizedString(key: "locationDescription")):\n").normal("\(artPiece?.locationDescription ?? Defaults.getLocalizedString(key: "noInformation"))"))")
         
         boldedString = NSMutableAttributedString()
         labelAddress.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "address")):\n ").normal("\(artPiece?.address ?? Defaults.getLocalizedString(key: "noInformation"))")
@@ -149,11 +153,6 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         else{
             labelArtistName.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "byArtist")): ").normal("\(firstName ?? Defaults.getLocalizedString(key: "noInformation")) \(lastName ?? Defaults.getLocalizedString(key: "noInformation"))")
         }
-        
-        buttonShowMore.layer.borderWidth = 0.5
-        buttonShowMore.layer.cornerRadius = 4
-        buttonShowMore.layer.borderColor = UIColor.black.cgColor
-        buttonShowMore.setTitle(Defaults.getLocalizedString(key: "showMore"), for: .normal)
     }
     
     @IBAction func buttonNavigatePressed(_ sender: UIButton) {
@@ -166,9 +165,6 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     @IBAction func buttonArtPiecePressed(_ sender: UIButton) {
         print("pressed")
         centerMapOnLocation(location: CLLocation(latitude: (artPiece?.latitude)!, longitude: (artPiece?.longitude)!))
-    }
-    @IBAction func buttonShowMorePressed(_ sender: UIButton) {
-        showMoreInfo()
     }
     func showMoreInfo() {
         if(!showMoreIsPressed) {     //show less pressed
