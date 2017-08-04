@@ -42,6 +42,12 @@
 "save" = "إحفظ";
 "language" = "اللغة\nLanguage";
 "restart" = "سيتم تغيير اللغة بعد إعادة تشغيل التطبيق";
+"sortBy" = "رتّب على حسب";
+"largeText" = "الخط الكبير";
+"title" = "العنوان";
+"artist" = "الفنان";
+"tableSettings" = "إعدادات الجدول";
+"appSettings" = "إعدادات التطبيق";
 
 //TableViewController.swift
 

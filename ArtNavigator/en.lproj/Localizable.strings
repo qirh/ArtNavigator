@@ -34,7 +34,7 @@
 
 //MapViewController.swift
 "map" = "Map";
-"list" = "List";
+"list" = "Table";
 "settings" = "Settings";
 "about" = "About Me";
 "detail" = "Detail";
@@ -47,6 +47,12 @@
 "save" = "save";
 "language" = "Language";
 "restart" = "Language will change upon restart";
+"sortBy" = "Sort By";
+"largeText" = "Large Text";
+"title" = "Title";
+"artist" = "Artist";
+"tableSettings" = "Table Settings";
+"appSettings" = "App Settings";
 
 //TableViewController.swift
 

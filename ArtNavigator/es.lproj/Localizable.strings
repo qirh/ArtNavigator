@@ -42,6 +42,12 @@
 "save" = "guardar";
 "language" = "El idioma\nLanguage";
 "restart" = "El idioma va a cambiar después de reiniciar";
+"sortBy" = "Ordenar Por";
+"largeText" = "Texto Grande";
+"title" = "Título";
+"artist" = "Artista";
+"tableSettings" = "Ajustes de la Lista";
+"appSettings" = "Ajustes del App";
 
 //TableViewController.swift
 
