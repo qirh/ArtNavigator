@@ -24,6 +24,10 @@
 "material" = "עִברִית";
 "byArtist" = "עִברִית";
 "byArtists" = "עִברִית";
+"showMore" = "";
+"showLess" = "";
+"artPiece" = "";
+"accessionNumber" = "";
 
 //MapViewController.swift
 "map" = "עִברִית";
