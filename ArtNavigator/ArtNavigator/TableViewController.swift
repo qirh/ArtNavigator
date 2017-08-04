@@ -24,6 +24,11 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         tableView.delegate = self
         tableView.dataSource = self
+        sortTable()
+    }
+    func sortTable() {
+        ArtPieces.artPieces.sort() { $0.title! < $1.title! }
+        //fruitList.reloadData(); // notify the table view the data has changed
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -10,20 +10,46 @@ import UIKit
 
 class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    @IBOutlet weak var viewNightMode: UIView!
-    @IBOutlet weak var labelNightMode: UILabel!
-    @IBOutlet weak var switchNightMode: UISwitch!
+    @IBOutlet weak var viewScroll: UIScrollView!
+    @IBOutlet weak var viewTableSettings: UIView!
     
+    //viewTableSettings
+    @IBOutlet weak var labelTableSettings: UILabel!
     @IBOutlet weak var viewResults: UIView!
+    @IBOutlet weak var viewSort: UIView!
+    
+    //viewTableSettings --> viewResults
     @IBOutlet weak var labelResults: UILabel!
     @IBOutlet weak var labelResultsNumbers: UILabel!
     @IBOutlet weak var sliderResults: UISlider!
     
+    //viewTableSettings --> viewSort
+    @IBOutlet weak var labelSort: UILabel!
+    @IBOutlet weak var segmentSort: UISegmentedControl!
+    
+    
+    @IBOutlet weak var viewAppSettings: UIView!
+    
+    //viewAppSettings
+    @IBOutlet weak var labelAppSettings: UILabel!
+    @IBOutlet weak var viewNightMode: UIView!
+    @IBOutlet weak var viewLargeText: UIView!
+    @IBOutlet weak var viewLanguage: UIView!
+    
+    //viewAppSettings --> viewNightMode
+    @IBOutlet weak var labelNightMode: UILabel!
+    @IBOutlet weak var switchNightMode: UISwitch!
+    
+    //viewAppSettings --> viewLargeTexr
+    @IBOutlet weak var labelLargeText: UILabel!
+    @IBOutlet weak var switchLargeText: UISwitch!
+    
+    //viewAppSettings --> viewLanguage
     @IBOutlet weak var labelLanguage: UILabel!
     @IBOutlet weak var pickerLanguage: UIPickerView!
     
+    //buttonSave
     @IBOutlet weak var buttonSave: UIButton!
-    
     
     override func viewDidLoad() {
         
@@ -31,10 +57,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         self.pickerLanguage.delegate = self
         self.pickerLanguage.dataSource = self
-        
-        buttonSave.layer.borderWidth = 0.7
-        buttonSave.layer.cornerRadius = 5
-        
         
         Defaults.setDefaultsVaribles()
         setViews()
@@ -131,30 +153,61 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         Defaults.sliderValue = Int(sliderValueFloat)
         labelResultsNumbers.text = "\(Defaults.sliderValue)"
     }
-    @IBAction func switchChanged(_ sender: UISwitch) {
+    @IBAction func switchNightModeChanged(_ sender: UISwitch) {
         Defaults.nightModeOn = sender.isOn
     }
+    @IBAction func switchLargeTextChanged(_ sender: UISwitch) {
+        Defaults.largeTextOn = sender.isOn
+    }
+    @IBAction func segmentedControlChanged(_ sender: UISegmentedControl) {
+        Defaults.sortByValue = sender.selectedSegmentIndex
+    }
+    
     
     @IBAction func buttonSavePressed(_ sender: Any) {
         let oldLanguageSelectedCode = Defaults.get(key: "languageSelectedCode")
         Defaults.set(key: "sliderValue", value: Defaults.sliderValue)
-        Defaults.set(key: "languageSelectedCode", value: Defaults.languageSelectedCode)
+        Defaults.set(key: "sortByValue", value: Defaults.sortByValue)
+        
         Defaults.set(key: "nightModeOn", value: Defaults.nightModeOn)
+        Defaults.set(key: "largeTextOn", value: Defaults.largeTextOn)
+        
+        Defaults.set(key: "languageSelectedCode", value: Defaults.languageSelectedCode)
+        
         Defaults.setDefaultsVaribles()
+        
         if oldLanguageSelectedCode != Defaults.languageSelectedCode{
             toast()
         }
     }
     func setViews() {
-        labelLanguage.text = Defaults.getLocalizedString(key: "language")
+        labelTableSettings.text = Defaults.getLocalizedString(key: "tableSettings")
+        //
+        labelResults.text = "\(Defaults.getLocalizedString(key: "resultsPerPage")):"
         labelResultsNumbers.text = "\(Defaults.sliderValue)"
-        switchNightMode.isOn = Defaults.nightModeOn
         sliderResults.setValue(Float(Defaults.sliderValue), animated: true)
+        labelSort.text = "\(Defaults.getLocalizedString(key: "sortBy")):"
         
+        segmentSort.selectedSegmentIndex = Defaults.sortByValue
+        segmentSort.setTitle(Defaults.getLocalizedString(key: "title"), forSegmentAt: 0)
+        segmentSort.setTitle(Defaults.getLocalizedString(key: "category"), forSegmentAt: 1)
+        segmentSort.setTitle(Defaults.getLocalizedString(key: "artist"), forSegmentAt: 2)
+        
+        
+        
+        labelAppSettings.text = Defaults.getLocalizedString(key: "appSettings")
+        //
         labelNightMode.text = Defaults.getLocalizedString(key: "nightMode")
-        labelResults.text = Defaults.getLocalizedString(key: "resultsPerPage")
-        buttonSave.setTitle(Defaults.getLocalizedString(key: "save"), for: .normal)
+        switchNightMode.isOn = Defaults.nightModeOn
         
+        labelLargeText.text = Defaults.getLocalizedString(key: "largeText")
+        switchLargeText.isOn = Defaults.largeTextOn
+        
+        labelLanguage.text = Defaults.getLocalizedString(key: "language")
+        
+        buttonSave.setTitle(Defaults.getLocalizedString(key: "save"), for: .normal)
+        buttonSave.layer.borderWidth = 0.7
+        buttonSave.layer.cornerRadius = 5
         
         switch Defaults.languageSelectedCode {
             case "ar":
@@ -171,6 +224,11 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 pickerLanguage.selectRow(1, inComponent: 0, animated: true)
         }
         
+        if(Defaults.languageSelectedCode == "ar" || Defaults.languageSelectedCode == "he"){
+            labelAppSettings.textAlignment = .right
+            labelTableSettings.textAlignment = .right
+            labelResults.textAlignment = .right
+        }
     }
     func toast() {
         let options: NSDictionary = [

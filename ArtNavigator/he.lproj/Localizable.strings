@@ -40,6 +40,12 @@
 "save" = "עִברִית";
 "language" = "עִברִית";
 "restart" = "עִברִית";
+"sortBy" = "رتّب على حسب";
+"largeText" = "الخط الكبير";
+"title" = "العنوان";
+"artist" = "الفنان";
+"tableSettings" = "Table Settings";
+"appSettings" = "App Settings";
 
 //TableViewController.swift
 
