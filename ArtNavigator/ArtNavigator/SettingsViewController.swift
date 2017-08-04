@@ -59,6 +59,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         self.pickerLanguage.dataSource = self
         
         Defaults.setDefaultsVaribles()
+        viewTableSettings.layer.borderWidth = 0.5
+        viewAppSettings.layer.borderWidth = 1
         setViews()
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -97,21 +99,21 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         var languageSelected: String
         switch row {
-        case 0:               //The following are the ios language codes: ar, en, es, he and pt
-            Defaults.languageSelectedCode = "ar"
-            myImageView.image = UIImage(named: Defaults.languageSelectedCode)
-        case 1:
-            Defaults.languageSelectedCode = "en"
-            myImageView.image = UIImage(named: Defaults.languageSelectedCode)
-        case 2:
-            Defaults.languageSelectedCode = "es"
-            myImageView.image = UIImage(named: Defaults.languageSelectedCode)
-        case 3:
-            Defaults.languageSelectedCode = "he"
-            myImageView.image = UIImage(named: Defaults.languageSelectedCode)
-        case 4:
-            Defaults.languageSelectedCode = "pt"
-            myImageView.image = UIImage(named: Defaults.languageSelectedCode)
+            case 0:               //The following are the ios language codes: ar, en, es, he and pt
+                Defaults.languageSelectedCode = "ar"
+                myImageView.image = UIImage(named: Defaults.languageSelectedCode)
+            case 1:
+                Defaults.languageSelectedCode = "en"
+                myImageView.image = UIImage(named: Defaults.languageSelectedCode)
+            case 2:
+                Defaults.languageSelectedCode = "es"
+                myImageView.image = UIImage(named: Defaults.languageSelectedCode)
+            case 3:
+                Defaults.languageSelectedCode = "he"
+                myImageView.image = UIImage(named: Defaults.languageSelectedCode)
+            case 4:
+                Defaults.languageSelectedCode = "pt"
+                myImageView.image = UIImage(named: Defaults.languageSelectedCode)
         
         default:
             Defaults.languageSelectedCode = "xx"
@@ -165,6 +167,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     
     @IBAction func buttonSavePressed(_ sender: Any) {
+        print("pressed")
+        
         let oldLanguageSelectedCode = Defaults.get(key: "languageSelectedCode")
         Defaults.set(key: "sliderValue", value: Defaults.sliderValue)
         Defaults.set(key: "sortByValue", value: Defaults.sortByValue)
@@ -228,6 +232,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             labelAppSettings.textAlignment = .right
             labelTableSettings.textAlignment = .right
             labelResults.textAlignment = .right
+            labelSort.textAlignment = .right
         }
     }
     func toast() {

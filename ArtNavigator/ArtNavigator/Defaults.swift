@@ -38,7 +38,7 @@ class Defaults {
     private init() {}
     
     static func setDefaultsVaribles() {
-        printDefaults()
+        //printDefaults()
         if defaults.object(forKey: "ranBefore") == nil && !ranBefore {
             firstTimeRun()
         }
@@ -60,10 +60,10 @@ class Defaults {
         if(languageSelectedCode != "ar" && languageSelectedCode != "en" && languageSelectedCode != "es" && languageSelectedCode != "he" && languageSelectedCode != "pt"){
             languageSelectedCode = "en"
         }
-        printDefaults()
+        //printDefaults()
     }
     static func firstTimeRun() {
-        print("**\nfirstTimeRun\n**\n")
+        //print("**\nfirstTimeRun\n**\n")
         if supportedLanguages[languageSelectedCode] != nil {
             defaults.register(defaults: ["languageSelectedCode" : languageSelectedCode])
         }
