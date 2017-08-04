@@ -27,8 +27,14 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         sortTable()
     }
     func sortTable() {
-        ArtPieces.artPieces.sort() { $0.title! < $1.title! }
-        //fruitList.reloadData(); // notify the table view the data has changed
+        switch Defaults.sortByValue {
+            case 1:
+                ArtPieces.artPieces.sort() { $0.category.rawValue < $1.category.rawValue }
+            case 2:
+                ArtPieces.artPieces.sort() { $0.lastName! < $1.lastName! }
+            default:
+                ArtPieces.artPieces.sort() { $0.title! < $1.title! }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -101,6 +107,9 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         self.tabBarController?.tabBar.isHidden = false
+        print("here")
+        sortTable()
+        tableView.reloadData()
         super.viewWillAppear(animated)
     }
     override func viewWillDisappear(_ animated: Bool) {
