@@ -26,6 +26,9 @@
 "showMore" = "Más";
 "showLess" = "Menos";
 "artPiece" = "La obra";
+"generalInformation" = "Información General";
+"detailedInformation" = "Información Detallada";
+"accessionNumber" = "El Numero del Accession";
 
 //MapViewController.swift
 "map" = "Mapa";
@@ -40,7 +43,7 @@
 "nightMode" = "Modo de la noche";
 "resultsPerPage" = "Resultados por página";
 "save" = "guardar";
-"language" = "El idioma\nLanguage";
+"language" = "Idioma\nLanguage";
 "restart" = "El idioma va a cambiar después de reiniciar";
 "sortBy" = "Ordenar Por";
 "largeText" = "Texto Grande";

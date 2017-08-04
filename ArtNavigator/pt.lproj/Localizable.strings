@@ -26,6 +26,7 @@
 "showMore" = "Mais";
 "showLess" = "Menos";
 "artPiece" = "A obra";
+"accessionNumber" = "";
 
 //MapViewController.swift
 "map" = "Mapa";
@@ -40,14 +41,14 @@
 "nightMode" = "Modo da noite";
 "resultsPerPage" = "";
 "save" = "";
-"language" = "";
+"language" = "Linguagem";
 "restart" = "";
-"sortBy" = "رتّب على حسب";
-"largeText" = "الخط الكبير";
-"title" = "العنوان";
-"artist" = "الفنان";
-"tableSettings" = "Table Settings";
-"appSettings" = "App Settings";
+"sortBy" = "";
+"largeText" = "";
+"title" = "";
+"artist" = "";
+"tableSettings" = "";
+"appSettings" = "";
 
 //TableViewController.swift
 

@@ -110,12 +110,9 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         var boldedString = NSMutableAttributedString()
         labelLocationName.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "location")): ").normal(artPiece?.locationName ?? Defaults.getLocalizedString(key: "noInformation"))
         
-        print("label1 = \(boldedString.bold("\(Defaults.getLocalizedString(key: "location")): ").normal(artPiece?.locationName ?? Defaults.getLocalizedString(key: "noInformation")))")
-        
         boldedString = NSMutableAttributedString()
         labelLocationDescription.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "locationDescription")):\n").normal("\(artPiece?.locationDescription ?? Defaults.getLocalizedString(key: "noInformation"))")
         
-        print("label2 = \(boldedString.bold("\(Defaults.getLocalizedString(key: "locationDescription")):\n").normal("\(artPiece?.locationDescription ?? Defaults.getLocalizedString(key: "noInformation"))"))")
         
         boldedString = NSMutableAttributedString()
         labelAddress.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "address")):\n ").normal("\(artPiece?.address ?? Defaults.getLocalizedString(key: "noInformation"))")

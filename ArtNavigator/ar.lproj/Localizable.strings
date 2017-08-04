@@ -26,6 +26,9 @@
 "showMore" = "أظهر التفاصيل";
 "showLess" = "إخفِ التفاصيل";
 "artPiece" = "العمل الفني";
+"generalInformation" = "المعلومات العامة";
+"detailedInformation" = "المعلومات الدقيقة";
+"accessionNumber" = "رقم العمل";
 
 //MapViewController.swift
 "map" = "الخريطة";

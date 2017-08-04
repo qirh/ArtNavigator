@@ -31,6 +31,9 @@
 "showMore" = "Show More";
 "showLess" = "Show Less";
 "artPiece" = "Art piece";
+"generalInformation" = "General Information";
+"detailedInformation" = "Detailed Information";
+"accessionNumber" = "Accession Number";
 
 //MapViewController.swift
 "map" = "Map";
