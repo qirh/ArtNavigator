@@ -54,13 +54,14 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
         self.pickerLanguage.delegate = self
         self.pickerLanguage.dataSource = self
         
         Defaults.setDefaultsVaribles()
         viewTableSettings.layer.borderWidth = 0.5
-        viewAppSettings.layer.borderWidth = 1
+        viewTableSettings.layer.borderColor = UIColor.yellow.cgColor
+        viewAppSettings.layer.borderWidth = 0.5
+        viewAppSettings.layer.borderColor = UIColor.yellow.cgColor
         setViews()
     }
     override func viewWillAppear(_ animated: Bool) {

@@ -402,7 +402,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.1197739578112641" green="0.28207828524883538" blue="0.58330182133592323" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="1Xd-7M-UKU" firstAttribute="top" secondItem="Tfr-jb-GKe" secondAttribute="top" id="1et-Iz-Qt2"/>
                                     <constraint firstAttribute="leadingMargin" secondItem="WBj-Sm-chc" secondAttribute="leadingMargin" id="47E-FI-aw0"/>
@@ -568,14 +568,13 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEn-Il-ctr">
-                                                        <rect key="frame" x="10" y="10" width="80" height="40"/>
+                                                        <rect key="frame" x="10" y="10" width="90" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="gxJ-ii-QwN"/>
-                                                            <constraint firstAttribute="width" constant="80" id="qwV-Pt-TFM"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <inset key="titleEdgeInsets" minX="-90" minY="5" maxX="0.0" maxY="5"/>
-                                                        <inset key="imageEdgeInsets" minX="57" minY="10" maxX="5" maxY="10"/>
+                                                        <inset key="imageEdgeInsets" minX="67" minY="10" maxX="5" maxY="10"/>
                                                         <state key="normal" title="Navigate" image="navigationBlue">
                                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -657,7 +656,7 @@ Bla</string>
                                                     <constraint firstItem="hLs-EO-YbI" firstAttribute="top" secondItem="bOH-4N-WMK" secondAttribute="bottom" constant="5" id="kny-Ic-OH7"/>
                                                     <constraint firstItem="igA-Ou-Pb4" firstAttribute="height" secondItem="hLs-EO-YbI" secondAttribute="height" id="lcQ-HH-EMI"/>
                                                     <constraint firstAttribute="trailing" secondItem="JZ4-2M-H5a" secondAttribute="trailing" constant="8" id="mAC-8P-1nt"/>
-                                                    <constraint firstAttribute="trailing" secondItem="LEn-Il-ctr" secondAttribute="trailing" constant="285" id="rR1-Mm-5E4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LEn-Il-ctr" secondAttribute="trailing" constant="275" id="rR1-Mm-5E4"/>
                                                     <constraint firstAttribute="trailing" secondItem="l7W-Y1-cYb" secondAttribute="trailing" constant="10" id="tF8-Ae-t6Z"/>
                                                 </constraints>
                                             </view>
@@ -672,7 +671,7 @@ Bla</string>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detailed Infomation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05K-gd-AHA" userLabel="labelDetailedInfo">
                                                         <rect key="frame" x="8" y="10" width="359" height="21"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -698,14 +697,14 @@ Bla</string>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <string key="text">Material Details:
  dat dat dat</string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tVf-x1-4Pw" userLabel="textViewAddDesc">
                                                         <rect key="frame" x="10" y="329" width="355" height="123"/>
                                                         <string key="text">Add. Desc:
  dat dat dat</string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mau-AO-I8n" userLabel="Size: ">
@@ -718,7 +717,7 @@ Bla</string>
                                                         <rect key="frame" x="10" y="457" width="355" height="133"/>
                                                         <string key="text">About the Work:
  dat dat dat</string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>

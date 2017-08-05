@@ -13,25 +13,26 @@
 "navigate" = "Ir";
 "location" = "Ubicación";
 "noInformation" = "No hay información";
-"locationDescription" = "Descripción de la Ubicación";
+"locationDescription" = "Descripción de la ubicación";
 "address" = "Dirección";
 "descriptionOfTheArtPiece" = "Descripción de la obra de arte";
 "locatedIndoors" = "Instalación en interiores";
 "locatedOutdoors" = "Instalación afuera";
 "category" = "Categoría";
-"objectType" = "Tipo del Objeto";
+"objectType" = "Tipo del objeto";
 "material" = "Material";
-"byArtist" = "del Artista";
-"byArtists" = "de l@s Artistas";
+"byArtist" = "del artista";
+"byArtists" = "de l@s artistas";
 "showMore" = "Más";
 "showLess" = "Menos";
 "artPiece" = "La obra";
 "generalInformation" = "Información General";
 "detailedInformation" = "Información Detallada";
-"accessionNumber" = "El Numero del Accession";
-"additionalDescription" = "";
-"aboutTheWork" = "";
-"materialDetails" = "";
+"accessionNumber" = "El número del accession";
+"additionalDescription" = "Descripción adicional";
+"aboutTheWork" = "Sobre la obra";
+"materialDetails" = "Detalles del material";
+"size" = "Tamaño";
 
 //MapViewController.swift
 "map" = "Mapa";
@@ -47,15 +48,13 @@
 "resultsPerPage" = "Resultados por página";
 "save" = "guardar";
 "language" = "Idioma\nLanguage";
-"restart" = "El idioma va a cambiar después de reiniciar";
-"sortBy" = "Ordenar Por";
-"largeText" = "Texto Grande";
+"restart" = "El idioma cambiará después de reiniciar";
+"sortBy" = "Ordenar por";
+"largeText" = "Texto grande";
 "title" = "Título";
 "artist" = "Artista";
 "tableSettings" = "Ajustes de la Lista";
 "appSettings" = "Ajustes del App";
-
-//TableViewController.swift
 
 //ArtPieces.swift
 "sculpture" = "Escultura";

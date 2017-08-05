@@ -107,15 +107,23 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         
         var boldedString = NSMutableAttributedString()
         labelLocationName.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "location")): ").normal(artPiece?.locationName ?? Defaults.getLocalizedString(key: "noInformation"))
+        labelLocationName.layer.borderWidth = 0.5
+        labelLocationName.layer.cornerRadius = 3
         
         boldedString = NSMutableAttributedString()
         labelAddress.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "address")):\n ").normal("\(artPiece?.address ?? Defaults.getLocalizedString(key: "noInformation"))")
+        labelAddress.layer.borderWidth = 0.5
+        labelAddress.layer.cornerRadius = 3
         
         boldedString = NSMutableAttributedString()
         labelCategory.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "category")):\n").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.category.rawValue ?? Defaults.getLocalizedString(key: "noInformation"))"))")
+        labelCategory.layer.borderWidth = 0.5
+        labelCategory.layer.cornerRadius = 3
         
         boldedString = NSMutableAttributedString()
         labelObjectType.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "objectType")):\n").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.objectType ?? Defaults.getLocalizedString(key: "noInformation"))"))")
+        labelObjectType.layer.borderWidth = 0.5
+        labelObjectType.layer.cornerRadius = 3
         
         boldedString = NSMutableAttributedString()
         if(artPiece?.isInterior)! {
@@ -130,24 +138,38 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         labelDetailedInfo.text = Defaults.getLocalizedString(key: "detailedInformation")
         boldedString = NSMutableAttributedString()
         labelAccNumber.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "accessionNumber")): ").normal("\(artPiece?.accessionNumber ?? Defaults.getLocalizedString(key: "noInformation"))")
+        labelAccNumber.layer.borderWidth = 0.5
+        labelAccNumber.layer.cornerRadius = 3
         
         boldedString = NSMutableAttributedString()
         labelLocationDescription.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "locationDescription")):\n").normal("\(artPiece?.locationDescription ?? Defaults.getLocalizedString(key: "noInformation"))")
+        labelLocationDescription.layer.borderWidth = 0.5
+        labelLocationDescription.layer.cornerRadius = 3
         
         boldedString = NSMutableAttributedString()
         labelMaterial.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "material")): ").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.material ?? Defaults.getLocalizedString(key: "noInformation"))"))")
+        labelMaterial.layer.borderWidth = 0.5
+        labelMaterial.layer.cornerRadius = 3
         
         boldedString = NSMutableAttributedString()
         textViewMaterialDetails.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "materialDetails")):\n ").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.materialDetails ?? Defaults.getLocalizedString(key: "noInformation"))"))")
+        textViewMaterialDetails.layer.borderWidth = 0.5
+        textViewMaterialDetails.layer.cornerRadius = 3
         
         boldedString = NSMutableAttributedString()
         labelSize.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "size")): ").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.size ?? Defaults.getLocalizedString(key: "noInformation"))"))")
+        labelSize.layer.borderWidth = 0.5
+        labelSize.layer.cornerRadius = 3
         
         boldedString = NSMutableAttributedString()
         labelAddDesc.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "additionalDescription")):\n ").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.additionalDescription ?? Defaults.getLocalizedString(key: "noInformation"))"))")
+        labelAddDesc.layer.borderWidth = 0.5
+        labelAddDesc.layer.cornerRadius = 3
         
         boldedString = NSMutableAttributedString()
         labelAboutTheWork.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "aboutTheWork")):\n ").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.materialDetails ?? Defaults.getLocalizedString(key: "noInformation"))"))")
+        labelAboutTheWork.layer.borderWidth = 0.5
+        labelAboutTheWork.layer.cornerRadius = 3
         
         if(Defaults.languageSelectedCode == "ar" || Defaults.languageSelectedCode == "he"){
             self.labelDetailedInfo.textAlignment = .right

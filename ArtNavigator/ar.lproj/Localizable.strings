@@ -29,9 +29,10 @@
 "generalInformation" = "المعلومات العامة";
 "detailedInformation" = "المعلومات الدقيقة";
 "accessionNumber" = "رقم القطعة";
-"additionalDescription" = "Additional Description";
-"aboutTheWork" = "About The Work";
-"materialDetails" = "Material Details";
+"additionalDescription" = "تفاصيل إضافية";
+"aboutTheWork" = "عن العمل";
+"materialDetails" = "تفاصيل مواد البناء";
+"size" = "الحجم";
 
 //MapViewController.swift
 "map" = "الخريطة";
