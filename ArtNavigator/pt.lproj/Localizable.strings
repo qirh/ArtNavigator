@@ -26,7 +26,12 @@
 "showMore" = "Mais";
 "showLess" = "Menos";
 "artPiece" = "A obra";
+"generalInformation" = "";
+"detailedInformation" = "";
 "accessionNumber" = "";
+"additionalDescription" = "";
+"aboutTheWork" = "";
+"materialDetails" = "";
 
 //MapViewController.swift
 "map" = "Mapa";
@@ -49,8 +54,6 @@
 "artist" = "";
 "tableSettings" = "";
 "appSettings" = "";
-
-//TableViewController.swift
 
 //ArtPieces.swift
 "sculpture" = "";

@@ -107,7 +107,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         self.tabBarController?.tabBar.isHidden = false
-        print("here")
         sortTable()
         tableView.reloadData()
         super.viewWillAppear(animated)

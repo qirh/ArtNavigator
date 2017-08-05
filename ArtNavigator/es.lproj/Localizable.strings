@@ -29,6 +29,9 @@
 "generalInformation" = "Información General";
 "detailedInformation" = "Información Detallada";
 "accessionNumber" = "El Numero del Accession";
+"additionalDescription" = "";
+"aboutTheWork" = "";
+"materialDetails" = "";
 
 //MapViewController.swift
 "map" = "Mapa";

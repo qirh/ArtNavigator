@@ -167,7 +167,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     
     @IBAction func buttonSavePressed(_ sender: Any) {
-        print("pressed")
         
         let oldLanguageSelectedCode = Defaults.get(key: "languageSelectedCode")
         Defaults.set(key: "sliderValue", value: Defaults.sliderValue)
