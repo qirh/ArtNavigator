@@ -25,15 +25,16 @@
 "material" = "חומר";
 "byArtist" = "על ידי אמן";
 "byArtists" = "על ידי אמנים";
-"showMore" = "";
-"showLess" = "";
-"artPiece" = "";
-"generalInformation" = "";
-"detailedInformation" = "";
-"accessionNumber" = "";
-"additionalDescription" = "";
-"aboutTheWork" = "";
-"materialDetails" = "";
+"showMore" = "יותר";
+"showLess" = "פחות";
+"artPiece" = "יצירות אמנות";
+"generalInformation" = "מידע כללי";
+"detailedInformation" = "מידע מדויק";
+"accessionNumber" = "מספר האמנות";
+"additionalDescription" = "פרטים נוספים";
+"aboutTheWork" = "אודות העבודה";
+"materialDetails" = "פרטי החומר";
+"size" = "גודל";
 
 //MapViewController.swift
 "map" = "מפה";
@@ -51,11 +52,11 @@
 "language" = "שפה";
 "restart" = "עִברִית";
 "sortBy" = "להפעיל מחדש";
-"largeText" = "";
-"title" = "";
-"artist" = "";
-"tableSettings" = "";
-"appSettings" = "";
+"largeText" = "הקו הגדול";
+"title" = "כותרת";
+"artist" = "האמן";
+"tableSettings" = "הגדרות הטבלה";
+"appSettings" = "הגדרות היישום";
 
 //ArtPieces.swift
 "sculpture" = "פסל";

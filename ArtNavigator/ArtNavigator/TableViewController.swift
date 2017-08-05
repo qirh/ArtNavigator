@@ -71,6 +71,10 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         cell.labelArtist.adjustsFontSizeToFitWidth = true
         
+        if(Defaults.languageSelectedCode == "ar" || Defaults.languageSelectedCode == "he"){
+            cell.labelArtist.textAlignment = .right
+        }
+        
         cell.buttonNavigate.layer.borderWidth = 0.5
         cell.buttonNavigate.layer.cornerRadius = 4
         cell.buttonNavigate.layer.borderColor = UIColor.gray.cgColor
@@ -106,7 +110,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        self.tabBarController?.tabBar.isHidden = false
+        self.tabBarController?.tabBar.isHidden = false 
         sortTable()
         tableView.reloadData()
         super.viewWillAppear(animated)

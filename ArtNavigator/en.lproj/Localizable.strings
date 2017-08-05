@@ -20,7 +20,7 @@
 "noInformation" = "No Information";
 "locationDescription" = "Location Description";
 "address" = "Address";
-"descriptionOfTheArtPiece" = "Description of the art piece";
+"descriptionOfTheArtPiece" = "Description of the art installation";
 "locatedIndoors" = "Indoors installation";
 "locatedOutdoors" = "Outdoors installation";
 "category" = "Category";
@@ -37,6 +37,7 @@
 "additionalDescription" = "Additional Description";
 "aboutTheWork" = "About The Work";
 "materialDetails" = "Material Details";
+"size" = "Size";
 
 //MapViewController.swift
 "map" = "Map";
