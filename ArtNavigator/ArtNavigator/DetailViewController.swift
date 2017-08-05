@@ -12,30 +12,30 @@ import MapKit
 class DetailViewController: UIViewController, MKMapViewDelegate {
     
     
+    @IBOutlet weak var viewContent: UIView!
+    //viewMap
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var buttonArtPiece: UIButton!
-    
+    //viewGeneral
+    @IBOutlet weak var viewGeneral: UIView!
     @IBOutlet weak var buttonNavigate: UIButton!
-    
+    @IBOutlet weak var labelGeneralInfo: UILabel!
     @IBOutlet weak var labelLocationName: UILabel!
-    @IBOutlet weak var labelLocationDescription: UILabel!
     @IBOutlet weak var labelAddress: UILabel!
-    
-    @IBOutlet weak var labelDescription: UILabel!
-    @IBOutlet weak var labelDescriptionText: UILabel!
-    
     @IBOutlet weak var labelInteriorExterior: UILabel!
-    
     @IBOutlet weak var labelCategory: UILabel!
     @IBOutlet weak var labelObjectType: UILabel!
+    //viewDetails
+    @IBOutlet weak var viewDetails: UIView!
+    @IBOutlet weak var labelDetailedInfo: UILabel!
+    @IBOutlet weak var labelAccNumber: UILabel!
+    @IBOutlet weak var labelLocationDescription: UILabel!
     @IBOutlet weak var labelMaterial: UILabel!
-    
-    @IBOutlet weak var labelArtistName: UILabel!
-    @IBOutlet weak var buttonShowMore: UIButton!
-    
-    @IBOutlet weak var viewContent: UIView!
-    
-    var showMoreIsPressed = true
+    @IBOutlet weak var textViewMaterialDetails: UITextView!
+    @IBOutlet weak var labelSize: UILabel!
+    @IBOutlet weak var labelAddDesc: UITextView!
+    @IBOutlet weak var labelAboutTheWork: UITextView!
+
     var artPiece: ArtPiece? = nil
     
     override func viewDidLoad() {
@@ -47,7 +47,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         mapView.addAnnotation(artPiece!)
         mapView.delegate = self
         
-        //setViews()
+        setViews()
     }
     
     func centerMapOnLocation(location: CLLocation, radius: CLLocationDistance = 500) {
@@ -98,35 +98,18 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         buttonArtPiece.layer.borderColor = UIColor.black.withAlphaComponent(0.5).cgColor
         buttonArtPiece.layer.borderWidth = 0.8
         
-        
-        //button
+        //**viewGeneral**//
         buttonNavigate.layer.borderWidth = 1
         buttonNavigate.layer.cornerRadius = 4
         buttonNavigate.layer.borderColor = UIColor.black.cgColor
         buttonNavigate.setTitle(Defaults.getLocalizedString(key: "navigate"), for: .normal)
-        
-        
+        labelGeneralInfo.text = Defaults.getLocalizedString(key: "generalInformation")
         
         var boldedString = NSMutableAttributedString()
         labelLocationName.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "location")): ").normal(artPiece?.locationName ?? Defaults.getLocalizedString(key: "noInformation"))
         
         boldedString = NSMutableAttributedString()
-        labelLocationDescription.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "locationDescription")):\n").normal("\(artPiece?.locationDescription ?? Defaults.getLocalizedString(key: "noInformation"))")
-        
-        
-        boldedString = NSMutableAttributedString()
         labelAddress.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "address")):\n ").normal("\(artPiece?.address ?? Defaults.getLocalizedString(key: "noInformation"))")
-       
-        boldedString = NSMutableAttributedString()
-        if(artPiece?.isInterior)! {
-            labelInteriorExterior.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "locatedIndoors"))")
-        }
-        else {
-           labelInteriorExterior.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "locatedOutdoors"))")
-        }
-        if(Defaults.languageSelectedCode == "ar" || Defaults.languageSelectedCode == "he"){
-            self.labelInteriorExterior.textAlignment = .right
-        }
         
         boldedString = NSMutableAttributedString()
         labelCategory.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "category")):\n").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.category.rawValue ?? Defaults.getLocalizedString(key: "noInformation"))"))")
@@ -135,8 +118,44 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         labelObjectType.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "objectType")):\n").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.objectType ?? Defaults.getLocalizedString(key: "noInformation"))"))")
         
         boldedString = NSMutableAttributedString()
-        labelMaterial.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "material")):\n").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.material ?? Defaults.getLocalizedString(key: "noInformation"))"))")
+        if(artPiece?.isInterior)! {
+            labelInteriorExterior.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "locatedIndoors"))")
+        }
+        else {
+            labelInteriorExterior.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "locatedOutdoors"))")
+        }
         
+        
+        //**viewDetailed**//
+        labelDetailedInfo.text = Defaults.getLocalizedString(key: "detailedInformation")
+        boldedString = NSMutableAttributedString()
+        labelAccNumber.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "accessionNumber")): ").normal("\(artPiece?.accessionNumber ?? Defaults.getLocalizedString(key: "noInformation"))")
+        
+        boldedString = NSMutableAttributedString()
+        labelLocationDescription.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "locationDescription")):\n").normal("\(artPiece?.locationDescription ?? Defaults.getLocalizedString(key: "noInformation"))")
+        
+        boldedString = NSMutableAttributedString()
+        labelMaterial.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "material")): ").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.material ?? Defaults.getLocalizedString(key: "noInformation"))"))")
+        
+        boldedString = NSMutableAttributedString()
+        textViewMaterialDetails.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "materialDetails")):\n ").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.materialDetails ?? Defaults.getLocalizedString(key: "noInformation"))"))")
+        
+        boldedString = NSMutableAttributedString()
+        labelSize.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "size")): ").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.size ?? Defaults.getLocalizedString(key: "noInformation"))"))")
+        
+        boldedString = NSMutableAttributedString()
+        labelAddDesc.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "additionalDescription")):\n ").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.additionalDescription ?? Defaults.getLocalizedString(key: "noInformation"))"))")
+        
+        boldedString = NSMutableAttributedString()
+        labelAboutTheWork.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "aboutTheWork")):\n ").normal("\(Defaults.getLocalizedString(key: "\(artPiece?.materialDetails ?? Defaults.getLocalizedString(key: "noInformation"))"))")
+        
+        if(Defaults.languageSelectedCode == "ar" || Defaults.languageSelectedCode == "he"){
+            self.labelDetailedInfo.textAlignment = .right
+            self.labelGeneralInfo.textAlignment = .right
+            self.labelSize.textAlignment = .right
+            self.labelInteriorExterior.textAlignment = .right
+        }
+        /*
         // handle multiple artists
         let firstName = artPiece?.firstName
         let lastName = artPiece?.lastName
@@ -150,6 +169,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         else{
             labelArtistName.attributedText = boldedString.bold("\(Defaults.getLocalizedString(key: "byArtist")): ").normal("\(firstName ?? Defaults.getLocalizedString(key: "noInformation")) \(lastName ?? Defaults.getLocalizedString(key: "noInformation"))")
         }
+         */
     }
     
     @IBAction func buttonNavigatePressed(_ sender: UIButton) {
@@ -160,16 +180,6 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving])
     }
     @IBAction func buttonArtPiecePressed(_ sender: UIButton) {
-        print("pressed")
         centerMapOnLocation(location: CLLocation(latitude: (artPiece?.latitude)!, longitude: (artPiece?.longitude)!))
-    }
-    func showMoreInfo() {
-        if(!showMoreIsPressed) {     //show less pressed
-            buttonShowMore.setTitle(Defaults.getLocalizedString(key: "showMore"), for: .normal)
-        }
-        else {              //show more pressed
-            buttonShowMore.setTitle(Defaults.getLocalizedString(key: "showLess"), for: .normal)
-        }
-        showMoreIsPressed = !showMoreIsPressed
     }
 }

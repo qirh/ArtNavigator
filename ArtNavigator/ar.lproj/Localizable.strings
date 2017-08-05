@@ -28,7 +28,10 @@
 "artPiece" = "العمل الفني";
 "generalInformation" = "المعلومات العامة";
 "detailedInformation" = "المعلومات الدقيقة";
-"accessionNumber" = "رقم العمل";
+"accessionNumber" = "رقم القطعة";
+"additionalDescription" = "Additional Description";
+"aboutTheWork" = "About The Work";
+"materialDetails" = "Material Details";
 
 //MapViewController.swift
 "map" = "الخريطة";
@@ -51,8 +54,6 @@
 "artist" = "الفنان";
 "tableSettings" = "إعدادات الجدول";
 "appSettings" = "إعدادات التطبيق";
-
-//TableViewController.swift
 
 //ArtPieces.swift
 "sculpture" = "تمثال";
