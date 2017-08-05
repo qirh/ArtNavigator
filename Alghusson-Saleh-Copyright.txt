@@ -1,4 +1,3 @@
-
 Resource 1:
   The data provided by the city of Cambridge.
   Source: https://data.cambridgema.gov/General-Government/Cambridge-Public-Art-Locations/svyv-zh72/data
@@ -31,7 +30,7 @@ Resource 4:
     https://github.com/Ashton-W
 
 Resource 5:
-  SwiftyJSON
+  SwiftyJSON for parsing JSON
   Source: https://github.com/SwiftyJSON/SwiftyJSON
   License: MIT License
   Credit:
