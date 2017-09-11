@@ -1,4 +1,4 @@
-# Cambridge art
+# Art Navigator
 Art navigator for the city of Cambridge, MA
 [![MIT license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/harvard-ios/assignment-5-almto3/master/LICENSE.txt)
 * License: MIT License
@@ -22,6 +22,7 @@ Art navigator for the city of Cambridge, MA
 
 ## Known Bugs
  * The annotations on the map only display one entry even if there are multiple.
+ * Doesn't display well on screen sizes that aren't iPhone 7
 
 ## Features to add
 ### General

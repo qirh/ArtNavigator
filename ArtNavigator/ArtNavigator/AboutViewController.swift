@@ -20,7 +20,7 @@ class AboutViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         
         let textString = Defaults.getLocalizedString(key: "aboutMe")
-        let gitLink = "\n\nGit Repo: http://arkanis.de/weblog/2009-04-11-friendly-blank-pages/blank.html"
+        let gitLink = "\n\nGit Repo: https://github.com/qirh/ArtNavigator"
         let dataLink = "\nData Source: https://data.cambridgema.gov/General-Government/Cambridge-Public-Art-Locations/svyv-zh72/data"
         
         self.textAbout.text = textString + gitLink + dataLink
