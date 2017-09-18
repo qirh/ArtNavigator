@@ -6,19 +6,17 @@ Art navigator for the city of Cambridge, MA
 * Contact: salehg@live.com
 
 ## Write-up
-	I was thinking of an idea for an application to work on. And while browsing the city of Cambridge's API I noticed a data set for the public art installations in the city. And the idea of making an app to serve as a guide for the city's local art absolutely grabbed me. So, I started searching if any other devs have already did something similar and couldn't find any similar thing done for the city of Cambridge, but I found a lot for other cities.
-	So, armed with the inspiration I got from all the other apps I looked at, I decided to go through with the idea and start developing the app. I anticipated that around the halfway mark of the deadline, I would be done with the beta version and from there I can dedicate more of my time and effort to beautify it. However, what I had not expected was the data set would be incomplete and have a lot of inconsistencies. All in all, I would say the data validation (or revalidation) took maybe 30%-50% of the time that it took to develop the app.
-	Moreover, I really enjoyed the programming aspects of this app. The MVC model seemed intuitive to work with, especially after utilizing it for the last assignment I worked on. However, I really really struggled with the design aspects of this app. I had a lot of problems working with storyboard, actually, the day of the deadline I had to completely redesign more than half the application view controllers. Because I was trying to design the app from the beginning with all the objects have relative constrains and relative size. Since I thought that designing with everything relative would make it work on many more platforms. However, things kept breaking until I decided to develop it with some fixed sizes and fixed constraints to the superview.
-	Nevertheless, the biggest problems I faced were not related to xCode or swift or any programming or design paradigms. But was around my inability to draw a concept of portraying the information thatI wanted to portray to the user. I even asked my little siblings for help in that regard haha. Over many trails, my ideas of design always revolved around sticking everything in a label and having labels stack over each other. Ultimately however, I worked on this submission version of the app, which I think portrays the information that I want it to do. But, it does not do so beautifully. So over the next few versions of the app, I would like to work on the aesthetics of it.
+	Cambridge Art Navigator is a personal iOS project that I worked on in the summer of 2017. It has been a really fun project to work on, and while it is fully functional right now, I think it could use a some UI improvements before being released to the app store The application basically shows an interactive map and a list of all the art installations in the city of Cambridge, MA, which is where I lived over the summer. If you are reading this, please give the app a try and let me know what you think :*
 
 ## Notes
  * App was designed to run on an iPhone 7.
  * On the settings app, there is a save button beneath, I'm not sure if that is obvious. Moreover, changes will not be committed unless saved.
 
 ## Features not working properly
- * Night mode not functional
- * Large Text not functional
- * Results per page not functional
+ * Night mode still not implemented
+ * Large Text still not implemented
+ * Results per page still not implemented
+ * Portuguese translation is lacking
 
 ## Known Bugs
  * The annotations on the map only display one entry even if there are multiple.
@@ -26,20 +24,24 @@ Art navigator for the city of Cambridge, MA
 
 ## Features to add
 ### General
- * Full right-to-left support
- * Show More Button
- * Searching the table
- * Add Somerville data
- * Add sculptures in Harvard/MIT campus!
- * Directions with google maps
+ * Full right-to-left support for Arabic/Hebrew
+ * Add data for the city of Somerville and neighboring cities
+ * Add data from Harvard/MIT campi
+
 ### Map View
  * Highlight Cambridge in the map
  * highlight zip codes
 ### Table View
  * Add search bar
+ * Redesign how the Navigate button looks
  * variable cell size
 ### Settings View
- * Redesign to fit apple guidelines for settings
+ * Redesign the UI to fit apple guidelines for settings
+ * Add option to navigate with google maps
+### Detailed View
+ * Redesign the UI
+ * Redesign how the Navigate button looks
+ * "Show More" Button to show details
 ##Copyright Information
  * Resource 1:
    The data provided by the city of Cambridge.
@@ -75,5 +77,5 @@ Art navigator for the city of Cambridge, MA
    Credit:
      https://github.com/tangplin
 
-## Reference
+## Look at this app for UI refrence Reference
  https://github.com/wikimedia/wikipedia-ios
