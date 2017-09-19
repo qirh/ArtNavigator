@@ -41,7 +41,7 @@ Art navigator for the city of Cambridge, MA
  * Redesign the UI
  * Redesign how the Navigate button looks
  * "Show More" Button to show details
-##Copyright Information
+## Copyright Information
  * Resource 1:
    The data provided by the city of Cambridge.
    Source: https://data.cambridgema.gov/General-Government/Cambridge-Public-Art-Locations/svyv-zh72/data
@@ -76,5 +76,5 @@ Art navigator for the city of Cambridge, MA
    Credit:
      https://github.com/tangplin
 
-## Look at this app for UI refrence Reference
+## Note to self, look at this app for design reference
  https://github.com/wikimedia/wikipedia-ios
