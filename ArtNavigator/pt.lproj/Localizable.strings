@@ -7,7 +7,7 @@
 */
 
 //AboutViewController.swift
-"aboutMe" = "Oi! Meu nome é saleh e estou estudando desenvolvimento iOS e português. Este é o meu primeira app para iPhone. Por favor envie-me um email para qualquer dúvida ou sugestão aquí: salehg@live.com";
+"aboutMe" = "Oi! Meu nome é saleh e estou estudando desenvolvimento de iOS e português. Este é meu primeiro app para iPhone. Por favor envie-me um email para qualquer dúvida ou sugestão aquí: salehg@live.com";
 
 //DetailViewController.swift
 "navigate" = "Navegar";
