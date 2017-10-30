@@ -25,6 +25,11 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.layer.borderColor = UIColor.gray.cgColor
+        tableView.layer.borderWidth = 1.0
+        
+        
         ArtPieces.sortTable()
     }
     
@@ -36,10 +41,10 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: CustomCellTable = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! CustomCellTable
-        
+        /*
         cell.layer.borderWidth = 1
         cell.layer.borderColor = UIColor.gray.cgColor
-        
+        */
         cell.labelTitle.text = ArtPieces.artPieces[indexPath.row].title
         cell.labelTitle.adjustsFontSizeToFitWidth = true
         

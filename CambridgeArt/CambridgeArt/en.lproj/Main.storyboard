@@ -14,7 +14,7 @@
         <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="ArtNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="CambridgeArt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -67,7 +67,7 @@
         <!--Table View Controller-->
         <scene sceneID="Gsp-30-Sl1">
             <objects>
-                <viewController id="cpR-Nv-jnS" customClass="TableViewController" customModule="ArtNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cpR-Nv-jnS" customClass="TableViewController" customModule="CambridgeArt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="deZ-pM-Mak"/>
                         <viewControllerLayoutGuide type="bottom" id="8or-vV-TtQ"/>
@@ -76,11 +76,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cJ7-rz-dvP">
-                                <rect key="frame" x="16" y="64" width="343" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cJ7-rz-dvP">
+                                <rect key="frame" x="16" y="104" width="343" height="474"/>
+                                <color key="backgroundColor" red="0.89956773477157359" green="0.89956773477157359" blue="0.89956773477157359" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellCustom" rowHeight="101" id="aVT-G2-bQZ" customClass="CustomCellTable" customModule="ArtNavigator" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellCustom" rowHeight="101" id="aVT-G2-bQZ" customClass="CustomCellTable" customModule="CambridgeArt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aVT-G2-bQZ" id="mhO-vY-Fkm">
@@ -106,9 +106,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MB7-gn-ucy">
-                                                    <rect key="frame" x="235" y="47.5" width="80" height="40"/>
+                                                    <rect key="frame" x="230" y="47.5" width="85" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="80" id="PUT-7F-hd5"/>
+                                                        <constraint firstAttribute="width" constant="85" id="PUT-7F-hd5"/>
                                                         <constraint firstAttribute="height" constant="40" id="T9h-un-bHy"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -143,10 +143,10 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.87209908425989846" green="0.87209908425989846" blue="0.87209908425989846" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="8or-vV-TtQ" firstAttribute="top" secondItem="cJ7-rz-dvP" secondAttribute="bottom" id="HJD-rI-IMz"/>
-                            <constraint firstItem="cJ7-rz-dvP" firstAttribute="top" secondItem="deZ-pM-Mak" secondAttribute="bottom" id="IeP-cm-W53"/>
+                            <constraint firstItem="8or-vV-TtQ" firstAttribute="top" secondItem="cJ7-rz-dvP" secondAttribute="bottom" constant="40" id="HJD-rI-IMz"/>
+                            <constraint firstItem="cJ7-rz-dvP" firstAttribute="top" secondItem="deZ-pM-Mak" secondAttribute="bottom" constant="40" id="IeP-cm-W53"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cJ7-rz-dvP" secondAttribute="trailing" id="Q3W-CK-PCZ"/>
                             <constraint firstItem="cJ7-rz-dvP" firstAttribute="leading" secondItem="YoC-M0-g97" secondAttribute="leadingMargin" id="SL0-JM-3q6"/>
                         </constraints>
@@ -164,7 +164,7 @@
         <!--Settings View Controller-->
         <scene sceneID="Aoy-yq-Upw">
             <objects>
-                <viewController id="H7K-We-3lf" customClass="SettingsViewController" customModule="ArtNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="H7K-We-3lf" customClass="SettingsViewController" customModule="CambridgeArt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gXQ-qE-OjK"/>
                         <viewControllerLayoutGuide type="bottom" id="Seb-KG-aJA"/>
@@ -464,7 +464,7 @@
         <!--About View Controller-->
         <scene sceneID="qn1-pm-34G">
             <objects>
-                <viewController id="QEa-t5-Ibm" customClass="AboutViewController" customModule="ArtNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QEa-t5-Ibm" customClass="AboutViewController" customModule="CambridgeArt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hgg-Jy-G1a"/>
                         <viewControllerLayoutGuide type="bottom" id="bX4-1q-GcN"/>
@@ -528,7 +528,7 @@
         <!--Detail View Controller-->
         <scene sceneID="kIc-UG-lHL">
             <objects>
-                <viewController id="kqG-Dj-Cvh" customClass="DetailViewController" customModule="ArtNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kqG-Dj-Cvh" customClass="DetailViewController" customModule="CambridgeArt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mG9-fK-s5O"/>
                         <viewControllerLayoutGuide type="bottom" id="xde-WK-uwt"/>
@@ -826,7 +826,7 @@ Bla</string>
         <!--Tab View Controller-->
         <scene sceneID="DyO-L5-KKy">
             <objects>
-                <tabBarController id="As9-wg-hrK" customClass="TabViewController" customModule="ArtNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="As9-wg-hrK" customClass="TabViewController" customModule="CambridgeArt" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="su9-G4-s0a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

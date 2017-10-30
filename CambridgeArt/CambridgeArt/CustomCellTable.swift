@@ -16,6 +16,5 @@ class CustomCellTable: UITableViewCell {
     @IBOutlet weak var labelCategory: UILabel!
     @IBOutlet weak var labelArtist: UILabel!
     
-    
     @IBOutlet weak var buttonNavigate: UIButton!
 }

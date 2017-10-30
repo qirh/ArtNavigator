@@ -1,10 +1,10 @@
-# Art Navigator
-Art navigator for the city of Cambridge, MA
+# Cambridge Art
+Cambridge Art for the city of Cambridge, MA
 [![MIT license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/harvard-ios/assignment-5-almto3/master/LICENSE.txt)
 * License: MIT License
 * Contact: salehg@live.com
 
-## Write-up
+## Summary
 	Cambridge Art Navigator is a personal iOS project that I worked on in the summer of 2017. It has been a really fun project to work on, and while it is fully functional right now, I think it could use a some UI improvements before being released to the app store The application basically shows an interactive map and a list of all the art installations in the city of Cambridge, MA, which is where I lived over the summer. If you are reading this, please give the app a try and let me know what you think :*
 
 ## Notes
@@ -15,18 +15,19 @@ Art navigator for the city of Cambridge, MA
  * Night mode still not implemented
  * Large Text still not implemented
  * Results per page still not implemented
- * Portuguese translation is lacking
+ * Portuguese and Hebrew translations is lacking
 
 ## Known Bugs
  * The annotations on the map only display one entry even if there are multiple.
  * Doesn't display well on screen sizes that aren't iPhone 7
+ * Doesn't display well in landscape
+ * Add space in App Name
 
 ## Features to add
 ### General
  * Full right-to-left support for Arabic/Hebrew
  * Add data for the city of Somerville and neighboring cities
- * Add data from Harvard/MIT campi
-
+ * Add data from Harvard/MIT campuses
 ### Map View
  * Highlight Cambridge in the map
  * highlight zip codes
@@ -41,6 +42,8 @@ Art navigator for the city of Cambridge, MA
  * Redesign the UI
  * Redesign how the Navigate button looks
  * "Show More" Button to show details
+
+
 ## Copyright Information
  * Resource 1:
    The data provided by the city of Cambridge.
@@ -75,6 +78,3 @@ Art navigator for the city of Cambridge, MA
    License: MIT License
    Credit:
      https://github.com/tangplin
-
-## Note to self, look at this app for design reference
- https://github.com/wikimedia/wikipedia-ios
