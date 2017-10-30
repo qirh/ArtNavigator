@@ -1,0 +1,62 @@
+/*
+  Localizable.strings
+  CambridgeArt
+
+  Created by saleh on 7/27/17.
+  Copyright © 2017 saleh. All rights reserved.
+*/
+
+//AboutViewController.swift
+"aboutMe" = "Oi! Meu nome é saleh e estou estudando desenvolvimento de iOS e português. Este é meu primeiro app para iPhone. Por favor envie-me um email para qualquer dúvida ou sugestão aquí: salehg@live.com";
+
+//DetailViewController.swift
+"navigate" = "Navegar";
+"location" = "Locação ";
+"noInformation" = "Sem informação";
+"locationDescription" = "Descrição do local";
+"address" = "Endereço";
+"descriptionOfTheArtPiece" = "Descrição da arte";
+"locatedIndoors" = "Instalação interior";
+"locatedOutdoors" = "Instalação ao ar livre";
+"category" = "Categoria";
+"objectType" = "Tipo De objeto";
+"material" = "Material";
+"byArtist" = "Artista";
+"byArtists" = "Artistas";
+"showMore" = "Mais";
+"showLess" = "Menos";
+"artPiece" = "A obra";
+"generalInformation" = "Informação geral";
+"detailedInformation" = "Informação detalhada";
+"accessionNumber" = "O número do accession";
+"additionalDescription" = "Descrição adicional";
+"aboutTheWork" = "Sobre a obra";
+"materialDetails" = "Detalhes do material";
+"size" = "Tamanho";
+
+//MapViewController.swift
+"map" = "Mapa";
+"list" = "Lista";
+"settings" = "Configurações";
+"about" = "Sobre nós";
+"detail" = "Detalhes";
+"back" = "De volta";
+"cambridge" = "Cambridge";
+
+//SettingsViewController.swift
+"nightMode" = "Modo da noite";
+"resultsPerPage" = "Resultados por página";
+"save" = "salvar";
+"language" = "Idioma\nLanguage";
+"restart" = "O idioma mudará após da reinicialização";
+"sortBy" = "Organizar por";
+"largeText" = "Texto amplo";
+"title" = "Título";
+"artist" = "Artista";
+"tableSettings" = "Configurações da lista";
+"appSettings" = "Configurações da app";
+
+//ArtPieces.swift
+"sculpture" = "Escultura";
+"mural" = "Mural";
+"electronicMedia" = "Mídia eletrônica";

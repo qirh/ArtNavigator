@@ -1,0 +1,62 @@
+/*
+  Localizable.strings
+  CambridgeArt
+
+  Created by saleh on 7/25/17.
+  Copyright © 2017 saleh. All rights reserved.
+*/
+
+//AboutViewController.swift
+"aboutMe" = "¡Hola!\nMe llamo saleh. Estoy aprendiendo el Español, es un idioma muy hermoso, pero eso no es importante ahora. La cosa importante es que estoy también aprendiendo a desarrollar iOS. Por este verano, estoy viviendo en la ciudad de Cambridge en el noreste de EE.UU. Para mi primer app, quise hacer algo beneficioso pero al otro lado no demasiado complicado. Entonces, decidí trabajar en un app que es navegador por el arte publico en la ciudad. \nToadvía no es completo, pero estoy trabajando en eso. Además, si se quiere más información u actualizaciones o leer mis notas, el enlace para la página del proyecto está abajo (o para decirme que mal es mi español). También, hay un otro enlace por la fuente de datos. Finalmente, muchísimas gracias por su interés en este app y por preguntas o algo, envíame aquí: salehg@live.com";
+
+//DetailViewController.swift
+"navigate" = "Ir";
+"location" = "Ubicación";
+"noInformation" = "No hay información";
+"locationDescription" = "Descripción de la ubicación";
+"address" = "Dirección";
+"descriptionOfTheArtPiece" = "Descripción de la obra de arte";
+"locatedIndoors" = "Instalación en interiores";
+"locatedOutdoors" = "Instalación afuera";
+"category" = "Categoría";
+"objectType" = "Tipo del objeto";
+"material" = "Material";
+"byArtist" = "del artista";
+"byArtists" = "de l@s artistas";
+"showMore" = "Más";
+"showLess" = "Menos";
+"artPiece" = "La obra";
+"generalInformation" = "Información General";
+"detailedInformation" = "Información Detallada";
+"accessionNumber" = "El número del accession";
+"additionalDescription" = "Descripción adicional";
+"aboutTheWork" = "Sobre la obra";
+"materialDetails" = "Detalles del material";
+"size" = "Tamaño";
+
+//MapViewController.swift
+"map" = "Mapa";
+"list" = "Lista";
+"settings" = "Ajustes";
+"about" = "Conócenos";
+"detail" = "Detalles";
+"back" = "Atrás";
+"cambridge" = "Cambridge";
+
+//SettingsViewController.swift
+"nightMode" = "Modo de la noche";
+"resultsPerPage" = "Resultados por página";
+"save" = "guardar";
+"language" = "Idioma\nLanguage";
+"restart" = "El idioma cambiará después de reiniciar";
+"sortBy" = "Ordenar por";
+"largeText" = "Texto grande";
+"title" = "Título";
+"artist" = "Artista";
+"tableSettings" = "Ajustes de la Lista";
+"appSettings" = "Ajustes del App";
+
+//ArtPieces.swift
+"sculpture" = "Escultura";
+"mural" = "Mural";
+"electronicMedia" = "Medio Electrónico";
