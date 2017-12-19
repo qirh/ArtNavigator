@@ -15,7 +15,7 @@ Cambridge Art for the city of Cambridge, MA
  * Night mode still not implemented
  * Large Text still not implemented
  * Results per page still not implemented
- * Portuguese and Hebrew translations is lacking
+ * Portuguese and Hebrew translations are lacking
 
 ## Known Bugs
  * The annotations on the map only display one entry even if there are multiple.
@@ -30,7 +30,7 @@ Cambridge Art for the city of Cambridge, MA
  * Add data from Harvard/MIT campuses
 ### Map View
  * Highlight Cambridge in the map
- * highlight zip codes
+ * Highlight zip codes
 ### Table View
  * Add search bar
  * Redesign how the Navigate button looks
