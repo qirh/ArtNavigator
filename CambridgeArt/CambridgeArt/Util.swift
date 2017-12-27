@@ -14,7 +14,7 @@ import UIKit
 extension String {
     
     var length: Int {
-        return self.characters.count
+        return self.count
     }
     
     subscript (i: Int) -> String {
@@ -34,7 +34,7 @@ extension String {
                                             upper: min(length, max(0, r.upperBound))))
         let start = index(startIndex, offsetBy: range.lowerBound)
         let end = index(start, offsetBy: range.upperBound - range.lowerBound)
-        return self[Range(start ..< end)]
+        return String(self[Range(start ..< end)])
     }
     
 }
@@ -44,9 +44,9 @@ extension String {
 extension NSMutableAttributedString {
     @discardableResult func bold(_ text:String, font: UIFont = UIFont.boldSystemFont(ofSize: 15), size: CGFloat = 15.0) -> NSMutableAttributedString {
         
-        let attrs:[String:AnyObject] = [NSFontAttributeName : font]
+        let attrs: [NSAttributedStringKey: Any] = [NSAttributedStringKey.font: font]
         
-        let boldString = NSMutableAttributedString(string:"\(text)", attributes:attrs)
+        let boldString = NSMutableAttributedString(string: "\(text)", attributes: attrs)
         self.append(boldString)
         return self
     }

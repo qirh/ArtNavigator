@@ -22,7 +22,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     
     override func viewDidLoad() {
-        print("viewDidLoad() - Map")
+        
         super.viewDidLoad()
         
         

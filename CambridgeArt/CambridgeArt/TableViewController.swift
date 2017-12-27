@@ -20,7 +20,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
-        print("viewDidLoad() - Table")
+       
         super.viewDidLoad()
         
         tableView.delegate = self
@@ -28,7 +28,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         tableView.layer.borderColor = UIColor.gray.cgColor
         tableView.layer.borderWidth = 1.0
-        
         
         ArtPieces.sortTable()
     }
@@ -82,7 +81,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         return cell
     }
-    func buttonNavigatePressed(_ sender: UIButton) {
+    @objc func buttonNavigatePressed(_ sender: UIButton) {
         
         let coordinate = CLLocationCoordinate2DMake(ArtPieces.artPieces[sender.tag].latitude, ArtPieces.artPieces[sender.tag].longitude)
         let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinate, addressDictionary:nil))
