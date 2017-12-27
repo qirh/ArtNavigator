@@ -62,10 +62,12 @@ Cambridge Art for the city of Cambridge, MA
    License: Free to use with credit
    Credit:
      https://icons8.com/icon/set/flags/all
+		 https://icons8.com/icon/set/art/all
      https://icons8.com/icon/14313/about
      https://icons8.com/icon/20406/bulleted-list
      https://icons8.com/icon/3779/map-marker
      https://icons8.com/icon/14099/Settings
+
  * Resource 4:
    CRToast for alerts
    Source: https://github.com/cruffenach/CRToast
@@ -78,3 +80,9 @@ Cambridge Art for the city of Cambridge, MA
    License: MIT License
    Credit:
      https://github.com/tangplin
+ * Resource 6:
+	 Icon Set Creator
+	 Source: https://itunes.apple.com/de/app/icon-set-creator/id939343785?l=en&mt=12
+	 License: Nicolas Miari
+	 Credit:
+	   https://stackoverflow.com/a/45122603
