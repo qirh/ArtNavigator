@@ -166,7 +166,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     
-    @IBAction func buttonSavePressed(_ sender: Any) {
+    @objc @IBAction func buttonSavePressed(_ sender: Any) {
         
         let oldLanguageSelectedCode = Defaults.get(key: "languageSelectedCode")
         Defaults.set(key: "sliderValue", value: Defaults.sliderValue)
@@ -234,7 +234,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             labelSort.textAlignment = .right
         }
     }
-    func toast() {
+    @objc func toast() {
         let options: NSDictionary = [
             kCRToastTextKey : Defaults.getLocalizedString(key: "restart"),
             kCRToastTextAlignmentKey : NSTextAlignment.center.rawValue,
