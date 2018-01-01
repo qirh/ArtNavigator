@@ -13,6 +13,8 @@
 
 //AboutViewController.swift
 "aboutMe" = "Hey!\nI'm saleh and I'm learning how to develop iOS. And since I'm staying in Cambridge, MA for the summer. I figured I should try to create an app that residents and visitors of the city could use. So, I decided to build this application, which is a navigator for the public art installations in the city. \nCurrently, this app is in beta phase and is still not finished and imho looks ugly because I'm a programmer not a designer :) For updates on the app, or to read my notes please go to the git repo at the link below. Also, a link to the data source is also below. \nThank you for your interst in this application! and don't hesistate to email me for any suggestions or questions or anything else: salehg@live.com";
+"color" = "Color coding for map items";
+"comma" = ",";
 
 //DetailViewController.swift
 "navigate" = "Navigate";

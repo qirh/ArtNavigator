@@ -88,7 +88,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         labelTitle.font = UIFont(name: "Helvetica-Bold", size: 18)
         labelTitle.backgroundColor = UIColor.clear
         labelTitle.adjustsFontSizeToFitWidth = true
-        self.navigationItem.titleView = labelTitle
+        //self.navigationItem.titleView = labelTitle
         self.navigationController?.navigationBar.backItem?.title = Defaults.getLocalizedString(key: "back")
         
         buttonArtPiece.setTitle(Defaults.getLocalizedString(key: "artPiece"), for: .normal)

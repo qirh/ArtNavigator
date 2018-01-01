@@ -8,6 +8,9 @@
 
 //AboutViewController.swift
 "aboutMe" = "¡Hola!\nMe llamo saleh. Estoy aprendiendo el Español, es un idioma muy hermoso, pero eso no es importante ahora. La cosa importante es que estoy también aprendiendo a desarrollar iOS. Por este verano, estoy viviendo en la ciudad de Cambridge en el noreste de EE.UU. Para mi primer app, quise hacer algo beneficioso pero al otro lado no demasiado complicado. Entonces, decidí trabajar en un app que es navegador por el arte publico en la ciudad. \nToadvía no es completo, pero estoy trabajando en eso. Además, si se quiere más información u actualizaciones o leer mis notas, el enlace para la página del proyecto está abajo (o para decirme que mal es mi español). También, hay un otro enlace por la fuente de datos. Finalmente, muchísimas gracias por su interés en este app y por preguntas o algo, envíame aquí: salehg@live.com";
+"color" = "Los colores para los elementos del mapa";
+"comma" = ",";
+
 
 //DetailViewController.swift
 "navigate" = "Ir";
