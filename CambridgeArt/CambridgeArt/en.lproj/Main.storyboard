@@ -526,6 +526,64 @@
             </objects>
             <point key="canvasLocation" x="1904.8" y="365.66716641679164"/>
         </scene>
+        <!--Force Touch View Controller-->
+        <scene sceneID="kbC-IJ-2mh">
+            <objects>
+                <viewController storyboardIdentifier="ForceTouch" id="1pF-gw-K4G" customClass="ForceTouchViewController" customModule="CambridgeArt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eEy-Kx-4Fa"/>
+                        <viewControllerLayoutGuide type="bottom" id="w8p-zH-mcm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mnl-DI-0tt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0q4-ci-cNu">
+                                <rect key="frame" x="75" y="40" width="225" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0q4-ci-cNu" secondAttribute="height" multiplier="1536:2048" id="Hc4-mm-NVp"/>
+                                    <constraint firstAttribute="height" constant="300" id="k3g-fX-EqH"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8l-jQ-cGk" userLabel="Caption container">
+                                <rect key="frame" x="20" y="607" width="335" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmg-0r-dtw">
+                                        <rect key="frame" x="136.5" y="10" width="62.5" height="20"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Gmg-0r-dtw" firstAttribute="centerX" secondItem="e8l-jQ-cGk" secondAttribute="centerX" id="QPw-1Y-3gR"/>
+                                    <constraint firstItem="Gmg-0r-dtw" firstAttribute="centerY" secondItem="e8l-jQ-cGk" secondAttribute="centerY" id="eqP-G0-rJP"/>
+                                    <constraint firstAttribute="height" constant="40" id="wTt-sQ-5vs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0q4-ci-cNu" firstAttribute="centerX" secondItem="Mnl-DI-0tt" secondAttribute="centerX" id="7Tz-Oi-Rch"/>
+                            <constraint firstAttribute="trailing" secondItem="e8l-jQ-cGk" secondAttribute="trailing" constant="20" id="7j2-Bh-158"/>
+                            <constraint firstItem="0q4-ci-cNu" firstAttribute="width" secondItem="0q4-ci-cNu" secondAttribute="height" multiplier="1536:2048" id="BKQ-NE-rjX"/>
+                            <constraint firstItem="0q4-ci-cNu" firstAttribute="top" secondItem="eEy-Kx-4Fa" secondAttribute="bottom" constant="20" id="cer-KF-Zkd"/>
+                            <constraint firstItem="e8l-jQ-cGk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0q4-ci-cNu" secondAttribute="bottom" constant="20" id="dzk-Ah-NAQ"/>
+                            <constraint firstItem="w8p-zH-mcm" firstAttribute="top" secondItem="e8l-jQ-cGk" secondAttribute="bottom" constant="20" id="eyl-eH-d44"/>
+                            <constraint firstItem="e8l-jQ-cGk" firstAttribute="leading" secondItem="Mnl-DI-0tt" secondAttribute="leading" constant="20" id="vrD-GQ-u3q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagePeek" destination="0q4-ci-cNu" id="g9z-HC-epN"/>
+                        <outlet property="labelPeek" destination="Gmg-0r-dtw" id="D3F-y6-j3n"/>
+                        <outlet property="viewPeek" destination="e8l-jQ-cGk" id="K5F-Ki-Zlb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vHf-Zc-zat" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2857" y="793"/>
+        </scene>
         <!--Detail View Controller-->
         <scene sceneID="kIc-UG-lHL">
             <objects>

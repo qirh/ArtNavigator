@@ -19,6 +19,7 @@
 		303AD1AD1F1EB9B50031F35F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303AD1AB1F1EB9B50031F35F /* LaunchScreen.storyboard */; };
 		303AD1D11F1EC1AF0031F35F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1D01F1EC1AF0031F35F /* TableViewController.swift */; };
 		303AD1D31F1EC1C90031F35F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD1D21F1EC1C90031F35F /* DetailViewController.swift */; };
+		305DFCE61FFAEB3300B50B35 /* ForceTouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305DFCE51FFAEB3300B50B35 /* ForceTouchViewController.swift */; };
 		308A68B01F29C683001EFD69 /* CRToastConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 308A68A61F29C683001EFD69 /* CRToastConfig.m */; };
 		308A68B11F29C683001EFD69 /* CRToastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 308A68A91F29C683001EFD69 /* CRToastManager.m */; };
 		308A68B21F29C683001EFD69 /* CRToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 308A68AB1F29C683001EFD69 /* CRToastView.m */; };
@@ -47,6 +48,7 @@
 		303AD1AE1F1EB9B50031F35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		303AD1D01F1EC1AF0031F35F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		303AD1D21F1EC1C90031F35F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		305DFCE51FFAEB3300B50B35 /* ForceTouchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceTouchViewController.swift; sourceTree = "<group>"; };
 		308A68A41F29C683001EFD69 /* CRToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToast.h; sourceTree = "<group>"; };
 		308A68A51F29C683001EFD69 /* CRToastConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastConfig.h; sourceTree = "<group>"; };
 		308A68A61F29C683001EFD69 /* CRToastConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRToastConfig.m; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				308A68A31F29C569001EFD69 /* CRToast */,
 				30BEECF21F28111B00EABA93 /* AboutViewController.swift */,
 				303AD1D21F1EC1C90031F35F /* DetailViewController.swift */,
+				305DFCE51FFAEB3300B50B35 /* ForceTouchViewController.swift */,
 				303AD1A41F1EB9B50031F35F /* MapViewController.swift */,
 				30BEECF01F28110B00EABA93 /* SettingsViewController.swift */,
 				300278F01FA55CDF0017A3A9 /* TabViewController.swift */,
@@ -259,6 +262,7 @@
 				3031BEB01F2E3C9B00CCC967 /* ArtPieces.swift in Sources */,
 				303AD1A31F1EB9B50031F35F /* AppDelegate.swift in Sources */,
 				303AD1D11F1EC1AF0031F35F /* TableViewController.swift in Sources */,
+				305DFCE61FFAEB3300B50B35 /* ForceTouchViewController.swift in Sources */,
 				301059E81F3265EB00FB534C /* CustomCellTable.swift in Sources */,
 				30BEECF11F28110B00EABA93 /* SettingsViewController.swift in Sources */,
 				308A68B11F29C683001EFD69 /* CRToastManager.m in Sources */,

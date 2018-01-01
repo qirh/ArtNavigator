@@ -71,7 +71,7 @@ extension UIColor {
     }
     
     func adjust(by percentage:CGFloat=30.0) -> UIColor? {
-        var r:CGFloat=0, g:CGFloat=0, b:CGFloat=0, a:CGFloat=0;
+        var r:CGFloat=0, g:CGFloat=0, b:CGFloat=0, a:CGFloat=0
         if(self.getRed(&r, green: &g, blue: &b, alpha: &a)){
             return UIColor(red: min(r + percentage/100, 1.0),
                            green: min(g + percentage/100, 1.0),
