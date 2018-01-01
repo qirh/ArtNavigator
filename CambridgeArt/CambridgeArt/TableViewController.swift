@@ -70,6 +70,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
             cell.labelArtist.textAlignment = .right
         }
         
+        cell.buttonNavigate.imageView!.contentMode = UIViewContentMode.scaleAspectFit
         cell.buttonNavigate.layer.borderWidth = 0.5
         cell.buttonNavigate.layer.cornerRadius = 4
         cell.buttonNavigate.layer.borderColor = UIColor.gray.cgColor

@@ -58,9 +58,10 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         self.pickerLanguage.dataSource = self
         
         Defaults.setDefaultsVaribles()
-        viewTableSettings.layer.borderWidth = 0.5
+        viewTableSettings.layer.borderWidth = 0.9
         viewTableSettings.layer.borderColor = UIColor.yellow.cgColor
-        viewAppSettings.layer.borderWidth = 0.5
+        
+        viewAppSettings.layer.borderWidth = 0.9
         viewAppSettings.layer.borderColor = UIColor.yellow.cgColor
         setViews()
     }
@@ -184,8 +185,12 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
     }
     func setViews() {
+        
+        labelResultsNumbers.layer.borderWidth = 1
+        labelResultsNumbers.layer.borderColor = UIColor.gray.cgColor
+        labelResultsNumbers.layer.cornerRadius = 5
+        
         labelTableSettings.text = Defaults.getLocalizedString(key: "tableSettings")
-        //
         labelResults.text = "\(Defaults.getLocalizedString(key: "resultsPerPage")):"
         labelResultsNumbers.text = "\(Defaults.sliderValue)"
         sliderResults.setValue(Float(Defaults.sliderValue), animated: true)
