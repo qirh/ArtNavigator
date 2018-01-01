@@ -1,11 +1,12 @@
 # Cambridge Art
 Cambridge Art for the city of Cambridge, MA
-[![MIT license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/harvard-ios/assignment-5-almto3/master/LICENSE.txt)
+[![MIT license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://https://raw.githubusercontent.com/qirh/CambridgeArt/master/LICENSE.txt)
 * License: MIT License
 * Contact: salehg@live.com
+* This Readme is meant for the continous development of the repo, for general information about the app look here: http://saladesaleh.com/cambridgeart
 
 ## Summary
-	Cambridge Art Navigator is a personal iOS project that I worked on in the summer of 2017. It has been a really fun project to work on, and while it is fully functional right now, I think it could use a some UI improvements before being released to the app store The application basically shows an interactive map and a list of all the art installations in the city of Cambridge, MA, which is where I lived over the summer. If you are reading this, please give the app a try and let me know what you think :*
+&nbsp;&nbsp;&nbsp;&nbsp;Cambridge Art Navigator is a personal iOS project that I worked on in the summer of 2017. It has been a really fun project to work on, and while it is fully functional right now, I think it could use a some UI improvements before being released to the app store The application basically shows an interactive map and a list of all the art installations in the city of Cambridge, MA, which is where I lived over the summer. If you are reading this, please give the app a try and let me know what you think :*
 
 ## Notes
  * App was designed to run on an iPhone 7.
