@@ -539,10 +539,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0q4-ci-cNu">
-                                <rect key="frame" x="75" y="40" width="225" height="300"/>
+                                <rect key="frame" x="37.5" y="40" width="300" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0q4-ci-cNu" secondAttribute="height" multiplier="1536:2048" id="Hc4-mm-NVp"/>
-                                    <constraint firstAttribute="height" constant="300" id="k3g-fX-EqH"/>
+                                    <constraint firstAttribute="height" constant="400" id="k3g-fX-EqH"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8l-jQ-cGk" userLabel="Caption container">
@@ -567,7 +567,6 @@
                         <constraints>
                             <constraint firstItem="0q4-ci-cNu" firstAttribute="centerX" secondItem="Mnl-DI-0tt" secondAttribute="centerX" id="7Tz-Oi-Rch"/>
                             <constraint firstAttribute="trailing" secondItem="e8l-jQ-cGk" secondAttribute="trailing" constant="20" id="7j2-Bh-158"/>
-                            <constraint firstItem="0q4-ci-cNu" firstAttribute="width" secondItem="0q4-ci-cNu" secondAttribute="height" multiplier="1536:2048" id="BKQ-NE-rjX"/>
                             <constraint firstItem="0q4-ci-cNu" firstAttribute="top" secondItem="eEy-Kx-4Fa" secondAttribute="bottom" constant="20" id="cer-KF-Zkd"/>
                             <constraint firstItem="e8l-jQ-cGk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0q4-ci-cNu" secondAttribute="bottom" constant="20" id="dzk-Ah-NAQ"/>
                             <constraint firstItem="w8p-zH-mcm" firstAttribute="top" secondItem="e8l-jQ-cGk" secondAttribute="bottom" constant="20" id="eyl-eH-d44"/>
