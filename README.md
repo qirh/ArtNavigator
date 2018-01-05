@@ -17,6 +17,9 @@ Cambridge Art for the city of Cambridge, MA
  * Large Text still not implemented
  * Results per page still not implemented
  * Portuguese and Hebrew translations are lacking
+ * 3d peek and pop are not 100%, look here for reference:
+    * https://medium.com/@darjeelingsteve/supporting-3d-touch-peek-and-pop-ee80d2a4bd69
+    * https://the-nerd.be/2015/10/06/3d-touch-peek-and-pop-tutorial/
 
 ## Known Bugs
  * The annotations on the map only display one entry even if there are multiple.
