@@ -40,9 +40,14 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var labelNightMode: UILabel!
     @IBOutlet weak var switchNightMode: UISwitch!
     
-    //viewAppSettings --> viewLargeTexr
+    //viewAppSettings --> viewLargeText
     @IBOutlet weak var labelLargeText: UILabel!
     @IBOutlet weak var switchLargeText: UISwitch!
+    
+    //viewAppSettings --> viewLargeText
+    @IBOutlet weak var labelNavigate: UILabel!
+    @IBOutlet weak var segmentNavigate: UISegmentedControl!
+    
     
     //viewAppSettings --> viewLanguage
     @IBOutlet weak var labelLanguage: UILabel!
@@ -167,6 +172,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     
+    
     @objc @IBAction func buttonSavePressed(_ sender: Any) {
         
         let oldLanguageSelectedCode = Defaults.get(key: "languageSelectedCode")
@@ -175,13 +181,16 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         Defaults.set(key: "nightModeOn", value: Defaults.nightModeOn)
         Defaults.set(key: "largeTextOn", value: Defaults.largeTextOn)
+        Defaults.set(key: "navigateUsingValue", value: Defaults.navigateUsingValue)
         
         Defaults.set(key: "languageSelectedCode", value: Defaults.languageSelectedCode)
         
         Defaults.setDefaultsVaribles()
         
         if oldLanguageSelectedCode != Defaults.languageSelectedCode{
-            toast()
+            toast(true)
+        } else {
+            toast(false)
         }
     }
     func setViews() {
@@ -201,15 +210,16 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         segmentSort.setTitle(Defaults.getLocalizedString(key: "category"), forSegmentAt: 1)
         segmentSort.setTitle(Defaults.getLocalizedString(key: "artist"), forSegmentAt: 2)
         
-        
-        
         labelAppSettings.text = Defaults.getLocalizedString(key: "appSettings")
-        //
+        
         labelNightMode.text = Defaults.getLocalizedString(key: "nightMode")
         switchNightMode.isOn = Defaults.nightModeOn
         
         labelLargeText.text = Defaults.getLocalizedString(key: "largeText")
         switchLargeText.isOn = Defaults.largeTextOn
+        
+        labelNavigate.text = "\(Defaults.getLocalizedString(key: "navigateUsing")):"
+        segmentNavigate.selectedSegmentIndex = Defaults.sortByValue
         
         labelLanguage.text = Defaults.getLocalizedString(key: "language")
         
@@ -239,18 +249,29 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             labelSort.textAlignment = .right
         }
     }
-    @objc func toast() {
-        let options: NSDictionary = [
-            kCRToastTextKey : Defaults.getLocalizedString(key: "restart"),
-            kCRToastTextAlignmentKey : NSTextAlignment.center.rawValue,
-            kCRToastBackgroundColorKey : UIColor.red,
-            kCRToastAnimationInTypeKey : CRToastAnimationType.gravity.rawValue,
-            kCRToastAnimationOutTypeKey : CRToastAnimationType.gravity.rawValue,
-            kCRToastAnimationInDirectionKey : CRToastAnimationDirection.left.rawValue,
-            kCRToastAnimationOutDirectionKey : CRToastAnimationDirection.right.rawValue
-        ]
-        
-        CRToastManager.showNotification(options: options as! [AnyHashable : Any], completionBlock: { () -> Void in
-        })
+    @objc func toast(_ retstart: Bool) {
+        if(retstart){
+            let options: NSDictionary = [
+                kCRToastTextKey : Defaults.getLocalizedString(key: "restart"),
+                kCRToastTextAlignmentKey : NSTextAlignment.center.rawValue,
+                kCRToastBackgroundColorKey : UIColor.red,
+                kCRToastAnimationInTypeKey : CRToastAnimationType.gravity.rawValue,
+                kCRToastAnimationOutTypeKey : CRToastAnimationType.gravity.rawValue,
+                kCRToastAnimationInDirectionKey : CRToastAnimationDirection.left.rawValue,
+                kCRToastAnimationOutDirectionKey : CRToastAnimationDirection.right.rawValue
+            ]
+            CRToastManager.showNotification(options: options as! [AnyHashable : Any], completionBlock: {() -> Void in})
+        } else {
+            let options: NSDictionary = [
+                kCRToastTextKey : Defaults.getLocalizedString(key: "changes"),
+                kCRToastTextAlignmentKey : NSTextAlignment.center.rawValue,
+                kCRToastBackgroundColorKey : UIColor.green.darker(),
+                kCRToastAnimationInTypeKey : CRToastAnimationType.gravity.rawValue,
+                kCRToastAnimationOutTypeKey : CRToastAnimationType.gravity.rawValue,
+                kCRToastAnimationInDirectionKey : CRToastAnimationDirection.left.rawValue,
+                kCRToastAnimationOutDirectionKey : CRToastAnimationDirection.right.rawValue
+            ]
+            CRToastManager.showNotification(options: options as! [AnyHashable : Any], completionBlock: {() -> Void in})
+        }
     }
 }

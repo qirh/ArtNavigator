@@ -13,6 +13,11 @@ enum SortBy : Int {
     case category = 1
     case artist = 2
 }
+enum NavigateUsing : Int {
+    case apple = 0
+    case google = 1
+    //case waze = 2
+}
 enum TabSelected : Int {
     case map = 0
     case list = 1
@@ -28,6 +33,7 @@ class Defaults {
     static let defaults: UserDefaults = UserDefaults.standard
     
     static var sortByValue: Int = SortBy.title.rawValue
+    static var navigateUsingValue: Int = NavigateUsing.apple.rawValue
     static var tabSelectedValue: Int = TabSelected.map.rawValue
     static var sliderValue: Int = 5
     static var nightModeOn: Bool = true
@@ -49,6 +55,7 @@ class Defaults {
         }
         
         sortByValue = defaults.integer(forKey: "sortByValue")
+        navigateUsingValue = defaults.integer(forKey: "navigateUsingValue")
         tabSelectedValue = defaults.integer(forKey: "tabSelectedValue")
         sliderValue = defaults.integer(forKey: "sliderValue")
         
@@ -56,7 +63,6 @@ class Defaults {
         largeTextOn = defaults.bool(forKey: "largeTextOn")
         
         languageSelectedCode = defaults.string(forKey: "languageSelectedCode")!
-        
         
         ranBefore = defaults.bool(forKey: "ranBefore")
         
@@ -82,11 +88,13 @@ class Defaults {
         }
         
         defaults.register(defaults: ["sliderValue" : sliderValue])
+        
         defaults.register(defaults: ["tabSelectedValue" : tabSelectedValue])
         defaults.register(defaults: ["sortByValue" : sortByValue])
         
         defaults.register(defaults: ["nightModeOn" : nightModeOn])
         defaults.register(defaults: ["largeTextOn" : largeTextOn])
+        defaults.register(defaults: ["navigateUsingValue" : navigateUsingValue])
         
         defaults.register(defaults: ["ranBefore" : true])
         defaults.synchronize()  

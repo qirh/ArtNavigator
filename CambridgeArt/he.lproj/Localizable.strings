@@ -53,12 +53,14 @@
 "save" = "שמור";
 "language" = "שפה";
 "restart" = "עִברִית";
+"changes" = "עִברִית"";
 "sortBy" = "להפעיל מחדש";
 "largeText" = "הקו הגדול";
 "title" = "כותרת";
 "artist" = "האמן";
 "tableSettings" = "הגדרות הטבלה";
 "appSettings" = "הגדרות היישום";
+"navigateUsing" = "Navigate using";
 
 //ArtPieces.swift
 "sculpture" = "פסל";

@@ -51,12 +51,14 @@
 "save" = "salvar";
 "language" = "Idioma\nLanguage";
 "restart" = "O idioma mudará após da reinicialização";
+"changes" = "Changes will take effect upon restart";
 "sortBy" = "Organizar por";
 "largeText" = "Texto amplo";
 "title" = "Título";
 "artist" = "Artista";
 "tableSettings" = "Configurações da lista";
 "appSettings" = "Configurações da app";
+"navigateUsing" = "Navigate using";
 
 //ArtPieces.swift
 "sculpture" = "Escultura";

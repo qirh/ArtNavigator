@@ -56,12 +56,14 @@
 "save" = "save";
 "language" = "Language";
 "restart" = "Language will change upon restart";
+"changes" = "All changes saved";
 "sortBy" = "Sort By";
 "largeText" = "Large Text";
 "title" = "Title";
 "artist" = "Artist";
 "tableSettings" = "Table Settings";
 "appSettings" = "App Settings";
+"navigateUsing" = "Navigate using";
 
 //ArtPieces.swift
 "sculpture" = "Sculpture";

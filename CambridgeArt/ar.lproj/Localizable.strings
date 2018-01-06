@@ -51,12 +51,14 @@
 "save" = "إحفظ";
 "language" = "اللغة\nLanguage";
 "restart" = "سيتم تغيير اللغة بعد إعادة تشغيل التطبيق";
+"changes" = "تم حفظ التغييرات";
 "sortBy" = "رتّب على حسب";
 "largeText" = "الخط الكبير";
 "title" = "العنوان";
 "artist" = "الفنان";
 "tableSettings" = "إعدادات الجدول";
 "appSettings" = "إعدادات التطبيق";
+"navigateUsing" = "Navigate using";
 
 //ArtPieces.swift
 "sculpture" = "تمثال";
