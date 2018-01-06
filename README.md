@@ -45,23 +45,21 @@ Cambridge Art Navigator is a personal iOS project that I worked on in the summer
 
 ## Copyright Information
  * **Resource 1:** The data provided by the city of Cambridge.
-   
+ 
    **License:** Provided as public information, free to use and no credit necessary.
    
-   **Source:** https://data.cambridgema.gov/General-Government/Cambridge-Public-Art-Locations/svyv-zh72/data
-   
+   **Source:** https://data.cambridgema.gov/General-Government/Cambridge-Public-Art-Locations/svyv-zh72/data  
 
  * **Resource 2:** Navigation icon
  
- **License:** Flaticon Basic License. Free to use if the author is credited
+   **License:** Flaticon Basic License. Free to use if the author is credited
    
    **Source:** http://www.flaticon.com/free-icon/navigation_149049#term=navigate&page=1&position=3
    
    **Credit:**
-     * Icons made by: http://www.flaticon.com/authors/madebyoliver
-     * licensed by: http://creativecommons.org/licenses/by/3.0/
- * **Resource 3:**
-   About, List, Map, Settings, flag and app icons are all from icons8.com
+    * Icons made by: http://www.flaticon.com/authors/madebyoliver
+    * licensed by: http://creativecommons.org/licenses/by/3.0/
+ * **Resource 3:** About, List, Map, Settings, flag and app icons are all from icons8.com
    
    **License:** Free to use with credit
    
@@ -83,22 +81,18 @@ Cambridge Art Navigator is a personal iOS project that I worked on in the summer
    
    **Credit:** https://github.com/Ashton-W
      
-     
- * **Resource 5:**
-   SwiftyJSON for parsing JSON
+ * **Resource 5:** SwiftyJSON for parsing JSON
    
    **License:** MIT License
    
    **Source:** https://github.com/SwiftyJSON/SwiftyJSON
    
    **Credit:** https://github.com/tangplin
+       
+ * **Resource 6:** Icon Set Creator
      
+   **License:** Nicolas Miari
      
- * **Resource 6:**
-	 Icon Set Creator
-     
-     **License:** Nicolas Miari
-     
-	 **Source:** https://itunes.apple.com/de/app/icon-set-creator/id939343785?l=en&mt=12
+   **Source:** https://itunes.apple.com/de/app/icon-set-creator/id939343785?l=en&mt=12
 	 
-	 **Credit:** https://stackoverflow.com/a/45122603
+   **Credit:** https://stackoverflow.com/a/45122603
