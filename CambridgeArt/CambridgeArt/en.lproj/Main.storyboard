@@ -105,7 +105,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zx4-IW-Ebu">
+                                                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zx4-IW-Ebu">
                                                     <rect key="frame" x="228" y="45" width="110" height="35"/>
                                                     <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                                     <constraints>
@@ -115,7 +115,7 @@
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                                     <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                                                     <size key="titleShadowOffset" width="3" height="3"/>
-                                                    <state key="normal" title="Navigate" image="navigation">
+                                                    <state key="normal" title="Navigate">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                 </button>
@@ -631,9 +631,7 @@
                                                             <constraint firstAttribute="height" constant="40" id="gxJ-ii-QwN"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                        <inset key="titleEdgeInsets" minX="-90" minY="5" maxX="0.0" maxY="5"/>
-                                                        <inset key="imageEdgeInsets" minX="67" minY="10" maxX="5" maxY="10"/>
-                                                        <state key="normal" title="Navigate" image="navigation">
+                                                        <state key="normal" title="Navigate">
                                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                     </button>
@@ -654,7 +652,7 @@
                                                             <constraint firstAttribute="height" constant="50" id="Tcx-6J-2py"/>
                                                         </constraints>
                                                         <string key="text">Address:
- 2610 Rio Grande st., Ausotn, TX 78705</string>
+ 2610 Rio Grande st., Austin, TX 78705</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -940,10 +938,7 @@ Bla</string>
             <point key="canvasLocation" x="296.80000000000001" y="-269.41529235382313"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="navigation" width="64" height="64"/>
-    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZY5-W6-xW4"/>
+        <segue reference="ehQ-iF-nZh"/>
     </inferredMetricsTieBreakers>
 </document>

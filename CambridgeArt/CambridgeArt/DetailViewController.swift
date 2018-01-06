@@ -103,6 +103,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         buttonNavigate.layer.cornerRadius = 4
         buttonNavigate.layer.borderColor = UIColor.black.cgColor
         buttonNavigate.setTitle(Defaults.getLocalizedString(key: "navigate"), for: .normal)
+        buttonNavigate.imageView!.contentMode = UIViewContentMode.scaleAspectFit
         labelGeneralInfo.text = Defaults.getLocalizedString(key: "generalInformation")
         
         var boldedString = NSMutableAttributedString()
