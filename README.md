@@ -9,8 +9,7 @@ Cambridge Art for the city of Cambridge, MA
 &nbsp;&nbsp;&nbsp;&nbsp;Cambridge Art Navigator is a personal iOS project that I worked on in the summer of 2017. It has been a really fun project to work on, and while it is fully functional right now, I think it could use a some UI improvements before being released to the app store The application basically shows an interactive map and a list of all the art installations in the city of Cambridge, MA, which is where I lived over the summer. If you are reading this, please give the app a try and let me know what you think :*
 
 ## Notes
- * App was designed to run on an iPhone 7.
- * On the settings app, there is a save button beneath, I'm not sure if that is obvious. Moreover, changes will not be committed unless saved.
+ * App was designed to run on an iPhone 7 or similar screen.
 
 ## Features not working properly
  * Night mode still not implemented
@@ -23,9 +22,8 @@ Cambridge Art for the city of Cambridge, MA
 
 ## Known Bugs
  * The annotations on the map only display one entry even if there are multiple.
- * Doesn't display well on screen sizes that aren't iPhone 7
+ * Doesn't display well on screen sizes that aren't iPhone 7 or similar
  * Doesn't display well in landscape
- * Add space in App Name
 
 ## Features to add
 ### General
@@ -44,8 +42,6 @@ Cambridge Art for the city of Cambridge, MA
  * Add option to navigate with google maps
 ### Detailed View
  * Redesign the UI
- * Redesign how the Navigate button looks
- * "Show More" Button to show details
 
 
 ## Copyright Information
