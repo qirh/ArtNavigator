@@ -35,6 +35,7 @@ Cambridge Art Navigator is a personal iOS project that I worked on in the summer
  * Highlight zip codes
 ### Table View
  * Add search bar
+ * Add 3d peek for cells
  * Redesign how the Navigate button looks
  * variable cell size
 ### Settings View
