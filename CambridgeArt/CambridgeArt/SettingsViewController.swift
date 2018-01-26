@@ -265,7 +265,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             let options: NSDictionary = [
                 kCRToastTextKey : Defaults.getLocalizedString(key: "changes"),
                 kCRToastTextAlignmentKey : NSTextAlignment.center.rawValue,
-                kCRToastBackgroundColorKey : UIColor.green.darker(),
+                kCRToastBackgroundColorKey : UIColor.green.darker()!,
                 kCRToastAnimationInTypeKey : CRToastAnimationType.gravity.rawValue,
                 kCRToastAnimationOutTypeKey : CRToastAnimationType.gravity.rawValue,
                 kCRToastAnimationInDirectionKey : CRToastAnimationDirection.left.rawValue,

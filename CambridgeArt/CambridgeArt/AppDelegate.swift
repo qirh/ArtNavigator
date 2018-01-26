@@ -40,6 +40,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
+    // src: https://jgonfer.com/blog/3d-touch-tutorial-for-swift-3-quick-actions/
+ 
+    enum ShortcutIdentifier: String {
+        case OpenMap
+        case OpenList
+        case OpenAbout
+        init?(identifier: String) {
+            guard let shortIdentifier = identifier.components(separatedBy: ".").last else {
+                return nil
+            }
+            self.init(rawValue: shortIdentifier)
+        }
+    }
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        completionHandler(shouldPerformActionFor(shortcutItem: shortcutItem))
+    }
+    private func shouldPerformActionFor(shortcutItem: UIApplicationShortcutItem) -> Bool {
+        let shortcutType = shortcutItem.type
+        guard let shortcutIdentifier = ShortcutIdentifier(identifier: shortcutType) else {
+            return false
+        }
+        return selectTabBarItemFor(shortcutIdentifier: shortcutIdentifier)
+    }
+    private func selectTabBarItemFor(shortcutIdentifier: ShortcutIdentifier) -> Bool {
+        guard let myTabBar = self.window?.rootViewController as? UITabBarController else {
+            return false
+        }
+        switch shortcutIdentifier {
+            case .OpenMap:
+                myTabBar.selectedIndex = 0
+                return true
+            case .OpenList:
+                myTabBar.selectedIndex = 1
+                return true
+            case .OpenAbout:
+                myTabBar.selectedIndex = 3
+                return true
+        }
+        return false
+    }
 
 
 }

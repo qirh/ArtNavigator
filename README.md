@@ -28,7 +28,7 @@ Cambridge Art Navigator is a personal iOS project that I worked on in the summer
 ## Features to add
 ### General
  * Full right-to-left support for Arabic/Hebrew
- * Add force touch to application icon
+ * Add force touch to application icon --> add option "closest to me"
  * Add data for the city of Somerville and neighboring cities
  * Add data from Harvard/MIT campuses
 ### Map View
