@@ -1,6 +1,6 @@
-# Cambridge Art
+# Cambridge Art [![MIT license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://https://raw.githubusercontent.com/qirh/CambridgeArt/master/LICENSE.txt)
 Cambridge Art for the city of Cambridge, MA
-[![MIT license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://https://raw.githubusercontent.com/qirh/CambridgeArt/master/LICENSE.txt)
+
 * License: MIT License
 * Contact: salehg@live.com
 * This Readme is meant for the continous development of the repo, for general information about the app look here: http://saladesaleh.com/cambridgeart
