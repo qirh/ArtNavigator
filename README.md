@@ -49,19 +49,19 @@ Cambridge Art is an iOS project that I worked on in the summer of 2017. It has b
     * **License:** Flaticon Basic License. Free to use if the author is credited
     * **Source:** http://www.flaticon.com/free-icon/navigation_149049#term=navigate&page=1&position=3
     * **Credit:**
-     * Icons made by: http://www.flaticon.com/authors/madebyoliver
-     * licensed by: http://creativecommons.org/licenses/by/3.0/
+        * Icons made by: http://www.flaticon.com/authors/madebyoliver
+        * licensed by: http://creativecommons.org/licenses/by/3.0/
  
  3. About, List, Map, Settings and flag icons are from [icons8.com](icons8.com)
     * **License:** Free to use with credit
     * **Source:** http://icons8.com
     * **Credit:**
-     * https://icons8.com/icon/set/flags/all
-     * https://icons8.com/icon/set/art/all
-     * https://icons8.com/icon/14313/about
-     * https://icons8.com/icon/20406/bulleted-list
-     * https://icons8.com/icon/3779/map-marker
-     * https://icons8.com/icon/14099/Settings
+        * https://icons8.com/icon/set/flags/all
+        * https://icons8.com/icon/set/art/all
+        * https://icons8.com/icon/14313/about
+        * https://icons8.com/icon/20406/bulleted-list
+        * https://icons8.com/icon/3779/map-marker
+        * https://icons8.com/icon/14099/Settings
 
  4. CRToast for alerts
     * **License:** MIT License
