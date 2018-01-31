@@ -46,16 +46,16 @@ Cambridge Art is an iOS project that I worked on in the summer of 2017. It has b
     * **Source:** https://data.cambridgema.gov/General-Government/Cambridge-Public-Art-Locations/svyv-zh72/data  
 
  2. Navigation icon
-   * **License:** Flaticon Basic License. Free to use if the author is credited
-   * **Source:** http://www.flaticon.com/free-icon/navigation_149049#term=navigate&page=1&position=3
-   * **Credit:**
+    * **License:** Flaticon Basic License. Free to use if the author is credited
+    * **Source:** http://www.flaticon.com/free-icon/navigation_149049#term=navigate&page=1&position=3
+    * **Credit:**
      * Icons made by: http://www.flaticon.com/authors/madebyoliver
      * licensed by: http://creativecommons.org/licenses/by/3.0/
  
  3. About, List, Map, Settings and flag icons are from [icons8.com](icons8.com)
-   * **License:** Free to use with credit
-   * **Source:** http://icons8.com
-   * **Credit:**
+    * **License:** Free to use with credit
+    * **Source:** http://icons8.com
+    * **Credit:**
      * https://icons8.com/icon/set/flags/all
      * https://icons8.com/icon/set/art/all
      * https://icons8.com/icon/14313/about
@@ -64,16 +64,16 @@ Cambridge Art is an iOS project that I worked on in the summer of 2017. It has b
      * https://icons8.com/icon/14099/Settings
 
  4. CRToast for alerts
-   * **License:** MIT License
-   * **Source:** https://github.com/cruffenach/CRToast
-   * **Credit:** https://github.com/Ashton-W
+    * **License:** MIT License
+    * **Source:** https://github.com/cruffenach/CRToast
+    * **Credit:** https://github.com/Ashton-W
      
  5. SwiftyJSON for parsing JSON
-   * **License:** MIT License
-   * **Source:** https://github.com/SwiftyJSON/SwiftyJSON
-   * **Credit:** https://github.com/tangplin
+    * **License:** MIT License
+    * **Source:** https://github.com/SwiftyJSON/SwiftyJSON
+    * **Credit:** https://github.com/tangplin
        
  6. Icon Set Creator
-   * **License:** Nicolas Miari
-   * **Source:** https://itunes.apple.com/de/app/icon-set-creator/id939343785?l=en&mt=12
-   * **Credit:** https://stackoverflow.com/a/45122603
+    * **License:** Nicolas Miari
+    * **Source:** https://itunes.apple.com/de/app/icon-set-creator/id939343785?l=en&mt=12
+    * **Credit:** https://stackoverflow.com/a/45122603
