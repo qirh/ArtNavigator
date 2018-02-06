@@ -8,11 +8,11 @@ Cambridge Art is an iOS project that I worked on in the summer of 2017. It has b
 
 ## Screenshots
 ### Map & List views
-<img src="/screenshots/en-47-map.png" height = "450" width="270"> <img src="/screenshots/en-47-list.png" height = "450" width="270">
+<table><tr><td><img src="/screenshots/en-47-map.png" height = "450" width="270"></td></tr></table> <table><tr><td><img src="/screenshots/en-47-list.png" height = "450" width="270"></td></tr></table>
 ### Settings & About views
-<img src="/screenshots/es-47-settings.png" height = "450" width="270"> <img src="/screenshots/ar-47-about.png" height = "450" width="270">
+<table><tr><td><img src="/screenshots/es-47-settings.png" height = "450" width="270"></td></tr></table> <table><tr><td><img src="/screenshots/ar-47-about.png" height = "450" width="270"></td></tr></table>
 ### Detailed view
-<img src="/screenshots/es-47-detail.png" height = "450" width="270">
+<table><tr><td><img src="/screenshots/es-47-detail.png" height = "450" width="270"></td></tr></table>
 
 ## Notes
 ### Features not working properly
