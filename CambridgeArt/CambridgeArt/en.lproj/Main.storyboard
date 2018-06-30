@@ -672,6 +672,9 @@
                                                         <state key="normal" title="Navigate">
                                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="buttonNavigatePressed:" destination="kqG-Dj-Cvh" eventType="touchUpInside" id="Vy7-Ab-sFd"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7W-Y1-cYb" userLabel="labelLocationName">
                                                         <rect key="frame" x="10" y="89" width="355" height="50"/>

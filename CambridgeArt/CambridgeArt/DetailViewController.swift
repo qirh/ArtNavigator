@@ -179,28 +179,22 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
             self.labelInteriorExterior.textAlignment = .right
         }
     }
-    
+    @IBAction func buttonArtPiecePressed(_ sender: UIButton) {
+        centerMapOnLocation(location: CLLocation(latitude: (artPiece?.latitude)!, longitude: (artPiece?.longitude)!))
+    }
     @IBAction func buttonNavigatePressed(_ sender: UIButton) {
-        /*
-        let coordinate = CLLocationCoordinate2DMake(artPiece!.latitude, artPiece!.longitude)
-        let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinate, addressDictionary:nil))
-        mapItem.name = artPiece!.locationName
-        
-        mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving])
-        */
         if(Defaults.navigateUsingValue == 0) {
-            let coordinate = CLLocationCoordinate2DMake(ArtPieces.artPieces[sender.tag].latitude, ArtPieces.artPieces[sender.tag].longitude)
+            let coordinate = CLLocationCoordinate2DMake((artPiece?.latitude)!, (artPiece?.longitude)!)
             let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinate, addressDictionary:nil))
-            mapItem.name = ArtPieces.artPieces[sender.tag].locationName
+            mapItem.name = artPiece?.locationName
             
             mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving])
         } else {
-            if let url = URL(string: "https://maps.google.com/?q=\(ArtPieces.artPieces[sender.tag].latitude),\(ArtPieces.artPieces[sender.tag].longitude)") {
+            if let url = URL(string: "https://maps.google.com/?q=\((artPiece?.latitude)!),\((artPiece?.longitude)!)") {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
         }
     }
-    @IBAction func buttonArtPiecePressed(_ sender: UIButton) {
-        centerMapOnLocation(location: CLLocation(latitude: (artPiece?.latitude)!, longitude: (artPiece?.longitude)!))
-    }
+    
+    
 }
