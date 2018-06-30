@@ -83,8 +83,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell
     }
     @objc func buttonNavigatePressed(_ sender: UIButton) {
-        
-        
         if(Defaults.navigateUsingValue == 0) {
             let coordinate = CLLocationCoordinate2DMake(ArtPieces.artPieces[sender.tag].latitude, ArtPieces.artPieces[sender.tag].longitude)
             let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinate, addressDictionary:nil))
@@ -92,7 +90,9 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
             
             mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving])
         } else {
-            UIApplication.shared.openURL(URL(string:"https://www.google.com/maps/@\(ArtPieces.artPieces[sender.tag].latitude),\(ArtPieces.artPieces[sender.tag].longitude),6z")!)
+            if let url = URL(string: "https://maps.google.com/?q=\(ArtPieces.artPieces[sender.tag].latitude),\(ArtPieces.artPieces[sender.tag].longitude)") {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
