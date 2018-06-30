@@ -84,12 +84,16 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     @objc func buttonNavigatePressed(_ sender: UIButton) {
         
-        let coordinate = CLLocationCoordinate2DMake(ArtPieces.artPieces[sender.tag].latitude, ArtPieces.artPieces[sender.tag].longitude)
-        let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinate, addressDictionary:nil))
-        mapItem.name = ArtPieces.artPieces[sender.tag].locationName
         
-        mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving])
-        
+        if(Defaults.navigateUsingValue == 0) {
+            let coordinate = CLLocationCoordinate2DMake(ArtPieces.artPieces[sender.tag].latitude, ArtPieces.artPieces[sender.tag].longitude)
+            let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinate, addressDictionary:nil))
+            mapItem.name = ArtPieces.artPieces[sender.tag].locationName
+            
+            mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving])
+        } else {
+            UIApplication.shared.openURL(URL(string:"https://www.google.com/maps/@\(ArtPieces.artPieces[sender.tag].latitude),\(ArtPieces.artPieces[sender.tag].longitude),6z")!)
+        }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
