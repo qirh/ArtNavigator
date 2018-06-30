@@ -49,6 +49,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var segmentNavigate: UISegmentedControl!
     
     
+    
     //viewAppSettings --> viewLanguage
     @IBOutlet weak var labelLanguage: UILabel!
     @IBOutlet weak var pickerLanguage: UIPickerView!
@@ -154,7 +155,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     @IBAction func sliderChanged(_ sender: UISlider) {
-        //https://stackoverflow.com/a/9695118
         let sliderValueFloat = Float(lroundf(sliderResults.value))
         sender.setValue(sliderValueFloat, animated: true)
         
@@ -167,8 +167,11 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBAction func switchLargeTextChanged(_ sender: UISwitch) {
         Defaults.largeTextOn = sender.isOn
     }
-    @IBAction func segmentedControlChanged(_ sender: UISegmentedControl) {
+    @IBAction func segmentSortChanged(_ sender: UISegmentedControl) {
         Defaults.sortByValue = sender.selectedSegmentIndex
+    }
+    @IBAction func segmentNavigateChanged(_ sender: UISegmentedControl) {
+        Defaults.navigateUsingValue = sender.selectedSegmentIndex
     }
     
     
@@ -219,7 +222,9 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         switchLargeText.isOn = Defaults.largeTextOn
         
         labelNavigate.text = "\(Defaults.getLocalizedString(key: "navigateUsing")):"
-        segmentNavigate.selectedSegmentIndex = Defaults.sortByValue
+        segmentNavigate.selectedSegmentIndex = Defaults.navigateUsingValue
+        segmentNavigate.setTitle(Defaults.getLocalizedString(key: "appleMaps"), forSegmentAt: 0)
+        segmentNavigate.setTitle(Defaults.getLocalizedString(key: "googleMaps"), forSegmentAt: 1)
         
         labelLanguage.text = Defaults.getLocalizedString(key: "language")
         

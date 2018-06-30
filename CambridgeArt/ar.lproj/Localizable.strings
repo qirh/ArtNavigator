@@ -58,7 +58,9 @@
 "artist" = "الفنان";
 "tableSettings" = "إعدادات الجدول";
 "appSettings" = "إعدادات التطبيق";
-"navigateUsing" = "Navigate using";
+"navigateUsing" = "إستخدام خرائط";
+"appleMaps" = "آبل";
+"googleMaps" = "قوقل";
 
 //ArtPieces.swift
 "sculpture" = "تمثال";

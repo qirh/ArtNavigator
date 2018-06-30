@@ -6,8 +6,7 @@
 //  Copyright © 2017 saleh. All rights reserved.
 //
 
-// source:
-// https://makeapppie.com/2015/02/04/swift-swift-tutorials-passing-data-in-tab-bar-controllers/
+// First class to launch
 
 class TabViewController: UITabBarController, UITabBarControllerDelegate {
     

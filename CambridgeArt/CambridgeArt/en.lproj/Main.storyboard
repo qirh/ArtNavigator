@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="As9-wg-hrK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="As9-wg-hrK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -247,7 +247,7 @@
                                                             <segment title="Artist"/>
                                                         </segments>
                                                         <connections>
-                                                            <action selector="segmentedControlChanged:" destination="H7K-We-3lf" eventType="valueChanged" id="kij-fh-mbq"/>
+                                                            <action selector="segmentSortChanged:" destination="H7K-We-3lf" eventType="valueChanged" id="AZx-Cc-42m"/>
                                                         </connections>
                                                     </segmentedControl>
                                                 </subviews>
@@ -386,6 +386,9 @@
                                                             <segment title="Apple Maps"/>
                                                             <segment title="Google Maps"/>
                                                         </segments>
+                                                        <connections>
+                                                            <action selector="segmentNavigateChanged:" destination="H7K-We-3lf" eventType="valueChanged" id="117-tD-E43"/>
+                                                        </connections>
                                                     </segmentedControl>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

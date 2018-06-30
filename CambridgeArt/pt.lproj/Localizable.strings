@@ -58,7 +58,9 @@
 "artist" = "Artista";
 "tableSettings" = "Configurações da lista";
 "appSettings" = "Configurações da app";
-"navigateUsing" = "Navigate using";
+"navigateUsing" = "Navegar usando";
+"appleMaps" = "Apple Maps";
+"googleMaps" = "Google Maps";
 
 //ArtPieces.swift
 "sculpture" = "Escultura";

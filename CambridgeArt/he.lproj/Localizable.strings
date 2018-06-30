@@ -58,7 +58,9 @@
 "artist" = "האמן";
 "tableSettings" = "הגדרות הטבלה";
 "appSettings" = "הגדרות היישום";
-"navigateUsing" = "Navigate using";
+"navigateUsing" = "באמצעות מפות";
+"appleMaps" = "אפל";
+"googleMaps" = "גוגל";
 
 //ArtPieces.swift
 "sculpture" = "פסל";

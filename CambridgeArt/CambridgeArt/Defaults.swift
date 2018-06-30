@@ -16,7 +16,6 @@ enum SortBy : Int {
 enum NavigateUsing : Int {
     case apple = 0
     case google = 1
-    //case waze = 2
 }
 enum TabSelected : Int {
     case map = 0
@@ -59,6 +58,8 @@ class Defaults {
         tabSelectedValue = defaults.integer(forKey: "tabSelectedValue")
         sliderValue = defaults.integer(forKey: "sliderValue")
         
+        print(navigateUsingValue)
+        
         nightModeOn = defaults.bool(forKey: "nightModeOn")
         largeTextOn = defaults.bool(forKey: "largeTextOn")
         
@@ -77,13 +78,9 @@ class Defaults {
     }
     static func firstTimeRun() {
         
-       
         if supportedLanguages[languageSelectedCode] != nil {
-            
             defaults.register(defaults: ["languageSelectedCode" : languageSelectedCode])
-        }
-        else{
-           
+        } else{
             defaults.register(defaults: ["languageSelectedCode" : "en"])
         }
         

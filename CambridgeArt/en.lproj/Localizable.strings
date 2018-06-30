@@ -64,6 +64,8 @@
 "tableSettings" = "Table Settings";
 "appSettings" = "App Settings";
 "navigateUsing" = "Navigate using";
+"appleMaps" = "Apple Maps";
+"googleMaps" = "Google Maps";
 
 //ArtPieces.swift
 "sculpture" = "Sculpture";
