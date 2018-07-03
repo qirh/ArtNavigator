@@ -3,7 +3,7 @@ Cambridge Art is an iOS app that shows public art for the city of Cambridge, Mas
 
 
 ## Summary
-Cambridge Art is an iOS project that I worked on in the summer of 2017. It has been a really fun project to work on, and while it is fully functional right now, I think it could use a some UI improvements before being released to the app store. The application basically shows an interactive map and a list of all the art installations in the city of Cambridge, MA, which is where I lived over the summer. If you are reading this, please give the app a try and let me know what you think :*
+Cambridge Art is an iOS project that I worked on in the summer of 2017. It has been a really fun project to work on, and while it is fully functional right now, I think it could use some UI improvements before being released to the app store. The application basically shows an interactive map and a list of all the art installations in the city of Cambridge, MA, which is where I lived over the summer. If you are reading this, please give the app a try and let me know what you think :*
 
 
 ## Screenshots
@@ -22,7 +22,7 @@ Cambridge Art is an iOS project that I worked on in the summer of 2017. It has b
  * Large Text still not implemented
  * Results per page still not implemented
  * Portuguese and Hebrew translations are lacking
- * 3d peek and pop are not 100%, for reference, look [here](https://medium.com/@darjeelingsteve/supporting-3d-touch-peek-and-pop-ee80d2a4bd69) & [here](https://the-nerd.be/2015/10/06/3d-touch-peek-and-pop-tutorial/) 
+ * 3d peek and pop are not 100%, for reference, look [here](https://medium.com/@darjeelingsteve/supporting-3d-touch-peek-and-pop-ee80d2a4bd69) & [here](https://the-nerd.be/2015/10/06/3d-touch-peek-and-pop-tutorial/)
 
 ### Known Issues
  * The annotations on the map only display one entry even if there are multiple.
