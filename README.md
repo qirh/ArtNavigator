@@ -16,27 +16,6 @@ Cambridge Art is an iOS project that I worked on in the summer of 2017. It has b
 ### Detailed view
 <table><tr><td><img src="/screenshots/es-47-detail.png" height = "450" width="270"></td></tr></table>
 
-## Notes
-
-### Features to add
-#### General
- * Full right-to-left support for Arabic/Hebrew
- * Add force touch to application icon --> add option "closest to me"
- * Add data for the city of Somerville and neighboring cities
- * Add data from Harvard/MIT campuses
-#### Map View
- * Highlight Cambridge in the map
- * Highlight zip codes
-#### Table View
- * Add search bar
- * Add 3d peek for cells
- * Redesign how the Navigate button looks
- * variable cell size
-#### Settings View
- * Redesign the UI to fit apple guidelines for settings
- * Add option to navigate with google maps
-#### Detailed View
- * Redesign the UI
 
  ## Copyright Information
  | No. | Description                               | Source                                                                                                  | Credit                                                                                                                                                                                                                                                |
