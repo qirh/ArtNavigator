@@ -17,17 +17,6 @@ Cambridge Art is an iOS project that I worked on in the summer of 2017. It has b
 <table><tr><td><img src="/screenshots/es-47-detail.png" height = "450" width="270"></td></tr></table>
 
 ## Notes
-### Features not working properly
- * Night mode still not implemented
- * Large Text still not implemented
- * Results per page still not implemented
- * Portuguese and Hebrew translations are lacking
- * 3d peek and pop are not 100%, for reference, look [here](https://medium.com/@darjeelingsteve/supporting-3d-touch-peek-and-pop-ee80d2a4bd69) & [here](https://the-nerd.be/2015/10/06/3d-touch-peek-and-pop-tutorial/)
-
-### Known Issues
- * The annotations on the map only display one entry even if there are multiple.
- * Doesn't display well on screen sizes that aren't iPhone 7 or similar
- * Doesn't display well in landscape
 
 ### Features to add
 #### General
