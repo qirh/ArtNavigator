@@ -1,5 +1,6 @@
 # Cambridge Art [![MIT license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://https://raw.githubusercontent.com/qirh/CambridgeArt/master/LICENSE)
-Cambridge Art is an iOS app that shows public art for the city of Cambridge, Massachusetts. 
+Cambridge Art is an iOS app that shows public art for the city of Cambridge, Massachusetts.
+
 __Update April 2020__: The app is no longer on the app store.
 
 
